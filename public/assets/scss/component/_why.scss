@@ -1,0 +1,93 @@
+@use '../abstract' as *;
+
+/*----------------------------------------*/
+/*  14. WHY CSS START
+/*----------------------------------------*/
+
+.why{
+    &__thumb{
+        position: relative;
+        z-index: 1;
+        margin-left: -35px;
+
+        @media #{$md}{
+            margin-top: 50px;
+        }
+        @media #{$sm}{
+            margin-top: 50px;
+        }
+        @media #{$xs}{
+            margin-top: 50px;
+        }
+        & img{
+            @media #{$xs}{
+                width: 100%;
+            }
+            &.why-green{
+                position: absolute;
+                z-index: -1;
+                bottom: 0;
+                right: 0;
+                @media #{$xl}{
+                    right: -23px;
+                }
+                @media #{$lg}{
+                    right: -19px;
+                }
+                @media #{$md}{
+                    right: -19px;
+                }
+                @media #{$sm}{
+                    right: 41px;
+                }
+                @media #{$xs}{
+                    right: 0px;
+                    width: 100%;
+                }
+            }
+            &.why-pink{
+                position: absolute;
+                z-index: -2;
+                bottom: -6%;
+                left: 15%;
+                @media #{$xs}{
+                    width: 80%;
+                }
+            }
+            &.why-dot{
+                position: absolute;
+                right: 10%;
+                bottom: 6%;
+                 @media #{$xs}{
+                    width: inherit;
+                }
+            }
+            &.why-line{
+                position: absolute;
+                right: 0%;
+                top: 28%;
+                 @media #{$xs}{
+                    width: inherit;
+                }
+            }
+        }
+    }
+    &__btn{
+        & .link-btn{
+            color: $black;
+            &:hover{
+                color: $e-blue;
+            }
+        }
+    }
+    &__content{
+        @media #{$xs}{
+            padding-right: 0;
+        }
+    }
+}
+.product-quantity button {
+    @media #{$md,$sm,$xs}{
+        white-space: nowrap;
+    }
+}

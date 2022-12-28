@@ -1,0 +1,94 @@
+@use '../abstract' as *;
+
+/*----------------------------------------*/
+/*  02. SERVICES CSS START
+/*----------------------------------------*/
+
+
+.services{
+    &__item{
+        position: relative;
+        padding: 40px 40px;
+        padding-bottom: 45px;
+        @include box-shadow(0px 30px 40px 0px rgba(3, 24, 128, 0.2));
+        @include border-radius(6px);
+        backface-visibility: hidden;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        -webkit-transition: transform .3s cubic-bezier(.21,.6,.44,2.18);
+        -moz-transition: transform .3s cubic-bezier(.21,.6,.44,2.18);
+        -ms-transition: transform .3s cubic-bezier(.21,.6,.44,2.18);
+        -o-transition: transform .3s cubic-bezier(.21,.6,.44,2.18);
+        transition: transform .3s cubic-bezier(.21,.6,.44,2.18);
+
+        @media #{$xl}{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        @media #{$lg}{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        @media #{$sm}{
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        &:hover{
+            @include transform(translateY(-5px) translate3d(0,-5px,0));
+            & p{
+                visibility: hidden;
+                opacity: 0;
+            }
+            & .link-btn-2{
+                bottom: 45px;
+                visibility: visible;
+                opacity: 1;
+                @media #{$xs}{
+                    bottom: 30px;
+                }
+            }
+        }
+    }
+    &__title{
+        font-size: 22px;
+        color: $white;
+        margin-bottom: 17px;
+    }
+    &__icon{
+        margin-bottom: 43px;
+        & svg{
+            width: 50px;
+            height: 50px;
+            & path{
+                fill: $white;
+            }
+        }
+    }
+    &__content{
+        & p{
+            color: $white;
+            opacity: .8;
+            line-height: 22px;
+            margin-bottom: 0;
+        }
+        & .link-btn-2{
+            position: absolute;
+            left: 40px;
+            bottom: 20px;
+            visibility: hidden;
+            opacity: 0;
+            color: $white;
+
+            @media #{$lg}{
+                left: 15px;
+            }
+            &:hover{
+                border-color: $white;
+            }
+        }
+    }
+}

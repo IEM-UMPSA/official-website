@@ -1,0 +1,164 @@
+@use '../abstract' as *;
+
+/*----------------------------------------*/
+/*  08. PRICE CSS START
+/*----------------------------------------*/
+
+.price{
+    &__item{
+        padding: 45px 50px;
+        padding-bottom: 60px;
+        @include border-radius(6px);
+    }
+    &__head{
+        & h3{
+            font-size: 26px;
+            margin-bottom: 5px;
+        }
+        & p{
+            color: $e-text-4;
+            margin-bottom: 17px;
+        }
+    }
+    &__tag{
+        padding-bottom: 13px;
+        border-bottom: 1px solid $border-3;
+        & h4{
+            font-size: 50px;
+            margin-bottom: 0;
+            & span{
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+    &__offer{
+        position: absolute;
+        top: 20px;
+        right: -15px;
+        z-index: 1;
+
+        @media #{$xs}{
+            right: 0;
+        }
+        & span{
+            display: inline-block;
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            text-align: center;
+            color: $white;
+            background: $e-pink-2;
+            padding: 0 10px;
+            @include border-radius(4px 4px 0px 4px);
+            position: relative;
+            @media #{$xs}{
+                @include border-radius(4px)
+            }
+            &::after{
+                position: absolute;
+                content: '';
+                bottom: -10px;
+                right: 0;
+                width: 0;
+                height: 0;
+                border-left: 15px solid $e-brown;
+                border-top: 0px solid transparent;
+                border-bottom: 10px solid transparent;
+                @media #{$xs}{
+                    display: none;
+                }
+            }
+            
+        }
+    }
+    &__features{
+        & ul{
+            & li{
+                font-size: 16px;
+                font-weight: 500;
+                color: $black;
+                position: relative;
+                padding-left: 30px;
+                &:not(:last-child){
+                    margin-bottom: 10px;
+                }
+                & i{
+                    position: absolute;
+                    left: 0;
+                    top: 3px;
+                    display: inline-block;
+                    color: $e-green;
+                    font-size: 8px;
+                    height: 18px;
+                    width: 18px;
+                    line-height: 19px;
+                    text-align: center;
+                    @include border-radius(50%);
+                    background: rgba($color: $e-green, $alpha: .1);
+                }
+
+                &:hover{
+                    color: $e-green;
+                    & i{
+                        background: $e-green;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    &__tab-btn{
+        & .react-tabs__tab-list {
+            border: none !important;
+            & .react-tabs__tab {
+                & .nav-link{
+                    background: transparent;
+                    padding: 0 15px;
+                    font-size: 14px;
+                    color: $black-2;
+                    font-weight: 500;
+                    height: 36px;
+                    line-height: 34px;
+                    border: 2px solid $grey-2;
+                    @include border-radius(4px);
+                    text-transform: capitalize;
+                }
+                &:first-child{
+                    & .nav-link{
+                        border-right: 0;
+                        @include border-radius( 4px 0 0 4px);
+                    }
+                }
+                &:last-child{
+                    & .nav-link {
+                        border-left: 0;
+                        @include border-radius( 0px 4px 4px 0px);
+                    }
+                }
+                &--selected {
+                    .nav-link{
+                        background: $e-blue;
+                        color: $white;
+                        border-color: $e-blue;
+                    }
+                }
+            }
+            
+        }
+        .react-tabs__tab--selected {
+            padding: 0px !important;
+            border: none !important;
+            color: inherit !important;
+            border-radius: 0px;
+        }
+        .react-tabs__tab {
+            bottom: 0px !important;
+            padding: 0px !important;
+            border: none !important;
+        }
+        .nav-tabs {
+            border-bottom: 0px;
+        }
+    }
+}

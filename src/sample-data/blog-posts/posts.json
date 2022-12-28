@@ -1,0 +1,62 @@
+[
+    {
+      "id": "1",
+      "tag": "Art & Design",
+      "title": "The Challenge Of Global Learning In Public Education",
+      "image": "assets/img/blog/blog-1.jpg",
+      "authorImage": "assets/img/blog/author/author-1.jpg",
+      "authorTitle": "Jim Séchen",
+      "url": "/The Challenge Of Global Learning In Public Education",
+      "date": "April 02, 2022"
+    },
+    {
+      "id": "2",
+      "tag": "Art & Design",
+      "title": "Exactly How Technology Can Make Reading Better",
+      "image": "assets/img/blog/blog-2.jpg",
+      "authorImage": "assets/img/blog/author/author-2.jpg",
+      "authorTitle": "Andrew Tye",
+      "url": "/Exactly How Technology Can Make Reading Better",
+      "date": "April 03, 2022"
+    },
+    {
+      "id": "3",
+      "tag": "Art & Design",
+      "title": "New Chicago school budget relies on state pension",
+      "image": "assets/img/blog/blog-3.jpg",
+      "authorImage": "assets/img/blog/author/author-3.jpg",
+      "authorTitle": "Steve Long",
+      "url": "/New Chicago school budget relies on state pension",
+      "date": "April 04, 2022"
+    },
+    {
+      "id": "4",
+      "tag": "Art & Design",
+      "title": "4 Facebook Ad Examples for Ad Creative Inspiration",
+      "image": "assets/img/blog/blog-4.jpg",
+      "authorImage": "assets/img/blog/author/author-3.jpg",
+      "authorTitle": "Josh Peter",
+      "url": "/4 Facebook Ad Examples for Ad Creative Inspiration",
+      "date": "April 05, 2022"
+    },
+    {
+      "id": "5",
+      "tag": "Art & Design",
+      "title": "Google Ads certifications: Are they worth it?",
+      "image": "assets/img/blog/blog-5.jpg",
+      "authorImage": "assets/img/blog/author/author-3.jpg",
+      "authorTitle": "Steve Smith",
+      "url": "/Google Ads certifications: Are they worth it?",
+      "date": "April 06, 2022"
+    },
+    {
+      "id": "6",
+      "tag": "Art & Design",
+      "title": "How to manage Facebook ads for clients the right way",
+      "image": "assets/img/blog/blog-6.jpg",
+      "authorImage": "assets/img/blog/author/author-3.jpg",
+      "authorTitle": "David Warner",
+      "url": "/How to manage Facebook ads for clients the right way",
+      "date": "April 07, 2022"
+    }
+  ]

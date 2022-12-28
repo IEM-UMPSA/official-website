@@ -1,0 +1,86 @@
+@use '../abstract' as *;
+
+/*----------------------------------------*/
+/*  15. COUNTER CSS START
+/*----------------------------------------*/
+
+.counter{
+    &__item{}
+    &__icon{
+        & svg{
+            height: 34px;
+        }
+        &.user{
+            & svg{
+                fill: $e-pink-4;
+            }
+        }
+        &.book{
+            & svg{
+                fill: $e-orange-3;
+            }
+        }
+        &.graduate{
+            & svg{
+                fill: $e-skyblue-2;
+            }
+        }
+        &.globe{
+            & svg{
+                fill: $e-blue-5;
+            }
+        }
+    }
+    &__content{
+        & h4{
+            font-size: 26px;
+            margin-bottom: 0;
+            line-height: 1;
+        }
+        & p{
+            font-weight: 500;
+        }
+    }
+    &__pl-80{
+        padding-left: 80px;
+        @media #{$lg}{
+            padding-left: 30px;
+        }
+        @media #{$md}{
+            padding-left: 0px;
+        }
+        @media #{$sm}{
+            padding-left: 0px;
+        }
+        @media #{$xs}{
+            padding-left: 0px;
+        }
+    }
+    &__pl-34{
+        padding-left: 34px;
+        @media #{$md}{
+            padding-left: 0;
+        }
+        @media #{$sm}{
+            padding-left: 0;
+        }
+        @media #{$xs}{
+            padding-left: 0;
+        }
+    }
+    &__pl-70{
+        padding-left: 70px;
+        @media #{$xl}{
+            padding-left: 0;
+        }
+        @media #{$md}{
+            padding-left: 0;
+        }
+        @media #{$sm}{
+            padding-left: 0;
+        }
+        @media #{$xs}{
+            padding-left: 0;
+        }
+    }
+}

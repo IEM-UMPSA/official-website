@@ -1,0 +1,354 @@
+@use '../abstract' as *;
+
+
+/*----------------------------------------*/
+/*  12. ABOUT CSS START
+/*----------------------------------------*/
+
+.about{
+    &__thumb{
+        & img{
+            width: 370px;
+            @include border-radius(6px);
+            @media #{$xs}{
+                width: 100%;
+            }
+        }
+        &-wrapper{
+            position: relative;
+        }
+    }
+    &__banner{
+        
+        @media #{$xs}{
+            margin-top: -25px;
+        }
+        & img{
+            @include border-radius(6px);
+            max-width: 240px;
+        }
+    }
+    &__content{
+        @media #{$lg}{
+            padding-left: 55px;
+        }
+        @media #{$md}{
+            margin-top: 50px;
+            padding-left: 0px;
+        }
+        @media #{$sm}{
+            margin-top: 50px;
+            padding-left: 0px;
+        }
+        @media #{$xs}{
+            margin-top: 50px;
+            padding-left: 0px;
+            padding-right: 0;
+        }
+    }
+    &__student{
+        @media #{$xs}{
+            margin-top: 20px;
+            margin-left: 0;
+        }
+         & img{
+            height: 36px;
+            width: 36px;
+            @include border-radius(50%);
+            border: 2px solid $white;
+            @include box-shadow(0px 10px 20px 0px rgba(0, 5, 52, 0.1));
+            & + img{
+                margin-left: -12px;
+            }
+        }
+        & p{
+            margin-top: 4px;
+            margin-bottom: 0;
+            & span{
+                font-weight: 600;
+                color: $black;
+            }
+        }
+    }
+    &__review{
+        position: absolute;
+        left: -25px;
+        top: 100px;
+        @include transform(rotate(90deg));
+
+        & h5{
+            font-size: 16px;
+            font-weight: 400;
+            color: $e-text-3;
+            margin-bottom: 0;
+            & span{
+                font-weight: 600;
+                color: $black;
+            }
+        }
+    }
+    &__list{
+        & ul{
+            & li{
+                font-size: 16px;
+                font-weight: 500;
+                color: $black;
+                margin-bottom: 5px;
+                & i{
+                    font-size: 16px;
+                    color: $e-green;
+                    padding-right: 9px;
+                }
+            }
+        }
+    }
+}
+
+.about__thumb.ml-100 {
+    @media #{$xs}{
+        margin-left: 0;
+    }
+}
+.about__review {
+    @media #{$xs}{
+        display: none;
+    }
+}
+.about__banner.mt--210 {
+	@media #{$xs}{
+        display: none;
+    }
+}
+.about__student {
+	@media #{$xs}{
+        margin-top: 30px;
+    }
+}
+.about__thumb img {
+	@media #{$sm}{
+        width: 100%;
+    }
+}
+
+
+//tp-award css
+.tp-award-item{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ECEFF4;
+    align-items: center;
+    @media #{$xs} {
+        display: block;
+        padding: 20px;
+        text-align: center;
+    }
+}
+.award-title{
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: medium;
+    &:hover{
+        color: $e-blue;
+    }
+    @media #{$md} {
+        font-size: 26px;
+    }
+    @media #{$sm} {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+    @media #{$xs} {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+}
+.award-meta{
+    font-size: 13px;
+    font-weight: medium;
+    color: #777B83;
+    display: inline-block;
+    text-transform: uppercase;
+    & .award-year{
+        color: $e-blue;
+        margin-right: 8px;
+    }
+}
+.award-icon{
+    border-left: 1px solid #ECEFF4;
+    padding: 50px;
+    @media #{$md, $sm, $xs} {
+        padding: 50px 20px;
+    }
+    @media #{$sm} {
+        padding: 40px;
+    }
+    & i{
+        font-size: 50px;
+        color: #B9B9B9;
+        @media #{$xs} {
+            transform: rotate(0deg);
+            transform-origin: 0% 0%;
+        }
+        &:hover{
+            color: var(--tp-heading-primary);
+        }
+    }
+    @media #{$xs} {
+        padding: 0;
+        border-left: 0;
+    }
+}
+.award-icon-wrap{
+    transform: rotate(-50deg);
+    transform-origin: 65% 50%;
+    @media #{$xs} {
+        transform: rotate(0deg);
+        transform-origin: 0% 0%;
+    }
+}
+.award-image{
+    padding: 0 40px;
+    margin-right: 120px;
+    @media #{$lg} {
+        margin-right: 40px;
+    }
+    @media #{$md, $sm, $xs} {
+        margin-right: 0;
+    }
+    @media #{$xs} {
+        padding: 0 0;
+    }
+
+    & img{
+        width: 90px;
+    }
+}
+.award-content {
+    @media #{$xs} {
+        padding: 15px 0;
+    }
+}
+
+
+/*----------------------------------------*/
+/*  05. About CSS START
+/*----------------------------------------*/
+
+.tpabout-pright{
+    margin-left: 70px;
+    
+}
+.tpabout{
+    &__image{
+        position: relative;
+        & img{
+            width: 100%;
+        }
+    }
+}
+.about-des-text{
+    padding: 0 78px;
+    margin-bottom: 40px;
+
+    @media #{$xl}{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    @media #{$sm,$xs} {
+        padding: 0 0;
+    }
+}
+
+// about page css
+.tpabout-xd-title{
+    font-size: 45px;
+    line-height: 1.3;
+    font-weight: light;
+    @media #{$sm} {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    @media #{$xs} {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    & b{
+        font-weight: bold;
+    }
+}
+.tpabout-xs-title{
+    font-size: 24px;
+    color: $e-blue;
+    font-weight: bold;
+    display: block;
+}
+.tpabout-content-2{
+    margin-right: 100px;
+    @media #{$lg} {
+        margin-right: 60px;
+    }
+    @media #{$md,$sm,$xs} {
+        margin-right: 0;
+    }
+}
+.tpabout-image-2{
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        background: linear-gradient(260.52deg, #1C99FE -4.98%, #7644FF 48.42%, #FD4766 96.9%);
+        right: 0;
+        bottom: 3%;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        visibility: visible;
+        opacity: 1;
+        -webkit-transition: all 0.3s ease-out 0s;
+        -moz-transition: all 0.3s ease-out 0s;
+        -ms-transition: all 0.3s ease-out 0s;
+        -o-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s;
+        transform: rotate(6.95deg);
+        @media #{$md} {
+            transform: rotate(2.95deg);
+        }
+        @media #{$sm,$xs} {
+            display: none;
+        }
+    }
+    &:hover{
+        &::before{
+        transform: rotate(0);
+        visibility: hiden;
+        opacity: 0;
+        }
+    }
+    & img{
+        width: 100%;
+    }
+}
+.tpfact-wrapper-2{
+    border-top: 1px solid #ECEFF4;
+}
+
+.tp-solid-btn{
+	color: $white;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 13px 34px;
+	border-radius: 500px;
+	display: inline-block;
+	font-weight: bold;
+	transition: all 0.4s ease-in-out;
+	background: $e-blue;
+	border: 2px solid transparent;
+	text-align: center;
+	&:hover{
+		background: transparent;
+		color: $e-blue;
+		border-color: $e-blue;
+	}
+}
+

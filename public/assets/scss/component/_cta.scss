@@ -1,0 +1,270 @@
+@use '../abstract' as *;
+
+/*----------------------------------------*/
+/*  09. CTA CSS START
+/*----------------------------------------*/
+
+.cta{
+    &__inner{
+        padding: 50px 100px 53px 70px;
+        @include border-radius(10px);
+        @include box-shadow(0px 30px 60px 0px rgba(0, 4, 48, 0.3));
+        position: relative;
+        z-index: 1;
+
+        @media #{$md}{
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        @media #{$sm}{
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        @media #{$xs}{
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        &-2{
+            @media #{$lg}{
+                padding-right: 50px;
+                padding-left: 50px;
+            }
+        }
+        &-3{
+            padding-left: 100px;
+            padding-right: 100px;
+            @include border-radius(6px);
+            @media #{$sm}{
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+            @media #{$xs}{
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+        }
+    }
+    &__shape{
+        & img{
+            position: absolute;
+            bottom: -48px;
+            right: -148px;
+
+            @media #{$sm}{
+                right: -80%;
+            }
+            @media #{$xs}{
+                right: -170%;
+            }
+        }
+        &-3{
+            & img{
+                position: absolute;
+                &.cta-2{
+                    left: -117px;
+                    top: -77px;
+                }
+                &.cta-3{
+                    right: -16px;
+                    top: 100px;
+                }
+            }
+        }
+    }
+    &__title{
+        position: relative;
+        z-index: 1;
+        font-size: 46px;
+        color: $white;
+        margin-bottom: 0;
+        @media #{$xl}{
+            font-size: 45px;
+        }
+        @media #{$lg}{
+            font-size: 40px;
+        }
+        @media #{$md}{
+            font-size: 31px;
+        }
+        @media #{$sm}{
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+        @media #{$xs}{
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+        &-2{
+            font-size: 40px;
+            margin-bottom: 33px;
+        }
+    }
+    &__content{
+        & span{
+            font-size: 16px;
+            color: $white;
+            font-weight: 500;
+            display: inline-block;
+            padding: 0 10px;
+            height: 22px;
+            line-height: 22px;
+            @include border-radius(4px);
+            background: $e-pink-2;
+            margin-bottom: 14px;
+        }
+    }
+    &__more{
+        @media #{$sm}{
+            margin-top: 30px;
+        }
+        @media #{$xs}{
+            margin-top: 30px;
+        }
+    }
+    &__apps{
+        & a{
+            display: inline-block;
+            height: 54px;
+            line-height: 52px;
+            border: 2px solid rgba($color: $white, $alpha: .2);
+            @include border-radius(4px);
+            color: $white;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 0 20px;
+            padding-right: 26px;
+
+            @media #{$md}{
+                margin-bottom: 10px;
+            }
+            & i{
+                margin-right: 2px;
+            }
+            &:hover,
+            &.active{
+                color: $black;
+                border-color: $white;
+                background: $white;
+                @include box-shadow(0px 16px 24px 0px rgba(107, 25, 0, 0.3));
+            }
+            @media #{$xs}{
+                margin-bottom: 5px;
+            }
+        }
+    }
+    &__form{
+        &-inner{
+            margin-bottom: 13px;
+            & input{
+                width: 325px;
+                height: 56px;
+                line-height: 56px;
+                font-size: 15px;
+                padding: 0 22px;
+                padding-top: 2px;
+                font-size: 15px;
+                outline: none;
+                background: $white;
+                border: 2px solid $white;
+                @include border-radius(4px);
+                margin-right: 20px;
+
+                @media #{$xl}{
+                    width: 290px;
+                }
+                @media #{$lg}{
+                    margin-bottom: 20px;
+                }
+                @media #{$md}{
+                    margin-bottom: 20px;
+                    width: 100%;
+                }
+                @media #{$sm}{
+                    margin-bottom: 20px;
+                    width: 100%;
+                }
+                @media #{$xs}{
+                    margin-bottom: 20px;
+                    width: 100%;
+                }
+
+                &::placeholder{
+                    color: $e-text-3
+                }
+                &:focus{
+                    border-color: $e-blue;
+                }
+            }
+            & button{
+                height: 56px;
+                line-height: 56px;
+                @media #{$md}{
+                    width: 100%;
+                }
+                @media #{$sm}{
+                    width: 100%;
+                }
+                @media #{$xs}{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &__agree{
+        padding-left: 5px;
+        & input{
+            margin: 0;
+            appearance: none;
+            -moz-appearance: none;
+            display: block;
+            width: 16px;
+            height: 16px;
+            background: $white;
+            border: 1px solid #b9bac1;
+            outline: none;
+            @include border-radius(4px);
+            @media #{$xxs}{
+                width: 21px;
+            }
+            &:checked{
+                position: relative;
+                background-color: $e-blue;
+                border-color: transparent;
+                &::after{
+                    box-sizing: border-box;
+                    content: '';
+                    position: absolute;
+                    font-size: 10px;
+                    color: $white;
+                    top: 1px;
+                    left: 4px;
+                    height: 10px;
+                    width: 6px;
+                    border-right: 2px solid #fff;
+                    border-bottom: 2px solid #fff;
+                    transform: rotate(45deg);
+                }
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        & label{
+            padding-left: 8px;
+            color: $e-text-4;
+            @media #{$xs}{
+                font-size: 14px;
+            }
+            & a{
+                color: $black;
+                font-weight: 600;
+                &:hover{
+                    color: $e-blue;
+                }
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}

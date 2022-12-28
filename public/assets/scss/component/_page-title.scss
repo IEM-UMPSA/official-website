@@ -1,0 +1,230 @@
+@use '../abstract' as *;
+
+/*----------------------------------------*/
+/*  21. PAGE TITLE CSS START
+/*----------------------------------------*/
+
+.page{
+    &__title{
+        font-size: 70px;
+        color: $white;
+        line-height: 62px;
+        margin-bottom: 0;
+
+        @media #{$xs}{
+            font-size: 50px;
+        }
+        &-2{
+            font-size: 60px;
+            line-height: 1.17;
+            color: $white;
+            margin-bottom: 20px;
+            @media #{$lg}{
+                font-size: 50px;
+            }
+            @media #{$md}{
+                font-size: 45px;
+            }
+            @media #{$sm}{
+                font-size: 33px;
+            }
+            @media #{$xs}{
+                font-size: 35px;
+            }
+        }
+        &-3{
+            font-size: 50px;
+            line-height: 1.1;
+            margin-top: 12px;
+            @media #{$sm}{
+                font-size: 40px;
+            }
+            @media #{$xs}{
+                font-size: 26px;
+            }
+        }
+        &-pre{
+            display: inline-block;
+            height: 24px;
+            line-height: 26px;
+            font-size: 14px;
+            color: $white;
+            font-weight: 500;
+            background: $e-green;
+            @include border-radius(4px);
+            padding: 0 7px;
+            margin-bottom: 12px;
+            &.purple-bg{
+                background: $e-purple;
+            }
+        }
+        &-wrapper{
+            position: relative;
+            z-index: 1;
+            & .breadcrumb{
+                margin-bottom: 0;
+                & .breadcrumb-item{
+                    &.active{
+                        font-size: 15px;
+                        color: $white;
+                        &::before{
+                            content: '.';
+                            font-family: $hind;
+                            font-size: 30px;
+                            color: $white;
+                            line-height: 18px;
+                            padding-right: 13px;
+                        }
+                    }
+                    & a{
+                        font-size: 15px;
+                        font-weight: 400;
+                        color: $white;
+                    }
+                    & + .breadcrumb-item{
+                        padding-left: 13px;
+                        &::before{
+                            content: '.';
+                            font-family: $hind;
+                            font-size: 30px;
+                            color: $white;
+                            line-height: 18px;
+                            padding-right: 13px;
+                        }
+                    }
+                }
+            }
+        }
+        &-height{
+            min-height: 450px;
+            @include background();
+            &-2{
+                min-height: 700px;
+            }
+        }
+        &-overlay{
+            position: relative;
+            &::after{
+                position: absolute;
+                content: '';
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba($color: #000320, $alpha: .6);
+            }
+        }
+        &-shape{
+            & img{
+                position: absolute;
+                z-index: 1;
+                &.page-title-shape-1{
+                    left: 0;
+                    bottom: 105px;
+                }
+                &.page-title-shape-2{
+                    left: 105px;
+                    top: 35%;
+                    @media #{$xxl}{
+                        left: 40px;
+                    }
+                    @media #{$xl}{
+                        top: 28%;
+                    }
+                    @media #{$lg}{
+                        top: 24%;
+                    }
+                    @media #{$md}{
+                        top: 29%;
+                    }
+                    @media #{$sm}{
+                        left: 50px;
+                        top: 28%;
+                    }
+                    @media #{$xs}{
+                        left: 30px;
+                        top: 28%;
+                    }
+                }
+                &.page-title-shape-3{
+                    bottom: 35%;
+                    right: 0;
+                }
+                &.page-title-shape-4{
+                    bottom: 41%;
+                    right: 0;
+                }
+                &.page-title-shape-5{
+                    top: 61%;
+                    left: 0;
+                    z-index: -1;
+                }
+                &.page-title-shape-6{
+                    top: 43%;
+                    left: 5%;
+                    z-index: -1;
+                    @media #{$xl}{
+                        top: 20%;
+                        left: 3%;
+                    }
+                    @media #{$lg}{
+                        top: 20%;
+                        left: 3%;
+                    }
+                    @media #{$md}{
+                        top: 20%;
+                        left: 3%;
+                    }
+                    @media #{$sm}{
+                        top: 18%;
+                        left: 3%;
+                    }
+                    @media #{$xs}{
+                        top: 16%;
+                        left: 3%;
+                    }
+                }
+                &.page-title-shape-7{
+                    top: 27%;
+                    right: 0;
+                    z-index: -1;
+                }
+                &.page-title-shape-8{
+                    top: 38%;
+                    right: 25%;
+                    z-index: -1;
+                }
+            }
+        }
+        &-breadcrumb{
+            & .breadcrumb{
+                margin-bottom: 30px;
+                & .breadcrumb-item{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $e-text-4;
+                    &.active{
+                        &::before{
+                            content: '.';
+                            font-family: $hind;
+                            font-size: 30px;
+                            color: $e-text-4;
+                            line-height: 18px;
+                            padding-right: 13px;
+                        }
+                    }
+                    & + .breadcrumb-item{
+                        &::before{
+                            content: '.';
+                            font-family: $hind;
+                            font-size: 30px;
+                            color: $e-text-4;
+                            line-height: 18px;
+                            padding-right: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
