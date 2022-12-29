@@ -37,6 +37,8 @@ const HeaderThree = () => {
          <Head>
             <title>IEM-UMPSS | Event</title>
             <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+            <script src="https://cdn.tailwindcss.com"></script>
+
          </Head>
          <header>
             <div id="header-sticky" className="header__area header__transparent header__padding header__white">

@@ -61,11 +61,11 @@ technology..</p>
                              <div className="footer__widget-body">
                                 <div className="footer__link">
                                    <ul>
-                                      <li><Link href="/instructor">Development Team</Link></li>
-                                      <li><Link href="/instructor">Open Source</Link></li>
-                                      <li><Link href="/instructor">Sponsors</Link></li>
-                                      <li><Link href="/blog">Jobs</Link></li>
-                                      <li><Link href="/about">FAQs</Link></li>
+                                      <li><Link href="/development-team">Development Team</Link></li>
+                                      <li><Link href="/open-source">Open Source</Link></li>
+                                      <li><Link href="/sponsor">Sponsor</Link></li>
+                                      <li><Link href="/job">Job</Link></li>
+                                      <li><Link href="/faq">FAQ</Link></li>
                                    </ul>
                                 </div>
                              </div>

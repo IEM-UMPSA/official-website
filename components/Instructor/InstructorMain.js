@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Breadcrumb from '../Common/Breadcrumb';
 import TeacherTwo from './TeacherSectionTwo';
-import Banner from '../Home/BannerSection';
+import OpenSourceContributor from './OpenSourceContributor';
 import Cta from '../Home/CtaSection';
 
 
@@ -12,7 +12,7 @@ class InstructorMain extends Component {
         return (
             <main>
 	            {/* breadcrumb-start */}
-				<Breadcrumb pageTitle="Instructor" />
+				<Breadcrumb pageTitle="Hall of Fame" />
 				{/* breadcrumb-end */}
 
                 {/* Teacher-start */}
@@ -20,7 +20,7 @@ class InstructorMain extends Component {
 				{/* Teacher-end */}
 
                 {/* cta-start */}
-				<Banner />
+				<OpenSourceContributor />
 				{/* cta-end */}
 
                 {/* cta-start */}
