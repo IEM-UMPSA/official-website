@@ -78,15 +78,15 @@ const Header = () => {
                                                 </g>
                                              </svg>
                                           </div>
-                                          <span>Category</span>
+                                          <span>Others</span>
 
                                        </Link>
                                        <ul className="cat-submenu">
-                                          <li><Link href="/course-grid">English Learning</Link></li>
-                                          <li><Link href="/course-grid">Web Development</Link></li>
-                                          <li><Link href="/course-grid">Logo Design</Link></li>
-                                          <li><Link href="/course-grid">Motion Graphics</Link></li>
-                                          <li><Link href="/course-grid">Video Edition</Link></li>
+                                          <li><Link href="/development-team">Hall of Fame</Link></li>
+                                          <li><Link href="/open-source">Open Source</Link></li>
+                                          <li><Link href="/sponsor">Sponsor</Link></li>
+                                          <li><Link href="/job">Job</Link></li>
+                                          <li><Link href="/faq">FAQ</Link></li>
                                        </ul>
                                     </li>
                                  </ul>
@@ -101,41 +101,18 @@ const Header = () => {
                                  <ul>
                                     <li>
                                        <Link href="/">Home</Link>
-                                       {/* <ul className="submenu">
-                                          <li><Link href="/"><a>Home Style 1</a></Link></li>
-                                          <li><Link href="/home-2"><a>Home Style 2</a></Link></li>
-                                          <li><Link href="/home-3"><a>Home Style 3</a></Link></li>
-                                       </ul> */}
                                     </li>
-                                    <li className="has-dropdown">
-                                       <Link href="/course-grid">Courses</Link>
-                                       <ul className="submenu">
-                                          <li><Link href="/course-grid">Courses</Link></li>
-                                          <li><Link href="/course-list">Courses List</Link></li>
-                                          <li><Link href="/course-sidebar">Courses Sidebar</Link></li>
-                                          <li><Link href="/course-details">Courses Details</Link></li>
-                                       </ul>
+                                    <li>
+                                       <Link href="/event">Event</Link>
                                     </li>
-                                    <li className="has-dropdown">
+                                    <li>
                                        <Link href="/blog">Blog</Link>
-                                       <ul className="submenu">
-                                          <li><Link href="/blog">Blog</Link></li>
-                                          <li><Link href="/blog-details">Blog Details</Link></li>
-                                       </ul>
                                     </li>
                                     <li className="has-dropdown">
-                                       <Link href="/course-grid">Pages</Link>
+                                       <Link href="/committee">Committee</Link>
                                        <ul className="submenu">
-                                          <li><Link href="/about">About</Link></li>
-                                          <li><Link href="/instructor">Instructor</Link></li>
-                                          <li><Link href="/instructor-details">Instructor Details</Link></li>
-                                          <li><Link href="/event-details">Event Details</Link></li>
-                                          <li><Link href="/cart">My Cart</Link></li>
-                                          <li><Link href="/wishlist">My Wishlist</Link></li>
-                                          <li><Link href="/checkout">Checkout</Link></li>
-                                          <li><Link href="/sign-in">Sign In</Link></li>
-                                          <li><Link href="/sign-up">Sign Up</Link></li>
-                                          <li><Link href="/error">Error</Link></li>
+                                          <li><Link href="/22-23">Committee 22/23</Link></li>
+                                          <li><Link href="/21-22">Committee 21/22</Link></li>
                                        </ul>
                                     </li>
                                     <li><Link href="/contact">Contact</Link></li>
@@ -193,8 +170,8 @@ const Header = () => {
             <BurgerMenus menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <div onClick={() => setMenuOpen(false)} className={menuOpen ? "body-overlay show" : "body-overlay"}></div>
 
-            <ShopingCart shopOpen={shopOpen} setShopOpen={setShopOpen} />
-            <div onClick={() => setShopOpen(false)} className={shopOpen ? "body-overlay show" : "body-overlay"}></div>
+            {/* <ShopingCart shopOpen={shopOpen} setShopOpen={setShopOpen} />
+            <div onClick={() => setShopOpen(false)} className={shopOpen ? "body-overlay show" : "body-overlay"}></div> */}
 
          </header>
       </React.Fragment>

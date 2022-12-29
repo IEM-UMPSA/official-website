@@ -32,7 +32,7 @@ const Counter = () => {
                             </div>
                             <div className="counter__content">
                             <h4 ><span className="counter">
-                                <VisibilitySensor onChange={onVisibilityChange} offset={{top:10}} delayedCall>
+                                <VisibilitySensor  onChange={onVisibilityChange} offset={{top:10}}>
                                     <CountUp end={!isViewCount ? counter.countNum : 0} />
                                  </VisibilitySensor>
                                  </span><span className="plus-icon">+</span></h4>

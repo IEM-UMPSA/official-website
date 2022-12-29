@@ -35,7 +35,7 @@ const HeaderThree = () => {
    return (
       <React.Fragment>
          <Head>
-            <title>Educal – Online Course and Education React, Nextjs Template</title>
+            <title>IEM-UMPSS | Event</title>
             <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
          </Head>
          <header>
@@ -74,15 +74,15 @@ const HeaderThree = () => {
                                                 </g>
                                              </svg>
                                           </div>
-                                          <span>Category</span>
+                                          <span>Others</span>
 
                                        </Link>
                                        <ul className="cat-submenu">
-                                          <li><Link href="/course-grid">English Learning</Link></li>
-                                          <li><Link href="/course-grid">Web Development</Link></li>
-                                          <li><Link href="/course-grid">Logo Design</Link></li>
-                                          <li><Link href="/course-grid">Motion Graphics</Link></li>
-                                          <li><Link href="/course-grid">Video Edition</Link></li>
+                                          <li><Link href="/development-team">Hall of Fame</Link></li>
+                                          <li><Link href="/open-source">Open Source</Link></li>
+                                          <li><Link href="/sponsor">Sponsor</Link></li>
+                                          <li><Link href="/job">Job</Link></li>
+                                          <li><Link href="/faq">FAQ</Link></li>
                                        </ul>
                                     </li>
                                  </ul>
@@ -95,50 +95,29 @@ const HeaderThree = () => {
                            <div className="main-menu main-menu-3 d-none d-xl-block">
                               <nav id="mobile-menu">
                                  <ul>
-                                    <li className="has-dropdown">
+                                    <li>
                                        <Link href="/">Home</Link>
-                                       <ul className="submenu">
-                                          <li><Link href="/">Home Style 1</Link></li>
-                                          <li><Link href="/home-2">Home Style 2</Link></li>
-                                          <li><Link href="/home-3">Home Style 3</Link></li>
-                                       </ul>
+                                       
                                     </li>
-                                    <li className="has-dropdown">
-                                       <Link href="/course-grid">Courses</Link>
-                                       <ul className="submenu">
-                                          <li><Link href="/course-grid">Courses</Link></li>
-                                          <li><Link href="/course-list">Courses List</Link></li>
-                                          <li><Link href="/course-sidebar">Courses Sidebar</Link></li>
-                                          <li><Link href="/course-details">Courses Details</Link></li>
-                                       </ul>
+                                    <li>
+                                    <Link href="/event">Event</Link>
+                                      
                                     </li>
-                                    <li className="has-dropdown">
+                                    <li>
                                        <Link href="/blog">Blog</Link>
-                                       <ul className="submenu">
-                                          <li><Link href="/blog">Blog</Link></li>
-                                          <li><Link href="/blog-details">Blog Details</Link></li>
-                                       </ul>
                                     </li>
                                     <li className="has-dropdown">
-                                       <Link href="/course-grid">Pages</Link>
+                                       <Link href="/course-grid">Committees</Link>
                                        <ul className="submenu">
-                                          <li><Link href="/about">About</Link></li>
-                                          <li><Link href="/instructor">Instructor</Link></li>
-                                          <li><Link href="/instructor-details">Instructor Details</Link></li>
-                                          <li><Link href="/event-details">Event Details</Link></li>
-                                          <li><Link href="/cart">My Cart</Link></li>
-                                          <li><Link href="/wishlist">My Wishlist</Link></li>
-                                          <li><Link href="/checkout">Checkout</Link></li>
-                                          <li><Link href="/sign-in">Sign In</Link></li>
-                                          <li><Link href="/sign-up">Sign Up</Link></li>
-                                          <li><Link href="/error">Error</Link></li>
+                                          <li><Link href="/22-23">Committees 22/23</Link></li>
+                                          <li><Link href="/21-22">Committees 21/22</Link></li>
                                        </ul>
                                     </li>
                                     <li><Link href="/contact">Contact</Link></li>
                                  </ul>
                               </nav>
                            </div>
-                           <div className="header__search p-relative ml-50 d-none d-md-block">
+                           {/* <div className="header__search p-relative ml-50 d-none d-md-block">
                               <form action="#">
                                  <input type="text" placeholder="Search..." />
                                  <button type="submit"><i className="fas fa-search"></i></button>
@@ -155,8 +134,8 @@ const HeaderThree = () => {
                                     <span className="cart-item">2</span>
                                  </span>
                               </div>
-                           </div>
-                           <div className="header__cart header__cart--responsive header__cart--responsive__white">
+                           </div> */}
+                           {/* <div className="header__cart header__cart--responsive header__cart--responsive__white">
                               <span className="cart-toggle-btn" onClick={() => { setShopOpen(!shopOpen) }}>
                                  <div className="header__cart-icon">
                                     <svg viewBox="0 0 24 24">
@@ -167,9 +146,9 @@ const HeaderThree = () => {
                                  </div>
                                  <span className="cart-item">2</span>
                               </span>
-                           </div>
+                           </div> */}
                            <div className="header__btn ml-20 d-none d-sm-block">
-                              <Link href="/contact" className="e-btn">Try for free</Link>
+                              <Link href="/contact" className="e-btn">Sign Up</Link>
                            </div>
                            <div className="sidebar__menu d-xl-none">
                               <div className="sidebar-toggle-btn ml-30" id="sidebar-toggle" onClick={() => { setMenuOpen(!menuOpen) }}>
@@ -187,8 +166,8 @@ const HeaderThree = () => {
             <BurgerMenus menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <div onClick={() => setMenuOpen(false)} className={menuOpen ? "body-overlay show" : "body-overlay"}></div>
 
-            <ShopingCart shopOpen={shopOpen} setShopOpen={setShopOpen} />
-            <div onClick={() => setShopOpen(false)} className={shopOpen ? "body-overlay show" : "body-overlay"}></div>
+            {/* <ShopingCart shopOpen={shopOpen} setShopOpen={setShopOpen} />
+            <div onClick={() => setShopOpen(false)} className={shopOpen ? "body-overlay show" : "body-overlay"}></div> */}
 
          </header>
       </React.Fragment>

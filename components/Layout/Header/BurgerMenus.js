@@ -5,9 +5,9 @@ import Link from 'next/link';
 const BurgerMenus = ({setMenuOpen, menuOpen}) => {
 
       const [home, setHome] = useState(false)
-      const [courses, setcourses] = useState(false)
+      const [event, setEvent] = useState(false)
       const [blog, setBlog] = useState(false)
-      const [pages, setPages] = useState(false)
+      const [committee, setCommittee] = useState(false)
 
       const router = useRouter()
       const [path, setPath] = useState("")
@@ -19,27 +19,27 @@ const BurgerMenus = ({setMenuOpen, menuOpen}) => {
         
         if( menu == 'home'){
           setHome(!home)
-          setcourses(false)
+          setEvent(false)
           setBlog(false)
-          setPages(false)
+          setCommittee(false)
         }
-        else if( menu == 'courses'){
+        else if( menu == 'event'){
           setHome(false)
-          setcourses(!courses)
+          setEvent(!event)
           setBlog(false)
-          setPages(false)
+          setCommittee(false)
         }
         else if( menu == 'blog'){
           setHome(false)
-          setcourses(false)
+          setEvent(false)
           setBlog(!blog)
-          setPages(false)
+          setCommittee(false)
         }
-        else if( menu == 'pages'){
+        else if( menu == 'committee'){
           setHome(false)
-          setcourses(false)
+          setEvent(false)
           setBlog(false)
-          setPages(!pages)
+          setCommittee(!committee)
         }
       }; 
 
@@ -58,43 +58,22 @@ const BurgerMenus = ({setMenuOpen, menuOpen}) => {
                 </div>
                 <div className="mm-menu">
                   <ul>
-                    <li className={home ? "has-droupdown active" : "has-droupdown"}>
+                    <li>
                       <a onClick={() => { openMobileMenu('home'); }}>Home</a>
-                      <ul className={home ? "sub-menu active" : "sub-menu"}>
-                        <li><Link href="/">Home 1</Link></li>
-                        <li><Link href="/home-2">Home 2</Link></li>
-                        <li><Link href="/home-3">Home 3</Link></li>
-                      </ul>
                     </li>
-                    <li className={courses ? "has-droupdown active" : "has-droupdown"}>
-                      <a onClick={() => { openMobileMenu('courses'); }}>Courses</a>
-                      <ul className={courses ? "sub-menu active" : "sub-menu"}>
-                        <li><Link href="/course-grid">Courses </Link></li>
-                        <li><Link href="/course-list">Course List</Link></li>
-                        <li><Link href="/course-sidebar">Course Sidebar</Link></li>
-                        <li><Link href="/course-details">Course Details</Link></li>
-                      </ul>
+                    <li>
+                      <a onClick={() => { openMobileMenu('event'); }}>Event</a>
+
                     </li>
-                    <li className={blog ? "has-droupdown active" : "has-droupdown"}>
+                    <li>
                       <a onClick={() => { openMobileMenu('blog'); }}>Blog</a>
-                      <ul className={blog ? "sub-menu active" : "sub-menu"}>
-                        <li><Link href="/blog" as="/blog">Blog</Link></li>
-                        <li><Link href="/blog-details">Blog Details</Link></li>
-                      </ul>
                     </li>
-                    <li className={pages ? "has-droupdown active" : "has-droupdown"}>
-                      <a onClick={() => { openMobileMenu('pages'); }}>Pages</a>
-                      <ul className={pages ? "sub-menu active" : "sub-menu"}>
-                        <li><Link href="/about">About</Link></li>
-                        <li><Link href="/instructor">Instructor</Link></li>
-                        <li><Link href="/instructor-details">Instructor Details</Link></li>
-                        <li><Link href="/event-details">Event Details</Link></li>
-                        <li><Link href="/cart">My Cart</Link></li>
-                        <li><Link href="/wishlist">My Wishlist</Link></li>
-                        <li><Link href="/checkout">Checkout</Link></li>
-                        <li><Link href="/sign-in">Sign In</Link></li>
-                        <li><Link href="/sign-up">Sign Up</Link></li>
-                        <li><Link href="/error">Error</Link></li>
+                    <li className={committee ? "has-droupdown active" : "has-droupdown"}>
+                      <a onClick={() => { openMobileMenu('committee'); }}>Committee</a>
+                      <ul className={committee ? "sub-menu active" : "sub-menu"}>
+                        <li><Link href="/22-23">Committee 22/23</Link></li>
+                        <li><Link href="/21-22">Committee 21/22</Link></li>
+                   
                     </ul>
                   </li>
                   <li><Link href="/contact">Contact</Link></li>
