@@ -20,7 +20,7 @@ class OpenSourceContributor extends Component {
 
              { osDeveloperData.map(item => (
                <div className="mb-12">
-                 <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" className="w-40 rounded-full mx-auto shadow-lg mb-4" alt=""/>
+                 <img src={item.img} className="w-40 rounded-full mx-auto shadow-lg mb-4" alt=""/>
                  <p className="font-bold mb-2">{item.name}</p>
                  <p className="text-gray-500">{item.position}</p>
                </div>
