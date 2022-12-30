@@ -49,12 +49,6 @@
     "eslint": "8.30.0",
     "eslint-config-next": "^12.3.4"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
