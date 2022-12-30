@@ -5,9 +5,6 @@ import { Provider } from 'react-redux';
 import React from 'react';
 import withRedux from "next-redux-wrapper";
 import store from '../redux/store';
-// import { loadIcons } from '../utils/IconLoader';
-import ErrorBoundary from '../components/ErrorBoundary';
-// loadIcons();
 
 class MyApp extends App {
 
@@ -25,9 +22,9 @@ class MyApp extends App {
         return (
                
                     <Provider store={store}>
-                        <ErrorBoundary>
+                     
                             <Component {...pageProps} />
-                        </ErrorBoundary>
+                       
                     </Provider>
         )
     }
