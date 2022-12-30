@@ -1,5 +1,6 @@
 import './index.scss';
 import App from 'next/app';
+
 import { Provider } from 'react-redux';
 import React from 'react';
 import withRedux from "next-redux-wrapper";

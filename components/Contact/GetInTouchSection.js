@@ -11,7 +11,7 @@ class GetInTouch extends Component {
                   <div className="col-xxl-7 col-xl-7 col-lg-6">
                      <div className="contact__wrapper">
                         <div className="section__title-wrapper mb-40">
-                           <h2 className="section__title">Get in<span className="yellow-bg yellow-bg-big">touch<img src="assets/img/shape/yellow-bg.png" alt="img not found"/></span></h2>
+                           <h2 className="section__title">Get in <span className="yellow-bg yellow-bg-big">touch<img src="assets/img/shape/yellow-bg.png" alt="img not found"/></span></h2>
                            <p>Have a question or just want to say hi? We'd love to hear from you.</p>
                         </div>
                         <div className="contact__form">

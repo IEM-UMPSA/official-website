@@ -16,7 +16,7 @@ export default function PriceTab() {
                 <div className="container">
                     <div className="row">
                         <div className="col-xxl-4 offset-xxl-4">
-                            <div className="section__title-wrapper mb-60 text-center">
+                            <div className="section__title-wrapper mb-20 text-center">
                                 <h2 className="section__title">Membership 
      <br/> All Inclusive  <span className="yellow-bg yellow-bg-big">Pricing<img src="assets/img/shape/yellow-bg.png" alt="img not found"/></span></h2>
                                 <p>Fees & Annual Subscriptions.</p>

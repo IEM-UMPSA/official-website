@@ -82,8 +82,8 @@ const HeaderThree = () => {
                                        <ul className="cat-submenu">
                                           <li><Link href="/development-team">Hall of Fame</Link></li>
                                           <li><Link href="/open-source">Open Source</Link></li>
-                                          <li><Link href="/sponsor">Sponsor</Link></li>
-                                          <li><Link href="/job">Job</Link></li>
+                                          <li><Link href="/partnership">Collaborate with Us</Link></li>
+                                          <li><Link href="/job">Job/Internship</Link></li>
                                           <li><Link href="/faq">FAQ</Link></li>
                                        </ul>
                                     </li>
@@ -109,10 +109,10 @@ const HeaderThree = () => {
                                        <Link href="/blog">Blog</Link>
                                     </li>
                                     <li className="has-dropdown">
-                                       <Link href="/course-grid">Committees</Link>
+                                       <Link href="#">Committee</Link>
                                        <ul className="submenu">
-                                          <li><Link href="/22-23">Committees 22/23</Link></li>
-                                          <li><Link href="/21-22">Committees 21/22</Link></li>
+                                          <li><Link href="/committee/2223">Committee 22/23</Link></li>
+                                          <li><Link href="/committee/2122">Committee 21/22</Link></li>
                                        </ul>
                                     </li>
                                     <li><Link href="/contact">Contact</Link></li>

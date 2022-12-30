@@ -25,12 +25,12 @@ class TeacherTwo extends Component {
                  <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
                     <div className="teacher__item text-center grey-bg-5 transition-3 mb-30">
                        <div className="teacher__thumb w-img fix">
-                          <Link href="/instructor"><img src={item.img} alt="img not found"/></Link>
+                          <Link href="/instructor"><img className="w-40 h-96    object-cover" src={item.img} alt="img not found"/></Link>
                        </div>
                        <div className="teacher__content">
                           <h3 className="teacher__title">{item.name}</h3> 
                           
-                          <h4><span>{item.position}</span></h4>
+                          <h4 className="p-2"><span>{item.position}</span></h4>
 
                           <div className="teacher__social">
                               <ul>

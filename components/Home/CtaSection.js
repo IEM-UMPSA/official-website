@@ -16,12 +16,12 @@ class Cta extends Component {
                             <div className="row align-items-center">
                                 <div className="col-xxl-7 col-xl-7 col-lg-8 col-md-8">
                                     <div className="cta__content">
-                                    <h3 className="cta__title">Be part of our Open Source team. You rule.</h3>
+                                    <h3 className="cta__title">Contribute to our open source project. Grow your portfolio.</h3>
                                     </div>
                                 </div>
                                 <div className="col-xxl-5 col-xl-5 col-lg-4 col-md-4">
                                     <div className="cta__more d-md-flex justify-content-end p-relative z-index-1">
-                                        <Link href="/contact" className="e-btn e-btn-white">Get Started</Link>
+                                        <Link href="/open-source" className="e-btn e-btn-white">Get Started</Link>
                                     </div>
                                 </div>
                             </div>

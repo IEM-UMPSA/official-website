@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Hero from './HeroSection';
 import Awards from './AwardsSection';
-import Banner from './BannerSection';
 import Event from './EventSection';
 import Cta from './CtaSection';
 import PriceTab from '../Elements/Tab/PriceTab';
@@ -17,6 +16,8 @@ class HomeMain extends Component {
 
         return (
             <main>
+				
+
 	            {/* hero-start */}
 				<Hero />
 				{/* hero-end */}

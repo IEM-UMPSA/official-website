@@ -333,7 +333,7 @@
 }
 
 .tp-solid-btn{
-	color: $white;
+	color:  $e-blue;
 	font-size: 14px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -342,13 +342,59 @@
 	display: inline-block;
 	font-weight: bold;
 	transition: all 0.4s ease-in-out;
-	background: $e-blue;
-	border: 2px solid transparent;
+	background: transparent;
+	border: 2px solid $e-blue ;
 	text-align: center;
 	&:hover{
-		background: transparent;
-		color: $e-blue;
+		background: $e-blue;
+		color: white;
 		border-color: $e-blue;
 	}
 }
+.monitor {
+    position: relative;
+    display: inline-block;
+    animation: move 10s infinite linear;
+  }
+  
+  @keyframes move {
+    from {
+      left: 500px;
+    }
+    to {
+      left: 0px;
+    }
+  }
 
+
+   //aboutme css
+   .getin-touch-area {
+    background-color: var(--tp-common-black-soft);
+}
+.aboutme-social a {
+   border-color: var(--tp-border-4);
+}
+.ab-tabs {
+    border-color: var(--tp-border-4);
+}
+.ab-tabs .ab-tab-item {
+    border-color: var(--tp-border-4);
+    color: var(--tp-common-white);
+    background-color: transparent;
+    box-shadow: none;
+}
+.ab-tabs .ab-tab-item.active {
+    color: var(--tp-theme-1);
+}
+.tab-pane-title {
+    color: var(--tp-common-white);
+}
+.skill-item-title {
+    color: var(--tp-common-white);
+}
+.edu-exp-title {
+    color: var(--tp-common-white);
+}
+.get-in-touch-wrapper {
+    border-color: border-4;
+}

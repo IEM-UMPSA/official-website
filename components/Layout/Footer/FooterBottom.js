@@ -1,5 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
+import { FaReact } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
+import { FaSass } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
+import { BsFillBootstrapFill } from "react-icons/bs";
+import { FaNodeJs } from "react-icons/fa";
 
 const FooterBottom = () => {
     return (
@@ -13,9 +19,14 @@ const FooterBottom = () => {
                 </div>
 
                 <div className="col-xxl-6 col-xl-6">
-                    <div className="footer__copyright text-right f-right">
-                    <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fhello-world"><img src="https://vercel.com/button" alt="Deploy with Vercel"/></a>
-
+                    <div className="footer__copyright text-right f-right flex">
+                    Powered by &nbsp;
+                    <Link  href="https://nextjs.org/" target="_blank" ><TbBrandNextjs size="1.5em" /></Link> &nbsp;
+                    <Link  href="https://reactjs.org/" target="_blank" ><FaReact size="1.5em" className="loaderIcon"/></Link> &nbsp;
+                    <Link  href="https://sass-lang.com/" target="_blank" ><FaSass size="1.5em" /> </Link>&nbsp;
+                    <Link  href="https://tailwindcss.com/" target="_blank" ><SiTailwindcss size="1.5em" /></Link> &nbsp;
+                    <Link  href="https://getbootstrap.com/" target="_blank" ><BsFillBootstrapFill size="1.5em" /></Link> &nbsp;
+                    <Link  href="https://nextjs.org/" target="_blank" ><FaNodeJs size="1.5em" /></Link> &nbsp;
 
                     </div>
                 </div>

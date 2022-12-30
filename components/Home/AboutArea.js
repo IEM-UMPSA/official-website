@@ -8,8 +8,8 @@ const AboutArea = () => {
           <div className="col-xl-6 col-lg-6">
             <div className="tpabout-content-2 pb-50">
               <h3 className="tpabout-xd-title mb-15"><b>IEM-UMPSS</b> </h3>
-              <span className="tpabout-xs-title mb-40">Embark on Professionalism</span>
-              <p className="tpab-text mb-30">The Institution of Engineers Malaysia – Univerisiti Malaysia Pahang Student Section (IEM-UMPSS)
+              <span className="tpabout-xs-title mb-10">Embark on Professionalism</span>
+              <p className="tpab-text mb-10">The Institution of Engineers Malaysia – Univerisiti Malaysia Pahang Student Section (IEM-UMPSS)
 offers a variety of programs and events for university students who want to be recognized for their
 engineering experience and professional achievements. University students can also be evaluated
 for proficiency in order to be eligible for Professional Engineer registration. </p>

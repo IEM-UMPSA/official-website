@@ -8,8 +8,14 @@ const developerData = [
     {
         id: 2,
         img: 'https://avatars.githubusercontent.com/u/68846168?v=4',
-        name: 'Lao Zhao Lin',
+        name: 'LAO ZHAO LIN',
         position: 'Software Developer'
+    },
+    {
+        id: 3,
+        img: '/assets/img/developer/chen.jpeg',
+        name: 'CHEN KAR KIT',
+        position: 'Copyrighter'
     },
  
   ]

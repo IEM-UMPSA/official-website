@@ -16,7 +16,7 @@ const Counter = () => {
         <div className="container">
             <div className="row">
                 <div className="col-xxl-6 offset-xl-3 col-xl-6 offset-xl-3">
-                    <div className="section__title-wrapper text-center mb-60">
+                    <div className="section__title-wrapper text-center mb-20">
                         <h2 className="section__title"><span className="yellow-bg yellow-bg-big">Numbers<img src="assets/img/shape/yellow-bg.png" alt="img not found"/></span>&nbsp;at glance</h2>
                         <p>Over the past few years, our social medias had grown tremendously</p>
                     </div>
