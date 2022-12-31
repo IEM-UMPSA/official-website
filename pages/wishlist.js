@@ -1,6 +1,6 @@
 import React from 'react';
-import HeaderThree from '../components/Layout/Header/HeaderStyleThree';
-import FooterThree from '../components/Layout/Footer/FooterStyleThree';
+import HeaderTwo from '../components/Layout/Header/HeaderStyleTwo';
+import FooterTwo from '../components/Layout/Footer/FooterStyleTwo';
 import MyWishListMain from '../components/MyWishList/MyWishListMain';
 
 class MyWishList extends React.Component {
@@ -14,9 +14,9 @@ class MyWishList extends React.Component {
     render() {
         return (
             <React.Fragment>
-            <HeaderThree />
+            <HeaderTwo />
             <MyWishListMain />
-            <FooterThree />
+            <FooterTwo />
             </React.Fragment>
         );
     }

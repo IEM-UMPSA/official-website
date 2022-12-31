@@ -1,7 +1,7 @@
 import React from 'react';
 import CourseListMain from '../components/CourseList/CourseListMain';
 import Footer from '../components/Layout/Footer/Footer';
-import HeaderThree from '../components/Layout/Header/HeaderStyleThree';
+import HeaderTwo from '../components/Layout/Header/HeaderStyleTwo';
 
 class CourseList extends React.Component {
 
@@ -14,7 +14,7 @@ class CourseList extends React.Component {
     render() {
         return (
             <React.Fragment>
-            <HeaderThree />
+            <HeaderTwo />
             <CourseListMain />
             <Footer />
             </React.Fragment>

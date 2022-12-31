@@ -1,6 +1,6 @@
 import React from 'react';
-import FooterThree from '../components/Layout/Footer/FooterStyleThree';
-import HeaderFour from '../components/Layout/Header/HeaderStyleFour';
+import FooterTwo from '../components/Layout/Footer/FooterStyleTwo';
+import HeaderTwo from '../components/Layout/Header/HeaderStyleTwo';
 import SignUpMain from '../components/SignUp/SignUpMain';
 
 class SignIn extends React.Component {
@@ -14,9 +14,9 @@ class SignIn extends React.Component {
     render() {
         return (
             <React.Fragment>
-            <HeaderFour />
+            <HeaderTwo />
             <SignUpMain />
-            <FooterThree />
+            <FooterTwo />
             </React.Fragment>
         );
     }

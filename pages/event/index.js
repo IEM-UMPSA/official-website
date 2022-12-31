@@ -1,7 +1,7 @@
 import React from 'react';
 import EventSidebarMain from '../../components/EventSidebar/EventSidebarMain';
 import Footer from '../../components/Layout/Footer/Footer';
-import HeaderThree from '../../components/Layout/Header/HeaderStyleThree';
+import HeaderTwo from '../../components/Layout/Header/HeaderStyleTwo';
 
 class Event extends React.Component {
 
@@ -14,7 +14,7 @@ class Event extends React.Component {
     render() {
         return (
             <React.Fragment>
-            <HeaderThree />
+            <HeaderTwo />
             <EventSidebarMain />
             <Footer />
             </React.Fragment>
