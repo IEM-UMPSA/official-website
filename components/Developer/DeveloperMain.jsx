@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Breadcrumb from '../Common/Breadcrumb';
-import TeacherTwo from './DeveloperSectionTwo';
+import DeveloperTwo from './DeveloperSectionTwo';
 import OpenSourceContributor from './OpenSourceContributor';
 import Cta from '../Home/CtaSection';
 
@@ -16,7 +16,7 @@ class InstructorMain extends Component {
 				{/* breadcrumb-end */}
 
                 {/* Teacher-start */}
-				<TeacherTwo />
+				<DeveloperTwo />
 				{/* Teacher-end */}
 
                 {/* cta-start */}

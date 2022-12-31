@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../../components/Layout/Footer/Footer';
-import HeaderFour from '../../components/Layout/Header/HeaderStyleFour';
+import HeaderTwo from '../../components/Layout/Header/HeaderStyleTwo';
 import InstructorDetailsMain from '../../components/InstructorDetails/InstructorDetailsMain';
 
 class InstructorDetails extends React.Component {
@@ -14,7 +14,7 @@ class InstructorDetails extends React.Component {
     render() {
         return (
             <React.Fragment>
-            <HeaderFour />
+            <HeaderTwo />
             <InstructorDetailsMain />
             <Footer />
             </React.Fragment>

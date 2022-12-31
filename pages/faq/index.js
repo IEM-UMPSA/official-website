@@ -1,6 +1,6 @@
 import React from 'react';
-import HeaderThree from '../../components/Layout/Header/HeaderStyleThree';
-import FooterThree from '../../components/Layout/Footer/FooterStyleThree';
+import HeaderTwo from '../../components/Layout/Header/HeaderStyleTwo';
+import FooterTwo from '../../components/Layout/Footer/FooterStyleTwo';
 import Breadcrumb from '../../components/Common/Breadcrumb';
 import FaqArea from '../../components/FAQ/FaqArea';
 class index extends React.Component {
@@ -10,9 +10,9 @@ class index extends React.Component {
             {/* breadcrumb-start */}
 			<Breadcrumb pageTitle="Frequently Asked Question (FAQ)" />
 			{/* breadcrumb-end */}
-            <HeaderThree />
+            <HeaderTwo />
             <FaqArea />
-            <FooterThree />
+            <FooterTwo />
             </React.Fragment>
         );
     }
