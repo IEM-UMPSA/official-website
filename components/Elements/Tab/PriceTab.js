@@ -25,7 +25,7 @@ export default function PriceTab() {
                     </div>
                     <div className="row">
                         <div className="col-xxl-12">
-                            <div className="price__tab-btn text-center mb-50">
+                            <div className="price__tab-btn text-center mb-20">
                                 <div className="nav-tabs">
                                     <TabList>
                                         <Tab><button className="nav-link" id="nav-monthly-tab" type="button">Per annum</button></Tab>
@@ -60,7 +60,7 @@ export default function PriceTab() {
                                                 <div className="price__tag mb-25">
                                                     <h4>RM{item.ringgit}<span>.{item.sen} </span></h4>
                                                 </div>
-                                                <div className="price__features mb-40">
+                                                <div className="price__features mb-20">
                                                     <ul>
 
                                                     {item.benefits.map((benefit, index) => {
@@ -70,7 +70,7 @@ export default function PriceTab() {
                                                     
                                                     </ul>
                                                 </div>
-                                                <Link href="/contact" className="e-btn e-btn-4">Get Started</Link>
+                                                <Link href="https://www.myiem.org.my/member/signuptype/student.aspx" target="_target" className="e-btn e-btn-4">Join Now</Link>
                                                 </div>
                                             </div>
                                     );
@@ -107,7 +107,7 @@ export default function PriceTab() {
                                                         
                                                         </ul>
                                                     </div>
-                                                    <Link href="/contact" className="e-btn e-btn-4">Get Started</Link>
+                                                    <Link href="https://www.myiem.org.my/member/signuptype/student.aspx" target="_target" className="e-btn e-btn-4">Join Now</Link>
                                                     </div>
                                                 </div>
                                         );

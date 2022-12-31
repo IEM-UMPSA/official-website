@@ -1,7 +1,7 @@
 import React from 'react';
 import ContactMain from '../components/Contact/ContactMain';
-import HeaderThree from '../components/Layout/Header/HeaderStyleThree';
-import FooterThree from '../components/Layout/Footer/FooterStyleThree';
+import HeaderTwo from '../components/Layout/Header/HeaderStyleTwo';
+import FooterTwo from '../components/Layout/Footer/FooterStyleTwo';
 
 class Contact extends React.Component {
 
@@ -14,9 +14,9 @@ class Contact extends React.Component {
     render() {
         return (
             <React.Fragment>
-            <HeaderThree />
+            <HeaderTwo />
             <ContactMain />
-            <FooterThree />
+            <FooterTwo />
             </React.Fragment>
         );
     }

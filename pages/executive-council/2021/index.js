@@ -1,13 +1,13 @@
 import React from 'react';
-import TechnicalDepartment from '../../../components/TwoOneTwoTwo/TechnicalDepartment';
-import FooterThree from '../../../components/Layout/Footer/FooterStyleThree';
+import FooterThree from '../../../components/Layout/Footer/FooterStyleTwo';
 import Header from '../../../components/Layout/Header/Header';
 import AdvisorSection from '../../../components/Advisor/AdvisorsSection'
-import ManagementTeam from '../../../components/TwoOneTwoTwo/ManagementTeam';
-import PublicityTeam from '../../../components/TwoOneTwoTwo/PublicityTeam';
-import MultimediaTeam from '../../../components/TwoOneTwoTwo/MultimediaTeam';
+import ManagementTeam from '../../../components/TwoZeroTwoOne/ManagementTeam';
+import PublicityTeam from '../../../components/TwoZeroTwoOne/PublicityTeam';
+import MultimediaTeam from '../../../components/TwoZeroTwoOne/MultimediaTeam';
+import TechnicalDepartment from '../../../components/TwoZeroTwoOne/TechnicalDepartment';
 
-class Custom404 extends React.Component {
+class Committee2021 extends React.Component {
 
     render() {
         return (
@@ -25,4 +25,4 @@ class Custom404 extends React.Component {
 }
 
 
-export default Custom404;
+export default Committee2021;

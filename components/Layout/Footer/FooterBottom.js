@@ -14,7 +14,7 @@ const FooterBottom = () => {
                 <div className="row">
                 <div className="col-xxl-6 col-xl-6">
                     <div className="footer__copyright text-left">
-                        <p>&copy; {new Date().getFullYear()} IEM-UMPSS, All Rights Reserved. Developed By <Link href="/">IEM Web Dev</Link></p>
+                        <p>&copy; {new Date().getFullYear()} IEM-UMPSS, All Rights Reserved. Developed By <Link href="/development-team">IEM Web Dev</Link></p>
                     </div>
                 </div>
 

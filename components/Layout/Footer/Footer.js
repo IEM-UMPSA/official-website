@@ -19,15 +19,17 @@ const Footer = () => {
                              </div>
                              <div className="footer__widget-body">
                                 <p>IEM-UMPSS provides various activities for different disciplines. We aim to promote sound
-professional engineering practice to prepare engineering students for future career. We also service
-the needs and interests of our members to enhance society’s consciousness of science and
-technology..</p>
+                           professional engineering practice to prepare engineering students for future career. We also service
+                           the needs and interests of our members to enhance society’s consciousness of science and
+                           technology..</p>
 
                                 <div className="footer__social">
                                    <ul>
-                                      <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-                                      <li><a href="#" className="tw"><i className="fab fa-telegram-plane"></i></a></li>
-                                      <li><a href="#" className="pin"><i className="fab fa-instagram"></i></a></li>
+                                      <li><a href="https://www.facebook.com/IEMUMPStudentSection/" className="fb"  target="_blank"><i className="fab fa-facebook-f"></i></a></li>
+                                      <li><a href="https://t.me/iemumpss" className="tw"  target="_blank"><i className="fab fa-telegram-plane"></i></a></li>
+                                      <li><a href="https://www.instagram.com/iemumpss/" className="ins"  target="_blank"><i className="fab fa-instagram"></i></a></li>
+                                      <li><a href="https://www.linkedin.com/company/iemumpss/" className="lin"  target="_blank"><i className="fab fa-linkedin"></i></a></li>
+
                                    </ul>
 
 

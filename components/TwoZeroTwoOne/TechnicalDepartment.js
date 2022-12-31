@@ -4,7 +4,7 @@ const Tabs = dynamic(import('react-tabs').then(mod => mod.Tabs), { ssr: false })
 import { Tab, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Link from 'next/link';
-import committee2122Data from '../../data/committee/2122Data';
+import committee2021Data from '../../data/committee/2021Data';
 
 export default () => (
     <section className="course__area pt-115 pb-120 grey-bg-2">
@@ -33,7 +33,7 @@ export default () => (
                </div>
                <TabPanel>
                <div className="row">
-               { committee2122Data.slice(9, 13).map(item => (
+               { committee2021Data.slice(9, 13).map(item => (
                <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-6">
                   <div className="teacher__item text-center grey-bg-5 transition-3 mb-30">
                      <div className="teacher__thumb w-img fix">
@@ -50,7 +50,7 @@ export default () => (
                </TabPanel>
                <TabPanel>
                <div className="row">
-               { committee2122Data.slice(13, 16).map(item => (
+               { committee2021Data.slice(13, 16).map(item => (
                <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-6">
                   <div className="teacher__item text-center grey-bg-5 transition-3 mb-30">
                      <div className="teacher__thumb w-img fix">
@@ -68,7 +68,7 @@ export default () => (
                </TabPanel>
                <TabPanel>
                <div className="row">
-                  { committee2122Data.slice(16, 20).map(item => (
+                  { committee2021Data.slice(16, 20).map(item => (
                   <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-6">
                      <div className="teacher__item text-center grey-bg-5 transition-3 mb-30">
                         <div className="teacher__thumb w-img fix">
@@ -85,7 +85,7 @@ export default () => (
                </TabPanel>
                <TabPanel>
                <div className="row">
-               { committee2122Data.slice(20, 24).map(item => (
+               { committee2021Data.slice(20, 24).map(item => (
                   <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-6">
                      <div className="teacher__item text-center grey-bg-5 transition-3 mb-30">
                         <div className="teacher__thumb w-img fix">
@@ -102,7 +102,7 @@ export default () => (
                </TabPanel>
                <TabPanel>
                <div className="row">
-                  { committee2122Data.slice(24, 28).map(item => (
+                  { committee2021Data.slice(24, 28).map(item => (
                      <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-6">
                         <div className="teacher__item text-center grey-bg-5 transition-3 mb-30">
                            <div className="teacher__thumb w-img fix">

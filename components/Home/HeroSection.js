@@ -44,10 +44,10 @@ class Hero extends Component {
                                     </div> */}
                                     <div className="hero__thumb-big mr-30">
                                         <img src="assets/img/hero/boat-animation.gif" alt="img not found"/>
-                                        {/* <div className="hero__quote hero__quote-animation">
-                                            <span>⚓ Set the sail ⚓</span>
+                                        <div className="hero__quote hero__quote-animation right-28	 ">
+                                            <span>⚓ Set the Sail ⚓</span>
                                             <h4>Embark 🌊 on Professionalism 🧭</h4>
-                                        </div>   */}
+                                        </div>  
                                     </div>
                                     {/* <div className="hero__thumb-sm mt-50 d-none d-lg-block">
                                         <img src="assets/img/hero/hero-sm-1.jpg" alt="img not found"/>

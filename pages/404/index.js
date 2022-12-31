@@ -1,6 +1,6 @@
 import React from 'react';
 import ErrorMain from '../../components/Error/ErrorMain';
-import FooterThree from '../../components/Layout/Footer/FooterStyleThree';
+import FooterTwo from '../../components/Layout/Footer/FooterStyleTwo';
 import Header from '../../components/Layout/Header/Header';
 
 class Custom404 extends React.Component {
@@ -10,7 +10,7 @@ class Custom404 extends React.Component {
             <React.Fragment>
             <Header />
             <ErrorMain />
-            <FooterThree />
+            <FooterTwo />
             </React.Fragment>
         );
     }

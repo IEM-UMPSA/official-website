@@ -10,7 +10,7 @@ class GetInTouch extends Component {
                <div className="row">
                   <div className="col-xxl-7 col-xl-7 col-lg-6">
                      <div className="contact__wrapper">
-                        <div className="section__title-wrapper mb-40">
+                        <div className="section__title-wrapper mb-20">
                            <h2 className="section__title">Get in <span className="yellow-bg yellow-bg-big">touch<img src="assets/img/shape/yellow-bg.png" alt="img not found"/></span></h2>
                            <p>Have a question or just want to say hi? We'd love to hear from you.</p>
                         </div>
@@ -72,7 +72,7 @@ class GetInTouch extends Component {
                                     </div>
                                     <div className="contact__info-text">
                                        <h4>New York Office</h4>
-                                       <p><a target="_blank" href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873">Maypole Crescent 70-80 Upper St Norwich NR2 1LT</a></p>
+                                       <p><a target="_blank" href="https://goo.gl/maps/K7WjNanRfYNH8LZo9">Universiti Malaysia, 26600 Pekan, Pahang</a></p>
    
                                     </div>
                                  </div>
@@ -87,32 +87,19 @@ class GetInTouch extends Component {
                                     </div>
                                     <div className="contact__info-text">
                                        <h4>Email us directly</h4>
-                                       <p><a href="mailto:support@educal.com">support@educal.com</a></p>
-                                       <p><a href="mailto:info@educal.com"> info@educal.com</a></p>
+                                       <p><a href="mailto:iem@ump.edu.my">iem@ump.edu.my</a></p>
                                     </div>
                                  </div>
                               </li>
-                              <li>
-                                 <div className="contact__info-item d-flex align-items-start mb-35">
-                                    <div className="contact__info-icon mr-15">
-                                       <svg className="call" viewBox="0 0 24 24">
-                                          <path className="st0" d="M22,16.9v3c0,1.1-0.9,2-2,2c-0.1,0-0.1,0-0.2,0c-3.1-0.3-6-1.4-8.6-3.1c-2.4-1.5-4.5-3.6-6-6  c-1.7-2.6-2.7-5.6-3.1-8.7C2,3.1,2.8,2.1,3.9,2C4,2,4.1,2,4.1,2h3c1,0,1.9,0.7,2,1.7c0.1,1,0.4,1.9,0.7,2.8c0.3,0.7,0.1,1.6-0.4,2.1  L8.1,9.9c1.4,2.5,3.5,4.6,6,6l1.3-1.3c0.6-0.5,1.4-0.7,2.1-0.4c0.9,0.3,1.8,0.6,2.8,0.7C21.3,15,22,15.9,22,16.9z"/>
-                                          </svg>
-                                    </div>
-                                    <div className="contact__info-text">
-                                       <h4>Phone</h4>
-                                       <p><a href="tel:+(426)-742-26-44">+(426) 742 26 44</a></p>
-                                       <p><a href="tel:+(224)-762-442-32">+(224) 762 442 32</a></p>
-                                    </div>
-                                 </div>
-                              </li>
+                             
                            </ul>
                            <div className="contact__social pl-30">
                               <h4>Follow Us</h4>
                               <ul>
-                                <li><a href="#" className="fb"><i className="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#" className="tw"><i className="fab fa-twitter"></i></a></li>
-                                <li><a href="#" className="pin"><i className="fab fa-pinterest-p"></i></a></li>
+                              <li><a href="https://www.facebook.com/IEMUMPStudentSection/" className="fb" target="_blank"><i className="fab fa-facebook-f"></i></a></li>
+                                       <li><a href="https://t.me/iemumpss" className="tw"  target="_blank"><i className="fab fa-telegram-plane"></i></a></li>
+                                       <li><a href="https://www.instagram.com/iemumpss/" className="ins"  target="_blank"><i className="fab fa-instagram"></i></a></li>
+                                       <li><a href="https://www.linkedin.com/company/iemumpss/" className="lin"  target="_blank"><i className="fab fa-linkedin"></i></a></li>
                               </ul>
                            </div>
                         </div>

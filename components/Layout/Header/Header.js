@@ -117,7 +117,9 @@ const Header = () => {
                                        <Link href="#">Executive Council</Link>
                                        <ul className="submenu">
                                           <li><Link href="/executive-council/2223">2022/2023</Link></li>
-                                          <li><Link href="/executive-council/2122">2021/2022</Link></li>
+                                          <li><Link href="/404">2021/2022</Link></li>
+                                          <li><Link href="/executive-council/2021">2020/2021</Link></li>
+
                                        </ul>
                                     </li>
                                     <li><Link href="/contact">Contact</Link></li>

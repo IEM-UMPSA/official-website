@@ -87,7 +87,7 @@ const committee2122Data = [
     {
         id: 15,
         img: 'https://std-comm.ump.edu.my/ecommstudent/Photo?profileID=183A7B24312-8BE2E628AED83E48',
-        name: 'Janice Lee Chia Hui',
+        name: 'Janice Lee ChiaHui',
         position: 'Committee',
     },
     {

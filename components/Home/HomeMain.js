@@ -6,10 +6,10 @@ import Cta from './CtaSection';
 import PriceTab from '../Elements/Tab/PriceTab';
 import AboutArea from './AboutArea';
 import Counter from '../Elements/Counter/CounterStyleTwo';
-import dynamic from 'next/dynamic';
-const BrandWithNoSSR = dynamic(() => import('../Elements/Brand/BrandSection'), {
-  ssr: false
-})
+// import dynamic from 'next/dynamic';
+// const BrandWithNoSSR = dynamic(() => import('../Elements/Brand/BrandSection'), {
+//   ssr: false
+// })
 class HomeMain extends Component {
 
     render() {
@@ -43,7 +43,7 @@ class HomeMain extends Component {
 				{/* tab-end */}
 
 				{/* brand-start */}
-				<BrandWithNoSSR />
+				{/* <BrandWithNoSSR /> */}
 				{/* brand-end */}
 				
 				{/* cta-start */}

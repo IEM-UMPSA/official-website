@@ -26,8 +26,8 @@ class Knowledge extends Component {
                            </div>
                            <div className="contact__content">
                               <h3 className="contact__title">Knowledge Base</h3>
-                              <p>My good sir plastered cuppa barney cobblers mush argy bargy ruddy.</p>
-                              <Link href="/contact" className="e-btn e-btn-border">Visit Documentation</Link>
+                              <p>Learn more about IEM-UMPSS.</p>
+                              <Link href="/faq" className="e-btn e-btn-border">Visit FAQ</Link>
                            </div>
                         </div>
                      </div>
@@ -45,8 +45,8 @@ class Knowledge extends Component {
                            </div>
                            <div className="contact__content">
                               <h3 className="contact__title">Online Support</h3>
-                              <p>My good sir plastered cuppa barney cobblers mush argy bargy ruddy.</p>
-                              <Link href="/contact" className="e-btn e-btn-border">Send a Ticket</Link>
+                              <p>Chat with our online agent right now.</p>
+                              <Link href="/contact" className="e-btn e-btn-border">Chat now</Link>
                            </div>
                         </div>
                      </div>

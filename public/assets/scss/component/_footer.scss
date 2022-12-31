@@ -60,14 +60,15 @@
                             color: #03a9f4;
                         }
                     }
-                    &.pin{
-                        background: #d2173f;
-                        border-color: #d2173f;
+                    &.ins{
+                        border-color: #fb2384;
+                        background:#fb2384;
                         &:hover{
+                            color: #fb2384;
                             background: transparent;
-                            color: #d2173f;
                         }
                     }
+                   
                 }
             }
         }

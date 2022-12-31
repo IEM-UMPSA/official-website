@@ -14,9 +14,9 @@ const FaqArea = () => {
                   {!isVisible && (
                     <button onClick={() => setIsVisible(true)}  class="flex items-center justify-between w-full p-8">
                         <h1 class="font-semibold text-gray-700 dark:text-white">How i can play for my appoinment ?</h1>
-                    <span class="text-gray-400 bg-gray-200 rounded-full" >
+                        <span class="text-white bg-blue-500 rounded-full">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 12H6" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                         </svg>
                     </span>
                     </button>
@@ -25,11 +25,12 @@ const FaqArea = () => {
                 {isVisible && (
                      <button onClick={() => setIsVisible(false)}  class="flex items-center justify-between w-full p-8">
                      <h1 class="font-semibold text-gray-700 dark:text-white">How i can play for my appoinment ?</h1>
-                    <span class="text-white bg-blue-500 rounded-full">
+                     <span class="text-gray-400 bg-gray-200 rounded-full" >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 12H6" />
                         </svg>
                     </span>
+                  
                     </button>
                   )}
 

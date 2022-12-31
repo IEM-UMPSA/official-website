@@ -28,12 +28,12 @@ const Awards = () => {
                         <Link href="/about-me">{item.title}</Link>
                       </h4>
                       <span className="award-meta">
-                        <span className="award-year">2022..</span>  MNX Business Card</span>
+                        <span className="award-year">{item.date}</span>  {item.event}</span>
                     </div>
                   </div>
                   <div className="award-icon">
                     <div className="award-icon-wrap">
-                      <Link href="/about-me">
+                      <Link href="https://www.facebook.com/photo/?fbid=582065110388774&set=a.538640898064529" target="_blank">
                         <i className="fa fa-sparkles"></i>
                       </Link>
                     </div>

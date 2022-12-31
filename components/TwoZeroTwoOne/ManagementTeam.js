@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
-import committee2122Data from '../../data/committee/2122Data';
+import committee2021Data from '../../data/committee/2021Data';
 
 class ManagementTeam extends Component {
 
@@ -20,7 +20,7 @@ class ManagementTeam extends Component {
                      </div>
                   </div>
                   <div className="row">
-                  { committee2122Data.slice(0, 9).map(item => (
+                  { committee2021Data.slice(0, 9).map(item => (
                      <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-6">
                         <div className="teacher__item text-center grey-bg-5 transition-3 mb-30">
                            <div className="teacher__thumb w-img fix">

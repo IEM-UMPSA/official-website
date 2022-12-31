@@ -347,7 +347,7 @@
 	text-align: center;
 	&:hover{
 		background: $e-blue;
-		color: white;
+		color: $white;
 		border-color: $e-blue;
 	}
 }
@@ -379,21 +379,21 @@
 }
 .ab-tabs .ab-tab-item {
     border-color: var(--tp-border-4);
-    color: var(--tp-common-white);
+    color: $white;
     background-color: transparent;
     box-shadow: none;
 }
 .ab-tabs .ab-tab-item.active {
-    color: var(--tp-theme-1);
+    color: #E7E9EE;
 }
 .tab-pane-title {
-    color: var(--tp-common-white);
+    color: $white;
 }
 .skill-item-title {
-    color: var(--tp-common-white);
+    color: $white;
 }
 .edu-exp-title {
-    color: var(--tp-common-white);
+    color: $white;
 }
 .get-in-touch-wrapper {
     border-color: border-4;

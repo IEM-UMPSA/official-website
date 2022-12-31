@@ -188,12 +188,20 @@
                             background: #03a9f4;
                         }
                     }
-                    &.pin{
-                        color: #d8163f;
-                        background: rgba($color: #d8163f, $alpha: .1);
+                    &.ins{
+                        color: #fb2384;
+                        background: rgba($color: #fb2384, $alpha: .1);
                         &:hover{
                             color: $white;
-                            background: #d8163f;
+                            background: #fb2384;
+                        }
+                    }
+                    &.lin{
+                        color: #0077b5;
+                        background: rgba($color: #0077b5, $alpha: .1);
+                        &:hover{
+                            color: $white;
+                            background: #0077b5;
                         }
                     }
                 }
@@ -381,23 +389,23 @@
     &-center{
         background: black;
         & .contact-item-title{
-            color: white;
+            color: $white;
         }
         & p{
-            color: white;
+            color: $white;
         }
     }
     &-last{
         background: $e-blue;
         & .contact-item-title{
-            color: white;
+            color: $white;
         }
         & p{
-            color: white;
+            color: $white;
         }
         & .contact-icon{
             & i{
-                color: white;
+                color: $white;
             }
         }
     }
@@ -492,7 +500,7 @@
         justify-content: center;
         height: 58px;
         background: black;
-        color: white;
+        color: $white;
         border: 1px solid transparent;
         position: relative;
         line-height: 58px;
@@ -505,7 +513,7 @@
         }
         &:hover{
             background: $e-blue;
-            color: white;
+            color: $white;
         }
     }
     &-content{
@@ -573,7 +581,7 @@
 
             &:focus{
                 border-color: $e-blue;
-                background-color: white;
+                background-color: $white;
             }
         }
     }
@@ -635,7 +643,7 @@
                 &:focus{
                     border-color: $e-blue;
                     outline: none;
-                    background: white;
+                    background: $white;
                 }
             }
             & textarea{
@@ -673,7 +681,7 @@
                 display: block;
                 width: 14px;
                 height: 14px;
-                background: white;
+                background: $white;
                 border: 1px solid #b9bac1;
                 outline: none;
                 @include border-radius(4px);
@@ -687,7 +695,7 @@
                         position: absolute;
                         font-family: '"Font Awesome 6 Pro"';
                         font-size: 10px;
-                        color: white;
+                        color: $white;
                         top: 46%;
                         left: 50%;
                         @include transform(translate(-50%, -50%));
@@ -798,7 +806,7 @@
                         color: #285da1;
                         background: rgba($color: #285da1, $alpha: .1);
                         &:hover{
-                            color: white;
+                            color: $white;
                             background: #285da1;
                         }
                     }
@@ -806,16 +814,24 @@
                         color: #03a9f4;
                         background: rgba($color: #03a9f4, $alpha: .1);
                         &:hover{
-                            color: white;
+                            color: $white;
                             background: #03a9f4;
                         }
                     }
-                    &.pin{
-                        color: #d8163f;
-                        background: rgba($color: #d8163f, $alpha: .1);
+                    &.ins{
+                        color: #fb2384;
+                        background: rgba($color: #fb2384, $alpha: .1);
                         &:hover{
-                            color: white;
-                            background: #d8163f;
+                            color: $white;
+                            background: #fb2384;
+                        }
+                    }
+                    &.lin{
+                        color: #0077b5;
+                        background: rgba($color: #0077b5, $alpha: .1);
+                        &:hover{
+                            color: $white;
+                            background: #0077b5;
                         }
                     }
                 }

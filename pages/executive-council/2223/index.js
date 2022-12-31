@@ -1,6 +1,6 @@
 import React from 'react';
 import TechnicalDepartment from '../../../components/TwoTwoTwoThree/TechnicalDepartment';
-import FooterThree from '../../../components/Layout/Footer/FooterStyleThree';
+import FooterTwo from '../../../components/Layout/Footer/FooterStyleTwo';
 import Header from '../../../components/Layout/Header/Header';
 import AdvisorSection from '../../../components/Advisor/AdvisorsSection'
 import ManagementTeam from '../../../components/TwoTwoTwoThree/ManagementTeam';
@@ -9,7 +9,7 @@ import UTMTeam from '../../../components/TwoTwoTwoThree/UTMTeam';
 
 import MultimediaTeam from '../../../components/TwoTwoTwoThree/MultimediaTeam';
 
-class Custom404 extends React.Component {
+class Committee2223 extends React.Component {
 
     render() {
         return (
@@ -21,11 +21,11 @@ class Custom404 extends React.Component {
             <MultimediaTeam />
             <PublicityTeam />
             <UTMTeam />
-            <FooterThree />
+            <FooterTwo />
             </React.Fragment>
         );
     }
 }
 
 
-export default Custom404;
+export default Committee2223;

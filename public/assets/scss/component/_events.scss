@@ -317,7 +317,7 @@
                     background: $grey;
                     @include border-radius(4px);
 
-                    &.fb{
+                   &.fb{
                         color: #285da1;
                         background: rgba($color: #285da1, $alpha: .1);
                         &:hover{
@@ -333,12 +333,20 @@
                             background: #03a9f4;
                         }
                     }
-                    &.pin{
-                        color: #d8163f;
-                        background: rgba($color: #d8163f, $alpha: .1);
+                    &.ins{
+                        color: #fb2384;
+                        background: rgba($color: #fb2384, $alpha: .1);
                         &:hover{
                             color: $white;
-                            background: #d8163f;
+                            background: #fb2384;
+                        }
+                    }
+                    &.lin{
+                        color: #0077b5;
+                        background: rgba($color: #0077b5, $alpha: .1);
+                        &:hover{
+                            color: $white;
+                            background: #0077b5;
                         }
                     }
                 }
