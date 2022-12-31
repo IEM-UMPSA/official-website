@@ -3,10 +3,10 @@ const developerData = [
         id: 1,
         img: 'https://media.licdn.com/dms/image/D5635AQHz-R3GNyynQA/profile-framedphoto-shrink_400_400/0/1671723756257?e=1672927200&v=beta&t=UxM4EaczQif52sX4K4coPkniCeX_2vLqbuvAc14HoPw',
         name: 'JEHOVAH YII ZUI HON',
-        position: 'Team Lead | Software Architect',
+        position: 'Team Lead | Software Architect | Full Stack',
         github: 'https://github.com/hovahyii',
-        linkedin: '',
-        website: ''
+        linkedin: 'https://www.linkedin.com/in/jehovah-yii-zui-hon/',
+        website: 'https://hovahyii.vercel.app'
        
     },
     {
@@ -29,10 +29,10 @@ const developerData = [
     },
     {
         id: 4,
-        img: 'https://std-comm.ump.edu.my/ecommstudent/Photo?profileID=174F7CB80D8-69270E68988D7388',
+        img: '/assets/img/developer/chin.jpg',
         name: 'CHIN YUNG CHEE',
         position: 'Front End Developer',
-        github: '',
+        github: 'https://github.com/CCCCheeee',
         linkedin: '',
         website: ''
     },

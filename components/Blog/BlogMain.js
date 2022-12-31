@@ -17,7 +17,7 @@ class BlogMain extends Component {
             <main>
 
                 {/* breadcrumb-start */}
-				<Breadcrumb pageTitle="Blog Grid" />
+				<Breadcrumb pageTitle="Blog" />
 				{/* breadcrumb-end */}
 
 	            <section className="blog__area pt-120 pb-120">

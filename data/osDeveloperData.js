@@ -15,7 +15,7 @@ const developerData = [
         id: 3,
         img: '/assets/img/developer/chen.jpeg',
         name: 'CHEN KAR KIT',
-        position: 'Copyrighter'
+        position: 'Copywriter'
     },
  
   ]

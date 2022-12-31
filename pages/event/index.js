@@ -1,5 +1,5 @@
 import React from 'react';
-import CourseSidebarMain from '../../components/CourseSidebar/CourseSidebarMain';
+import EventSidebarMain from '../../components/EventSidebar/EventSidebarMain';
 import Footer from '../../components/Layout/Footer/Footer';
 import HeaderThree from '../../components/Layout/Header/HeaderStyleThree';
 
@@ -15,7 +15,7 @@ class Event extends React.Component {
         return (
             <React.Fragment>
             <HeaderThree />
-            <CourseSidebarMain />
+            <EventSidebarMain />
             <Footer />
             </React.Fragment>
         );

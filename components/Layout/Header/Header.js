@@ -85,11 +85,13 @@ const Header = () => {
 
                                        </Link>
                                        <ul className="cat-submenu">
+                                          <li><Link href="/partnership">Collaborate with Us</Link></li>
+                                          <li><Link href="/job-opportunity">Job/Internship</Link></li>
+                                          <li><Link href="/faq">FAQ</Link></li>
                                           <li><Link href="/development-team">Hall of Fame</Link></li>
                                           <li><Link href="/open-source">Open Source</Link></li>
-                                          <li><Link href="/partnership">Collaborate with Us</Link></li>
-                                          <li><Link href="/job">Job/Internship</Link></li>
-                                          <li><Link href="/faq">FAQ</Link></li>
+                     
+                                         
                                        </ul>
                                     </li>
                                  </ul>
@@ -112,10 +114,10 @@ const Header = () => {
                                        <Link href="/blog">Blog</Link>
                                     </li>
                                     <li className="has-dropdown">
-                                       <Link href="#">Committee</Link>
+                                       <Link href="#">Executive Council</Link>
                                        <ul className="submenu">
-                                          <li><Link href="/committee/2223">Committee 22/23</Link></li>
-                                          <li><Link href="/committee/2122">Committee 21/22</Link></li>
+                                          <li><Link href="/executive-council/2223">2022/2023</Link></li>
+                                          <li><Link href="/executive-council/2122">2021/2022</Link></li>
                                        </ul>
                                     </li>
                                     <li><Link href="/contact">Contact</Link></li>

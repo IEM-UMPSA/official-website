@@ -508,9 +508,11 @@ p {
 		background: $white;
 		color: $black;
 		padding: 0 45px;
-
+		border: 2px solid white ;
+		font-weight: 500;
+		border-radius: 500px;
 		&:hover {
-			color: $black;
+			color: $e-blue;
 		}
 	}
 }

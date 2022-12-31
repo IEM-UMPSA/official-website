@@ -7,14 +7,14 @@ const FooterThree = () => {
     return (
       <footer>
            <div className="footer__area footer-bg">
-              <div className="footer__top pt-190 pb-40">
+              <div className="footer__top pt-100 pb-20">
                  <div className="container">
                     <div className="row">
                        <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6">
                           <div className="footer__widget mb-50">
                              <div className="footer__widget-head mb-22">
                                 <div className="footer__logo">
-                                   <Link href="/"><img src="assets/img/logo/logo-2.png" alt="img not found"/></Link>
+                                   <Link href="/"><img src="/assets/img/logo/logo-2.png" alt="img not found"/></Link>
                                 </div>
                              </div>
                              <div className="footer__widget-body">
@@ -44,9 +44,9 @@ technology..</p>
                              <div className="footer__widget-body">
                                 <div className="footer__link">
                                    <ul>
-                                      <li><Link href="/event-details">Events</Link></li>
-                                      <li><Link href="/instructor">Blogs</Link></li>
-                                      <li><Link href="/instructor">Committees</Link></li>
+                                      <li><Link href="/event-details">Event</Link></li>
+                                      <li><Link href="/instructor">Blog</Link></li>
+                                      <li><Link href="/instructor">Committee</Link></li>
                                       <li><Link href="/contact">Contact</Link></li>
                                    </ul>
                                 </div>
@@ -61,11 +61,11 @@ technology..</p>
                              <div className="footer__widget-body">
                                 <div className="footer__link">
                                    <ul>
-                                   <li><Link href="/development-team">Development Team</Link></li>
-                                      <li><Link href="/open-source">Open Source</Link></li>
-                                      <li><Link href="/sponsor">Sponsor</Link></li>
-                                      <li><Link href="/job">Job</Link></li>
-                                      <li><Link href="/faq">FAQ</Link></li>
+                                       <li><Link href="/development-team">Development Team</Link></li>
+                                       <li><Link href="/open-source">Open Source</Link></li>
+                                       <li><Link href="/partnership">Collaborate with Us</Link></li>
+                                       <li><Link href="/job">Job</Link></li>
+                                       <li><Link href="/faq">FAQ</Link></li>
                                    </ul>
                                 </div>
                              </div>

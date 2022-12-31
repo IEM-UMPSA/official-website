@@ -27,7 +27,7 @@ such as engineering talks, workshops, games, site visits, conferences, and more.
                                  <div className="hero__thumb d-flex p-relative"> 
                                   <div className="hero__thumb-shape">
                                       <img className="hero-1-dot" src="assets/img/shape/hero/hero-1-dot.png" alt="img not found"/>
-                                      <img className="hero-1-circle-3" src="assets/img/shape/hero/hero-1-circle-3.png" alt="img not found"/>
+                                      {/* <img className="hero-1-circle-3" src="assets/img/shape/hero/hero-1-circle-3.png" alt="img not found"/> */}
                                       <img className="hero-1-circle-4" src="assets/img/shape/hero/hero-1-circle-4.png" alt="img not found"/>
                                   </div> 
                                   <div className="hero__thumb-big mr-30">

@@ -69,7 +69,7 @@
             line-height: 24px;
             font-size: 14px;
             font-weight: 500;
-            color: $white;
+            color: white;
             background: $e-purple;
             padding: 0 10px;
             @include border-radius(4px);
@@ -537,6 +537,7 @@
             &:hover,
             &.active {
                 color: $e-blue;
+              
             }
 
             &:not(:first-child) {
@@ -577,8 +578,8 @@
                         width: 30px;
                         height: 30px;
                         background: transparent;
-                        padding: 0;
-                        margin-right: 6px;
+                        padding: 8px;
+                        margin: 2px;
 
                         & svg {
                             width: 14px;
@@ -609,12 +610,12 @@
                                 &.grid {
                                     & .st0 {
                                         fill: none;
-                                        stroke: $white;
+                                        stroke: white;
                                     }
                                 }
 
                                 & .st0 {
-                                    fill: $white;
+                                    fill: white;
                                 }
                             }
                         }
@@ -642,6 +643,7 @@
 
                             &.active {
                                 border-color: $e-blue;
+                               
                             }
                         }
                     }
@@ -676,7 +678,7 @@
 
                         & .nav-link {
                             background: $e-blue;
-                            color: $white;
+                            color: white;
                         }
                     }
                 }
@@ -1030,7 +1032,7 @@
                         background: rgba($color: #285da1, $alpha: .1);
 
                         &:hover {
-                            color: $white;
+                            color: white;
                             background: #285da1;
                         }
                     }
@@ -1050,7 +1052,7 @@
                         background: rgba($color: #d8163f, $alpha: .1);
 
                         &:hover {
-                            color: $white;
+                            color: white;
                             background: #d8163f;
                         }
                     }

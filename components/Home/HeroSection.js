@@ -9,9 +9,18 @@ class Hero extends Component {
             <main>
                 <section className="hero__area hero__height d-flex align-items-center grey-bg-2 p-relative">
                     <div className="hero__shape">
-                        <img className="hero-1-circle" src="assets/img/shape/hero/hero-1-circle.png" alt="img not found"/>
-                        <img className="hero-1-circle-2" src="assets/img/shape/hero/hero-1-circle-2.png" alt="img not found"/>
-                        <img className="hero-1-dot-2" src="assets/img/shape/hero/hero-1-dot-2.png" alt="img not found"/>
+                        <img className="moon" src="assets/img/shape/hero/moon-4.png" alt="img not found"/>
+                        <img className="star-1" src="assets/img/shape/hero/star-1.png" alt="img not found"/>
+                        <img className="star-2" src="assets/img/shape/hero/star-1.png" alt="img not found"/>
+                        <img className="star-3" src="assets/img/shape/hero/star-1.png" alt="img not found"/>
+                        <img className="star-4" src="assets/img/shape/hero/star-1.png" alt="img not found"/>
+                        <img className="star-5" src="assets/img/shape/hero/star-1.png" alt="img not found"/>
+                        <img className="star-6" src="assets/img/shape/hero/star-1.png" alt="img not found"/>
+
+                        <img className="star-7" src="assets/img/shape/hero/star-1.png" alt="img not found"/>
+                        <img className="star-8" src="assets/img/shape/hero/star-1.png" alt="img not found"/>
+
+
                     </div>
                     <div className="container">
                         <div className="hero__content-wrapper mt-90">

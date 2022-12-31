@@ -47,7 +47,7 @@ class Brand extends Component {
                                         <SwiperSlide>
                                             <div className="swiper-slide">
                                                 <div className="brand__item">
-                                                    <img width="120px" height="100px" src={item.img} alt="img not found" />
+                                                    <Link href={item.link} target="_blank"><img width="120px" height="100px" src={item.img} alt="img not found" /></Link>
                                                 </div>
                                             </div>
                                         </SwiperSlide>
@@ -58,15 +58,7 @@ class Brand extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="row">
-                        <div className="col-xxl-12">
-                            <div className="brand__more text-center">
-                                <Link href="/about" className="link-btn">View all partners<i className="fas fa-arrow-right"></i>
-                                    <i className="fas fa-arrow-right"></i>
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
+        
                 </div>
             </section>
         );

@@ -266,22 +266,100 @@
     &__shape{
         & img{
             position: absolute;
-            &.hero-1-circle{
+            &.moon{
                 top: 25%;
                 left: 5%;
-                -webkit-animation: hero-circle-1 6s linear 0s infinite alternate;
-                -moz-animation: hero-circle-1 6s linear 0s infinite alternate; 
-                -o-animation: hero-circle-1 6s linear 0s infinite alternate;
-                animation: hero-circle-1 6s linear 0s infinite alternate; 
+                
             }
-            &.hero-1-circle-2{
-                bottom: 29%;
-                left: 0;
+            &.star-1{
+                top: 30%;
+                left: 15%;
+                opacity: 0; 
+
+                -webkit-animation: opacityOn 5s linear 0s infinite alternate;
+                -moz-animation: opacityOn 5s linear 0s infinite alternate; 
+                -o-animation: opacityOn5s linear 0s infinite alternate;
+                animation: opacityOn 5s linear 0s infinite alternate;
+                animation-delay: 2s;
             }
-            &.hero-1-dot-2{
-                right: 0;
-                bottom: 38%;
+            &.star-2{
+                right: 40%;
+                top: 38%;
+                opacity: 0; 
+
+                -webkit-animation: opacityOn 5s linear 0s infinite alternate;
+                -moz-animation: opacityOn 5s linear 0s infinite alternate; 
+                -o-animation: opacityOn5s linear 0s infinite alternate;
+                animation: opacityOn 5s linear 0s infinite alternate;
+                animation-delay: 2s;
             }
+            &.star-3{
+                right: 35%;
+                top: 38%;
+                opacity: 0; 
+
+                -webkit-animation: opacityOn 5s linear 0s infinite alternate;
+                -moz-animation: opacityOn 5s linear 0s infinite alternate; 
+                -o-animation: opacityOn5s linear 0s infinite alternate;
+                animation: opacityOn 5s linear 0s infinite alternate;
+                animation-delay: 2s;
+            }
+            &.star-4{
+                right: 27%;
+                top: 33%;
+                opacity: 0; 
+
+                -webkit-animation: opacityOn 5s linear 0s infinite alternate;
+                -moz-animation: opacityOn 5s linear 0s infinite alternate; 
+                -o-animation: opacityOn5s linear 0s infinite alternate;
+                animation: opacityOn 5s linear 0s infinite alternate;
+                animation-delay: 2s;
+            }
+            &.star-5{
+                right: 70%;
+                top: 38%;
+                opacity: 0; 
+
+                -webkit-animation: opacityOn 5s linear 0s infinite alternate;
+                -moz-animation: opacityOn 5s linear 0s infinite alternate; 
+                -o-animation: opacityOn5s linear 0s infinite alternate;
+                animation: opacityOn 5s linear 0s infinite alternate;
+                animation-delay: 2s;
+            }
+            &.star-6{
+                right: 90%;
+                top: 35%;
+                opacity: 0; 
+
+                -webkit-animation: opacityOn 5s linear 0s infinite alternate;
+                -moz-animation: opacityOn 5s linear 0s infinite alternate; 
+                -o-animation: opacityOn5s linear 0s infinite alternate;
+                animation: opacityOn 5s linear 0s infinite alternate;
+                animation-delay: 2s;
+            }
+            &.star-7{
+                right: 60%;
+                top: 28%;
+                opacity: 0; 
+
+                -webkit-animation: opacityOn 5s linear 0s infinite alternate;
+                -moz-animation: opacityOn 5s linear 0s infinite alternate; 
+                -o-animation: opacityOn5s linear 0s infinite alternate;
+                animation: opacityOn 5s linear 0s infinite alternate;
+                animation-delay: 2s;
+            }
+            &.star-8{
+                right: 20%;
+                top: 40%;
+                opacity: 0; 
+
+                -webkit-animation: opacityOn 5s linear 0s infinite alternate;
+                -moz-animation: opacityOn 5s linear 0s infinite alternate; 
+                -o-animation: opacityOn5s linear 0s infinite alternate;
+                animation: opacityOn 5s linear 0s infinite alternate;
+                animation-delay: 2s;
+            }
+
         }
     }
     &__search{
@@ -474,12 +552,21 @@
     60% {transform: translateY(-15px);}
 }
 
-@keyframes hero-circle-1{
-    0%{
-        @include transform(rotate(0deg));
+@keyframes opacityOn {
+    0% {
+        opacity: 1;
     }
-    100%{
-        @include transform(rotate(360deg));
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 

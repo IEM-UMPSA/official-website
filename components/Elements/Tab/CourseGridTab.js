@@ -15,7 +15,7 @@ export default () => (
                     <div className="row align-items-center">
                         <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
                         <div className="course__tab-wrapper d-flex align-items-center">
-                            <div className="course__tab-btn">
+                            <div className="course__tab-btn ">
                                 <TabList>
                                     <Tab>
                                         <button className="nav-link active" id="grid-tab" type="button">

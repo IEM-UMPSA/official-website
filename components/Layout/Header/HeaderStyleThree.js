@@ -38,7 +38,6 @@ const HeaderThree = () => {
             <title>IEM-UMPSS | Event</title>
             <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
             <script src="https://cdn.tailwindcss.com"></script>
-
          </Head>
          <header>
             <div id="header-sticky" className="header__area header__transparent header__padding header__white">
@@ -80,11 +79,11 @@ const HeaderThree = () => {
 
                                        </Link>
                                        <ul className="cat-submenu">
+                                       <li><Link href="/partnership">Collaborate with Us</Link></li>
+                                          <li><Link href="/job-opportunity">Job/Internship</Link></li>
+                                          <li><Link href="/faq">FAQ</Link></li>
                                           <li><Link href="/development-team">Hall of Fame</Link></li>
                                           <li><Link href="/open-source">Open Source</Link></li>
-                                          <li><Link href="/partnership">Collaborate with Us</Link></li>
-                                          <li><Link href="/job">Job/Internship</Link></li>
-                                          <li><Link href="/faq">FAQ</Link></li>
                                        </ul>
                                     </li>
                                  </ul>
@@ -109,10 +108,10 @@ const HeaderThree = () => {
                                        <Link href="/blog">Blog</Link>
                                     </li>
                                     <li className="has-dropdown">
-                                       <Link href="#">Committee</Link>
+                                       <Link href="#">Executive Council</Link>
                                        <ul className="submenu">
-                                          <li><Link href="/committee/2223">Committee 22/23</Link></li>
-                                          <li><Link href="/committee/2122">Committee 21/22</Link></li>
+                                          <li><Link href="/executive-council/2223">2022/2023</Link></li>
+                                          <li><Link href="/executive-council/2122">2021/2022</Link></li>
                                        </ul>
                                     </li>
                                     <li><Link href="/contact">Contact</Link></li>
