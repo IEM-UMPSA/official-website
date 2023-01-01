@@ -98,7 +98,7 @@ const committee2122Data = [
     }, 
     {
         id: 17,
-        img: 'https://std-comm.ump.edu.my/ecommstudent/Photo?profileID=16CF35D33F0-3B30C42F7948C3C5',
+        img: 'https://std-comm.ump.edu.my/ecommstudent/Photo?profileID=174FD4D3956-32A73976B3D3FF1B',
         name: 'Chua Hong Xiang',
         position: 'Committee',
     },

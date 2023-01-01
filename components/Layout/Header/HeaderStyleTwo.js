@@ -57,7 +57,7 @@ const HeaderThree = () => {
                               <nav>
                                  <ul>
                                     <li>
-                                       <Link href="/course-grid" className="cat-menu d-flex align-items-center">
+                                       <Link href="#" className="cat-menu d-flex align-items-center">
                                           <div className="cat-dot-icon d-inline-block">
                                              <svg viewBox="0 0 276.2 276.2">
                                                 <g>
@@ -111,7 +111,7 @@ const HeaderThree = () => {
                                        <Link href="#">Executive Council</Link>
                                        <ul className="submenu">
                                        <li><Link href="/executive-council/2223">2022/2023</Link></li>
-                                          <li><Link href="/404">2021/2022</Link></li>
+                                       <li><Link href="/executive-council/2122">2021/2022</Link></li>
                                           <li><Link href="/executive-council/2021">2020/2021</Link></li>
 
                                        </ul>

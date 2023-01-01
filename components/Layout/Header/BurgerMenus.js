@@ -54,7 +54,7 @@ const BurgerMenus = ({setMenuOpen, menuOpen}) => {
             </div>
             <div className="sidebar__content">
                 <div className="logo mb-40">
-                  <Link href="/"><img src="assets/img/logo/logo.png" alt="logo"/></Link>
+                  <Link href="/"><img src="/assets/img/logo/logo.png" alt="logo"/></Link>
                 </div>
                 <div className="mm-menu">
                   <ul>
@@ -69,11 +69,12 @@ const BurgerMenus = ({setMenuOpen, menuOpen}) => {
                       <a onClick={() => { openMobileMenu('blog'); }}>Blog</a>
                     </li>
                     <li className={committee ? "has-droupdown active" : "has-droupdown"}>
-                      <a onClick={() => { openMobileMenu('committee'); }}>Committee</a>
+                      <a onClick={() => { openMobileMenu('committee'); }}>Executive Council</a>
                       <ul className={committee ? "sub-menu active" : "sub-menu"}>
-                        <li><Link href="/22-23">Committee 22/23</Link></li>
-                        <li><Link href="/21-22">Committee 21/22</Link></li>
-                   
+                        <li><Link href="/executive-council/2223">2022/2023</Link></li>
+                        <li><Link href="/executive-council/2122">2021/2022</Link></li>
+                        <li><Link href="/executive-council/2021">2020/2021</Link></li>
+
                     </ul>
                   </li>
                   <li><Link href="/contact">Contact</Link></li>

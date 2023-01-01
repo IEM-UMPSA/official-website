@@ -32,7 +32,7 @@ class Hero extends Component {
                                         <span className="yellow-shape">2013 <img src="assets/img/shape/yellow-bg.png" alt="yellow-shape"/> </span> 
                                         </h3>
                                         <p>Acts as a liaison, connecting UMP students to engineers, institutions, industries and professionals.</p>
-                                        <Link href="/course-grid" className="e-btn">Join Us Now</Link>
+                                        <Link href="#" className="e-btn">Join Us Now</Link>
                                     </div>
                                 </div>
                                 <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6"> 

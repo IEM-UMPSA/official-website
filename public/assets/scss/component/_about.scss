@@ -351,6 +351,8 @@
 		border-color: $e-blue;
 	}
 }
+
+// HeaderBanner
 .monitor {
     position: relative;
     display: inline-block;
@@ -364,6 +366,17 @@
     to {
       left: 0px;
     }
+  }
+
+  @media #{$sm} {
+    @keyframes move {
+        from {
+          left: 50px;
+        }
+        to {
+          left: 0px;
+        }
+      }
   }
 
 
