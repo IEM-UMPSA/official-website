@@ -27,3 +27,7 @@
 @use 'component/footer';
 @use 'component/privacy';
 @use 'component/job';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
