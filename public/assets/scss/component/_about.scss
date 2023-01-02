@@ -359,25 +359,27 @@
     animation: move 10s infinite linear;
   }
   
-  @keyframes move {
-    from {
-      left: 500px;
+  @media((min-width: 768px)) {
+        @keyframes move {
+            from {
+            left: 500px;
+            }
+            to {
+            left: 0px;
+            }
+        }
     }
-    to {
-      left: 0px;
-    }
-  }
 
-  @media #{$sm} {
-    @keyframes move {
-        from {
-          left: 50px;
+    @media(max-width: 767px) {
+        @keyframes move {
+            from {
+            left: 100px;
+            }
+            to {
+            left: 0px;
+            }
         }
-        to {
-          left: 0px;
-        }
-      }
-  }
+    }
 
 
    //aboutme css
