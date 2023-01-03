@@ -1,5 +1,4 @@
 import { google } from "googleapis";
-import keys from "../../secrets.json";
 
 export default function handler(req, res) {
     try {

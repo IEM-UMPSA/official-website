@@ -1,6 +1,6 @@
 import { google } from "googleapis";
-import keys from "../../secrets.json";
 
+export const revalidate = 60; // revalidate this page every 60 seconds
 export default function handler(req, res) {
     try {
         const client = new google.auth.JWT(
