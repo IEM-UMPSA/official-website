@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import BurgerMenus from './BurgerMenus';
-import ShopingCart from './ShopingCart';
 import HeaderBanner from '../../Home/HeaderBanner';
 
 const Header = () => {

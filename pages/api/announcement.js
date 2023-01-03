@@ -27,9 +27,6 @@ export default function handler(req, res) {
             console.log(response);
 
             // return res.status(400).send(JSON.stringify({error: false, data: data.data.values}));
-
-
-
             const [titles, ...announcements] = response.data.values;
         
             const formattedItems = announcements.map((row) => {
@@ -38,7 +35,10 @@ export default function handler(req, res) {
                  return obj;
             });
 
-         return res.status(400).send(JSON.stringify({error: false, formattedItems}));
+            const myObject = JSON.parse(JSON.stringify(formattedItems));
+
+
+            return res.status(400).send(myObject);
 
         });
     } catch (e) {
