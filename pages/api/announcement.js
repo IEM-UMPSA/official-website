@@ -35,9 +35,14 @@ export default function handler(req, res) {
                  return obj;
             });
 
+
+            // Convert
+            // { formattedItems = [{"id":"1","description":"Thanks for visiting IEM-UMPSS Official Website, meet our developers","summary":"Meet our developers","link":"http:\/\/localhost:3000\/development-team"}] }
+            // to
+            // [{"id":"1","description":"Thanks for visiting IEM-UMPSS Official Website, meet our developers","summary":"Meet our developers","link":"http:\/\/localhost:3000\/development-team"}]
             const myObject = JSON.parse(JSON.stringify(formattedItems));
 
-
+            
             return res.status(400).send(myObject);
 
         });
