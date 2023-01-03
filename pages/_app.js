@@ -1,5 +1,6 @@
 import './index.scss';
 import App from 'next/app';
+import Router from 'next/router';
 
 import { Provider } from 'react-redux';
 import React from 'react';
@@ -8,7 +9,14 @@ import store from '../redux/store';
 // import { loadIcons } from '../utils/IconLoader';
 import ErrorBoundary from '../components/ErrorBoundary';
 // loadIcons();
+import NProgress from 'nprogress'; //nprogress module
+import 'nprogress/nprogress.css'; //styles of nprogress
+import Script from 'next/script';
 
+//Binding events. 
+Router.events.on('routeChangeStart', () => NProgress.start()); 
+Router.events.on('routeChangeComplete', () => NProgress.done()); 
+Router.events.on('routeChangeError', () => NProgress.done());
 class MyApp extends App {
 
     static async getInitialProps({ Component, ctx }) {
@@ -25,6 +33,7 @@ class MyApp extends App {
         return (
                
                     <Provider store={store}>
+                        <Script src='https://embed.tawk.to/6374fb4fb0d6371309cf5ea7/1gi0fbbnv' />
                         <ErrorBoundary>
                             <Component {...pageProps} />
                         </ErrorBoundary>

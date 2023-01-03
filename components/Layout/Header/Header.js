@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import BurgerMenus from './BurgerMenus';
 import HeaderBanner from '../../Home/HeaderBanner';
+export const revalidate = 3600; // revalidate this page every hour
 
 const Header = () => {
 
@@ -179,7 +180,11 @@ const Header = () => {
 
          </header>
 
+
          <HeaderBanner />
+
+
+
       </React.Fragment>
    );
 }

@@ -17,6 +17,7 @@ class Index extends React.Component {
             <Header />
             <HomeMain />
             <Footer />
+
             </React.Fragment>
         );
     }

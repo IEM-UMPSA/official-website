@@ -35,15 +35,21 @@ export default function handler(req, res) {
                  return obj;
             });
 
-
+            for(var i = 0; i < formattedItems.length; i++){
+                var obj = formattedItems[i];
+                for(var prop in obj){
+                    if(obj.hasOwnProperty(prop) && obj[prop] !== null && !isNaN(obj[prop])){
+                        obj[prop] = +obj[prop];   
+                    }
+                }
+            }
             // Convert
             // { formattedItems = [{"id":"1","description":"Thanks for visiting IEM-UMPSS Official Website, meet our developers","summary":"Meet our developers","link":"http:\/\/localhost:3000\/development-team"}] }
             // to
-            // [{"id":"1","description":"Thanks for visiting IEM-UMPSS Official Website, meet our developers","summary":"Meet our developers","link":"http:\/\/localhost:3000\/development-team"}]
+            // [{"id":1,"description":"Thanks for visiting IEM-UMPSS Official Website, meet our developers","summary":"Meet our developers","link":"http:\/\/localhost:3000\/development-team"}]
             const myObject = JSON.parse(JSON.stringify(formattedItems));
 
-            
-            return res.status(400).send(myObject);
+            return res.status(400).send(myObject[0]);
 
         });
     } catch (e) {
