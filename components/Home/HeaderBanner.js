@@ -3,15 +3,11 @@
 import { BsMegaphone } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
 import React, { useState } from "react";
-import { useRouter } from 'next/router';
-
-
 
 export const revalidate = 3600; // revalidate this page every 3600 seconds
 
+
 export default function HeaderBanner() {
-
-
 
 const [isVisible, setIsVisible] = useState(true);
 
