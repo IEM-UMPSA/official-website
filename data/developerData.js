@@ -20,7 +20,7 @@ const developerData = [
     },
     {
         id: 3,
-        img: 'https://scontent.fkul8-3.fna.fbcdn.net/v/t39.30808-6/313920738_2522950061189947_5795619340199076811_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=DmgECXxtLwoAX_xLAdN&_nc_ht=scontent.fkul8-3.fna&oh=00_AfBDaddQzFvlj64mWmJMXjJ933TG-2hF2GmaoDJSq3U3FA&oe=63B28EA1',
+        img: '/assets/img/developer/tan.jpg',
         name: 'TAN TENG XING',
         position: 'Lead Front End Developer',
         github: '',

@@ -38,7 +38,7 @@ export default function handler(req, res) {
                  return obj;
             });
 
-         return res.status(400).send(JSON.stringify({error: false, formattedItems: response.data.values}));
+         return res.status(400).send(JSON.stringify({error: false, formattedItems}));
 
         });
     } catch (e) {

@@ -67,6 +67,12 @@
       "last 1 safari version"
     ]
   },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false,
+    "child_process": false
+  },
   "presets": [
     "@babel/preset-env",
     [
