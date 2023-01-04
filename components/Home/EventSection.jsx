@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import Link from 'next/link';
 import EventItem from '../Event/EventItem';
 // import eventData from "../../data/eventData";
 import useSWR from 'swr';
-import { API } from '../../config';
 const fetcher = (...args) => fetch(...args).then(res => res.json());
 
 export default function Event() {
-    const { data, error } = useSWR(`${API}/event`, fetcher)
+    const { data, error } = useSWR('/api/event', fetcher)
     if (error) return <div>Failed to load</div>
     if (!data) return <div>Loading...</div>
 

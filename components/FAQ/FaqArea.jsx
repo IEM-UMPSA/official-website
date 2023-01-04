@@ -1,5 +1,4 @@
 import useSWR from 'swr';
-import { API } from '../../config';
 import FaqItem from "./FaqItem";
 
 const fetcher = (...args) => fetch(...args).then(res => res.json());
@@ -7,7 +6,7 @@ const fetcher = (...args) => fetch(...args).then(res => res.json());
 const FaqArea = () => {
   
 
-    const { data, error } = useSWR(`${API}/faq`, fetcher)
+    const { data, error } = useSWR('/api/faq', fetcher)
 
     if (error) return <div>Failed to load</div>
     if (!data) return <div>Loading...</div>

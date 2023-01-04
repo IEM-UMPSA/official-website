@@ -4,14 +4,13 @@ import { BsMegaphone } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
 import React, { useState } from "react";
 import useSWR from 'swr';
-import { API } from '../../config';
 
 const fetcher = (...args) => fetch(...args).then(res => res.json());
 
 export default function HeaderBanner() {
   const [isVisible, setIsVisible] = useState(true);
 
-  const { data, error } = useSWR(`${API}/announcement`, fetcher)
+  const { data, error } = useSWR('/api/announcement', fetcher)
 
   if (error) return <div>Failed to load</div>
   if (!data) return <div>Loading...</div>
