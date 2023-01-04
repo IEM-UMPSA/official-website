@@ -19,7 +19,5 @@ module.exports = {
         // by next.js will be dropped. Doesn't make much sense, but how it is
       fs: false, // the solution
     };
-
-    return config;
   }
 };
