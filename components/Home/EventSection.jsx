@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import EventItem from '../Event/EventItem';
 // import eventData from "../../data/eventData";
 import useSWR from 'swr';

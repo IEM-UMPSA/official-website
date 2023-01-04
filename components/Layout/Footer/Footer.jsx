@@ -1,8 +1,40 @@
 import React from 'react';
 import FooterBottom from './FooterBottom';
 import Link from 'next/link';
+import { useState } from 'react';
 
 const Footer = () => {
+
+   const [email, setEmail] = useState('');
+
+
+   const handleSubmit = async (e) => {
+      e.preventDefault();
+
+      const form = {
+         email
+      }
+
+      console.log(form)
+  
+
+   const response = await fetch('/api/subscribe',{
+      method: 'POST',
+      headers: {
+         'Accept': 'application/json',
+         'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(form)
+   })
+
+      const content = await response.json();
+
+      console.log(content)
+
+      alert(content.data.tableRange)
+
+      setEmail('');
+   }
 
     return (
        <footer>
@@ -80,9 +112,9 @@ const Footer = () => {
                              </div>
                              <div className="footer__widget-body">
                                 <div className="footer__subscribe">
-                                   <form action="#">
+                                   <form onSubmit={handleSubmit}>
                                       <div className="footer__subscribe-input mb-15">
-                                         <input type="email" placeholder="Your email address"/>
+                                         <input value={email} onChange={e => setEmail(e.target.value)} type="email" name="email" id="email" placeholder="Your email address"/>
                                          <button type="submit">
                                             <i className="fas fa-arrow-right"></i>
                                             <i className="fas fa-arrow-right"></i>

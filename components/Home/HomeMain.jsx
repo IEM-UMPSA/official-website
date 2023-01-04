@@ -42,10 +42,6 @@ class HomeMain extends Component {
 				<PriceTab />
 				{/* tab-end */}
 
-				{/* brand-start */}
-				{/* <BrandWithNoSSR /> */}
-				{/* brand-end */}
-				
 				{/* cta-start */}
 				<Cta />
 				{/* cta-end */}
