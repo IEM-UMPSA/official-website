@@ -1,7 +1,7 @@
 import { google } from "googleapis";
 
 export default function handler(req, res) {
-    try {
+
         const client = new google.auth.JWT(
             process.env.GCP_CLIENT_EMAIL, 
             null, 
@@ -40,7 +40,5 @@ export default function handler(req, res) {
          return res.status(400).send(JSON.stringify({error: false, formattedItems: response.data.values}));
 
         });
-    } catch (e) {
-        return res.status(400).send(JSON.stringify({error: true, message: e.message}));
-    }
+    
 }

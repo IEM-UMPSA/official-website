@@ -2,7 +2,7 @@ import { google } from "googleapis";
 
 export const revalidate = 60; // revalidate this page every 60 seconds
 export default function handler(req, res) {
-    try {
+
         const client = new google.auth.JWT(
             process.env.GCP_CLIENT_EMAIL, 
             null, 
@@ -54,7 +54,5 @@ export default function handler(req, res) {
 
 
         });
-    } catch (e) {
-        return res.status(400).send(JSON.stringify({error: true, message: e.message}));
-    }
+  
 }
