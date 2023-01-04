@@ -4,10 +4,10 @@ module.exports = {
   publicRuntimeConfig:{
     APP_NAME: 'IEM-UMPSS',
     API_DEVELOPMENT: 'http://localhost:3000/api',
-    API_PRODUCTION: 'https://iemumpss.vercel.app/api',
+    API_PRODUCTION: 'http://iemumpss.vercel.app/',
     PRODUCTION: true,
     DOMAIN_DEVELOPMENT: 'http://localhost:3000',
-    DOMAIN_PRODUCTION: 'https://iemumpss.vercel.app/',
+    DOMAIN_PRODUCTION: 'http://iemumpss.vercel.app/',
   },
   future: {
     webpack5: true, // by default, if you customize webpack config, they switch back to version 4. 
