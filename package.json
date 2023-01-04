@@ -2,6 +2,7 @@
   "name": "iem-umpss",
   "version": "0.1.0",
   "private": true,
+  "node": "v16.16.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
