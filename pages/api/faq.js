@@ -46,7 +46,10 @@ export default function handler(req, res) {
         
             const myObject = JSON.parse(JSON.stringify(formattedItems));
 
-            return res.status(400).send(myObject);
+
+            res.statusCode = 200;
+            res.setHeader('Content-Type', 'application/json');
+            return res.json(myObject);
 
         });
     } catch (e) {

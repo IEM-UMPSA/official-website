@@ -49,7 +49,9 @@ export default function handler(req, res) {
             // [{"id":1,"description":"Thanks for visiting IEM-UMPSS Official Website, meet our developers","summary":"Meet our developers","link":"http:\/\/localhost:3000\/development-team"}]
             const myObject = JSON.parse(JSON.stringify(formattedItems));
 
-            return res.status(400).send(myObject[0]);
+            res.statusCode = 200;
+            res.setHeader('Content-Type', 'application/json');
+            return res.json(myObject);
 
         });
     } catch (e) {
