@@ -8,6 +8,7 @@ const BurgerMenus = ({setMenuOpen, menuOpen}) => {
       const [event, setEvent] = useState(false)
       const [blog, setBlog] = useState(false)
       const [committee, setCommittee] = useState(false)
+      const [other, setOther] = useState(false)
 
       const router = useRouter()
       const [path, setPath] = useState("")
@@ -22,24 +23,39 @@ const BurgerMenus = ({setMenuOpen, menuOpen}) => {
           setEvent(false)
           setBlog(false)
           setCommittee(false)
+          setOther(false)
         }
         else if( menu == 'event'){
           setHome(false)
           setEvent(!event)
           setBlog(false)
           setCommittee(false)
+          setOther(false)
+
         }
         else if( menu == 'blog'){
           setHome(false)
           setEvent(false)
           setBlog(!blog)
           setCommittee(false)
+          setOther(false)
+
         }
         else if( menu == 'committee'){
           setHome(false)
           setEvent(false)
           setBlog(false)
           setCommittee(!committee)
+          setOther(false)
+
+        }
+        else if( menu == 'other'){
+          setHome(false)
+          setEvent(false)
+          setBlog(false)
+          setCommittee(false)
+          setOther(!other)
+
         }
       }; 
 
@@ -78,6 +94,16 @@ const BurgerMenus = ({setMenuOpen, menuOpen}) => {
                     </ul>
                   </li>
                   <li><Link href="/contact">Contact</Link></li>
+                  <li className={other ? "has-droupdown active" : "has-droupdown"}>
+                      <a onClick={() => { openMobileMenu('other'); }}>Others</a>
+                      <ul className={other ? "sub-menu active" : "sub-menu"}>
+                        <li><Link href="/partnership">Collaborate with Us</Link></li>
+                        <li><Link href="/job-opportunity">Job/Internship</Link></li>
+                        <li><Link href="/faq">FAQ</Link></li>
+                        <li><Link href="/development-team">Hall of Fame</Link></li>
+                        <li><Link href="/open-source">Open Source</Link></li>
+                    </ul>
+                  </li>
                 </ul>
               </div>
 

@@ -8,7 +8,7 @@ const AboutArea = () => {
           <div className="col-xl-6 col-lg-6">
             <div className="tpabout-content-2 pb-50">
               <h3 className="tpabout-xd-title mb-15"><b>IEM-UMPSS</b> </h3>
-              <span className="tpabout-xs-title mb-10">Embark on Professionalism</span>
+              <span className="tpabout-xs-title mb-10">Celebrating 10 Years Anniversary</span>
               <p className="tpab-text mb-10">The Institution of Engineers Malaysia – Univerisiti Malaysia Pahang Student Section (IEM-UMPSS)
 offers a variety of programs and events for university students who want to be recognized for their
 engineering experience and professional achievements. University students can also be evaluated
@@ -27,18 +27,17 @@ such as engineering talks, workshops, games, site visits, conferences, and more.
                                  <div className="hero__thumb d-flex p-relative"> 
                                   <div className="hero__thumb-shape">
                                       <img className="hero-1-dot" src="assets/img/shape/hero/hero-1-dot.png" alt="img not found"/>
-                                      {/* <img className="hero-1-circle-3" src="assets/img/shape/hero/hero-1-circle-3.png" alt="img not found"/> */}
-                                      <img className="hero-1-circle-4" src="assets/img/shape/hero/hero-1-circle-4.png" alt="img not found"/>
+                                      {/* \<img className="hero-1-circle-3" src="assets/img/shape/hero/hero-1-circle-3.png" alt="img not found"/> */}
+                                      {/* <img className="hero-1-circle-4" src="assets/img/shape/hero/hero-1-circle-4.png" alt="img not found"/> */}
                                   </div> 
-                                  <div className="hero__thumb-big mr-30">
-                                      <img src="assets/img/hero/IEM-logo.png" alt="img not found"/>
-                                      {/* <div className="hero__quote hero__quote-animation">
-                                          <span>⚓ Set the sail ⚓</span>
-                                          <h4>Embark 🌊 on Professionalism 🧭</h4>
-                                      </div>   */}
+                                  <div className="hero__thumb-big">
+                                      <img className="w-screen" src="assets/img/hero/IEM-logo.png" alt="img not found"/>
+                                      <div className="hero__thumb-sm d-none d-lg-block z-10 absolute right-2 -top-12">
+                                        <img className="w-screen"  src="assets/img/hero/tenYear.png" alt="img not found"/>
+                                      </div>
                                   </div>
                                  {/* <div className="hero__thumb-sm mt-50 d-none d-lg-block">
-                                      <img src="assets/img/hero/IEM-logo.png" alt="img not found"/>
+                                      <img src="assets/img/hero/tenYear.png" alt="img not found"/>
                                   </div>   */}
                                    </div> 
                                </div> 

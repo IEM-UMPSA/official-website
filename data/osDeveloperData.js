@@ -17,6 +17,12 @@ const developerData = [
         name: 'CHEN KAR KIT',
         position: 'Copywriter'
     },
+    {
+        id: 4,
+        img: '/assets/img/developer/ChxPs.jpg',
+        name: 'CHONG HONG XIONG',
+        position: 'Graphic Designer'
+    },
  
   ]
   

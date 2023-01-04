@@ -206,6 +206,8 @@
         transform-origin: 0% 0%;
     }
 }
+
+
 .award-image{
     padding: 0 40px;
     margin-right: 120px;
@@ -213,8 +215,12 @@
         margin-right: 40px;
     }
     @media #{$md, $sm, $xs} {
-        margin-right: 0;
+        padding: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
     }
+ 
     @media #{$xs} {
         padding: 0 0;
     }

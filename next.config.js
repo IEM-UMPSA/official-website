@@ -1,6 +1,14 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   reactStrictMode: false,
+  publicRuntimeConfig:{
+    APP_NAME: 'IEM-UMPSS',
+    API_DEVELOPMENT: 'http://localhost:3000/api',
+    API_PRODUCTION: 'https://iemumpss.vercel.app/api',
+    PRODUCTION: true,
+    DOMAIN_DEVELOPMENT: 'http://localhost:3000',
+    DOMAIN_PRODUCTION: 'https://iemumpss.vercel.app/',
+  },
   future: {
     webpack5: true, // by default, if you customize webpack config, they switch back to version 4. 
       // Looks like backward compatibility approach.
@@ -13,5 +21,5 @@ module.exports = {
     };
 
     return config;
-  },
+  }
 };
