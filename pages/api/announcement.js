@@ -51,7 +51,7 @@ export default function handler(req, res) {
 
             res.statusCode = 200;
             res.setHeader('Content-Type', 'application/json');
-            return res.json(myObject);
+            return res.json(myObject[0]);
 
         });
     } catch (e) {
