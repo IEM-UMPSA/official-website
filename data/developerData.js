@@ -21,8 +21,8 @@ const developerData = [
         img: '/assets/img/developer/tan.jpg',
         name: 'TAN TENG XING',
         position: 'Lead Front End Developer',
-        github: '',
-        linkedin: '',
+        github: 'https://github.com/tengxing-tan',
+        linkedin: 'https://www.linkedin.com/in/tengxing/',
     },
     {
         id: 4,
