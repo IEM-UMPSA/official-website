@@ -2,7 +2,6 @@ import { google } from "googleapis";
 
 export const revalidate = 60; // revalidate this page every 60 seconds
 export default function handler(req, res) {
-        const { id } = req.query
 
         const client = new google.auth.JWT(
             process.env.GCP_CLIENT_EMAIL, 
@@ -21,23 +20,20 @@ export default function handler(req, res) {
             //CUSTOMIZATION FROM HERE
             const opt = {
                 spreadsheetId: process.env.SHEET_ID,
-                range: 'events'
+                range: 'jobs'
             };
-
-           
 
             const response = await gsapi.spreadsheets.values.get(opt);
             console.log(response);
 
             // return res.status(400).send(JSON.stringify({error: false, data: data.data.values}));
-            const [titles, ...events] = response.data.values;
+            const [titles, ...announcements] = response.data.values;
         
-            const formattedItems = events.map((row) => {
+            const formattedItems = announcements.map((row) => {
              const obj = {}
              row.forEach((field, index) => obj[titles[index]] = field)
                  return obj;
             });
-
 
             for(var i = 0; i < formattedItems.length; i++){
                 var obj = formattedItems[i];
@@ -47,19 +43,13 @@ export default function handler(req, res) {
                     }
                 }
             }
-          
+        
             const myObject = JSON.parse(JSON.stringify(formattedItems));
-            
-            const idObject = myObject.find((slugObject) => slugObject.id === parseInt(id))
+
 
             res.statusCode = 200;
             res.setHeader('Content-Type', 'application/json');
-            
-            return res.json(idObject);
-        
-            
-            
-
+            return res.json(myObject);
 
         });
   

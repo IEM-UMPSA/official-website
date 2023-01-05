@@ -8,8 +8,8 @@ const fetcher = (...args) => fetch(...args).then(res => res.json());
 
 export default function EventDetailsMain(){
     const router = useRouter();
-    const { id } = router.query;
-    const { data, error } = useSWR(`/api/event/${id}`, fetcher)
+    const { slug } = router.query;
+    const { data, error } = useSWR(`/api/event/${slug}`, fetcher)
 
     console.log(data)
     if (error) return <div>Failed to load</div>
