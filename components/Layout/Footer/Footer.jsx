@@ -98,7 +98,7 @@ const Footer = () => {
                                        <li><Link href="/development-team">Development Team</Link></li>
                                        <li><Link href="/open-source">Open Source</Link></li>
                                        <li><Link href="/partnership">Collaborate with Us</Link></li>
-                                       <li><Link href="/job">Job</Link></li>
+                                       {/* <li><Link href="/job">Job</Link></li> */}
                                        <li><Link href="/faq">FAQ</Link></li>
                                    </ul>
                                 </div>

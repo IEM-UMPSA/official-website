@@ -84,7 +84,7 @@ const Header = () => {
                                        </Link>
                                        <ul className="cat-submenu">
                                           <li><Link href="/partnership">Collaborate with Us</Link></li>
-                                          <li><Link href="/job-opportunity">Job/Internship</Link></li>
+                                          {/* <li><Link href="/job-opportunity">Job/Internship</Link></li> */}
                                           <li><Link href="/faq">FAQ</Link></li>
                                           <li><Link href="/development-team">Hall of Fame</Link></li>
                                           <li><Link href="/open-source">Open Source</Link></li>
