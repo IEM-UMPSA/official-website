@@ -1,8 +1,11 @@
 import React from 'react';
 import EventItem from '../Event/EventItem';
 // import eventData from "../../data/eventData";
+
 import useSWR from 'swr';
+import EventDetailsMain from '../EventDetails/EventDetailsMain';
 const fetcher = (...args) => fetch(...args).then(res => res.json());
+
 
 export default function Event() {
     const { data, error } = useSWR('/api/event', fetcher)
@@ -31,6 +34,7 @@ export default function Event() {
                                 key={item.id}
                                 {...item}
                             />
+                           
                         ))
                     } 
                 </div>

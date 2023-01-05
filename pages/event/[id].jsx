@@ -14,7 +14,7 @@ class EventDetails extends React.Component {
     render() {
         return (
             <React.Fragment>
-            <HeaderTwo />
+            <HeaderTwo/>
             <EventDetailsMain />
             <Footer />
             </React.Fragment>

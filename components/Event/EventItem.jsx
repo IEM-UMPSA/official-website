@@ -5,7 +5,7 @@ import Link from "next/link";
     time,
     venue,
     title,
-    link
+    id
   }) => {
     return (
         <div className="row">
@@ -18,10 +18,10 @@ import Link from "next/link";
                             <span>{time}</span>
                             <span>{venue}</span>
                         </div>
-                        <h3 className="events__title"><Link href={link}>{title}</Link></h3>
+                        <h3 className="events__title"><Link href={`/event/${id}`}>{title}</Link></h3>
                     </div>
                     <div className="events__more">
-                        <Link href={link} className="link-btn">View More<i className="fas fa-arrow-right"></i>
+                        <Link href={`/event/${id}`} className="link-btn">View More<i className="fas fa-arrow-right"></i>
                             <i className="fas fa-arrow-right"></i>
                         </Link>
                     </div>

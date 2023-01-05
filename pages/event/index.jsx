@@ -2,6 +2,9 @@ import React from 'react';
 import EventSidebarMain from '../../components/EventSidebar/EventSidebarMain';
 import Footer from '../../components/Layout/Footer/Footer';
 import HeaderTwo from '../../components/Layout/Header/HeaderStyleTwo';
+import EventSection from '../../components/Home/EventSection';
+import Breadcrumb from '../../components/Common/Breadcrumb';
+
 
 class Event extends React.Component {
 
@@ -15,7 +18,9 @@ class Event extends React.Component {
         return (
             <React.Fragment>
             <HeaderTwo />
-            <EventSidebarMain />
+            <Breadcrumb pageTitle="Events" />
+            <EventSection />
+            {/* <EventSidebarMain /> */}
             <Footer />
             </React.Fragment>
         );

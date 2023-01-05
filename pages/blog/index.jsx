@@ -2,6 +2,8 @@ import React from 'react';
 import HeaderTwo from '../../components/Layout/Header/HeaderStyleTwo';
 import FooterTwo from '../../components/Layout/Footer/FooterStyleTwo';
 import BlogMain from '../../components/Blog/BlogMain';
+import UnderConstruction from '../../components/UnderConstruction/UnderConstruction';
+import Breadcrumb from '../../components/Common/Breadcrumb';
 
 class Blog extends React.Component {
 
@@ -15,7 +17,10 @@ class Blog extends React.Component {
         return (
             <React.Fragment>
             <HeaderTwo />
-            <BlogMain />
+            <Breadcrumb pageTitle="Blog" />
+
+            <UnderConstruction />
+            {/* <BlogMain /> */}
             <FooterTwo />
             </React.Fragment>
         );

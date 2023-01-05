@@ -1,23 +1,43 @@
-import { useFormik } from 'formik';
 import React from 'react';
-import ErrorMsg from '../Common/ErrorMsg';
-import schema from '../Common/schema';
+import { useState } from 'react';
 
 const ServiceContact = () => {
-  const handleOnSubmit = (values,{ resetForm }) => {
-    alert(`${values.name + "\n" + values.email + "\n" + values.subject + "\n" + values.msg}`);
-    resetForm()
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [msg, setMsg] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+
+    const form = {
+      name,
+      email,
+      subject,
+      msg
+   }
+
+   console.log(form)
+
+      const response = await fetch('/api/partnership',{
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(form)
+    })
+
+      const content = await response.json();
+
+      console.log(content)
+
+      alert("Thanks for having interest to collaborate with us. We will get back to you soon.")
+
   }
-  const { handleChange, handleSubmit, handleBlur, errors, values, touched } = useFormik({
-    initialValues: {
-      name: '',
-      email: '',
-      subject: '',
-      msg: ''
-    },
-    validationSchema: schema,
-    onSubmit: handleOnSubmit,
-  })
+
   return (
     <>
       <div className="getin-touch-area-2 grey-bg-2 pt-130 pb-140">
@@ -30,26 +50,22 @@ const ServiceContact = () => {
                   <div className="row">
                     <div className="col-xxl-6 col-xl-6 col-md-6">
                       <div className="contact__form-input">
-                        <input id='name' value={values.name} onChange={handleChange} onBlur={handleBlur} type="text" placeholder="Your Name" />
-                        {touched.name && <ErrorMsg error={errors.name} />}
+                        <input id='name' value={name} onChange={e => setName(e.target.value)} type="text" placeholder="Your Name" />
                       </div>
                     </div>
                     <div className="col-xxl-6 col-xl-6 col-md-6">
                       <div className="contact__form-input">
-                        <input id='email' value={values.email} onChange={handleChange} onBlur={handleBlur} type="email" placeholder="Your Email" />
-                        {touched.email && <ErrorMsg error={errors.email} />}
+                        <input id='email' value={email} onChange={e => setEmail(e.target.value)}  type="email" placeholder="Your Email" />
                       </div>
                     </div>
                     <div className="col-xxl-12">
                       <div className="contact__form-input">
-                        <input id='subject' value={values.subject} onChange={handleChange} onBlur={handleBlur} type="text" placeholder="Your Subject" />
-                        {touched.subject && <ErrorMsg error={errors.subject} />}
+                        <input id='subject' value={subject} onChange={e => setSubject(e.target.value)}  type="text" placeholder="Your Subject" />
                       </div>
                     </div>
                     <div className="col-xxl-12">
                       <div className="contact__form-input">
-                        <textarea id='msg' value={values.msg} onChange={handleChange} onBlur={handleBlur} placeholder="Write  Your Message"></textarea>
-                        {touched.msg && <ErrorMsg error={errors.msg} />}
+                        <textarea id='msg' value={msg} onChange={e => setMsg(e.target.value)} placeholder="Write  Your Message"></textarea>
                       </div>
                     </div>
                     <div className="col-xxl-12">

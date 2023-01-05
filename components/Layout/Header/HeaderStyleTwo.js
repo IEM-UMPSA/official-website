@@ -40,7 +40,7 @@ const HeaderThree = () => {
             <script src="https://cdn.tailwindcss.com"></script>
          </Head>
          <header>
-            <div id="header-sticky" className="header__area header__transparent header__padding header__white">
+            <div id="header-sticky" className="header__area header__transparent header__padding header__white bg-slate-400">
                <div className="container-fluid">
                   <div className="row align-items-center">
                      <div className="col-xxl-3 col-xl-3 col-lg-4 col-md-2 col-sm-4 col-6">
@@ -48,8 +48,8 @@ const HeaderThree = () => {
                            <div className="logo">
                               <Link href="/">
 
-                                 <img className="logo-white" src="assets/img/logo/logo-2.png" alt="logo" />
-                                 <img className="logo-black" src="assets/img/logo/logo.png" alt="logo" />
+                                 <img className="logo-white" src="/assets/img/logo/logo-2.png" alt="logo" />
+                                 <img className="logo-black" src="/assets/img/logo/logo.png" alt="logo" />
 
                               </Link>
                            </div>
@@ -101,12 +101,11 @@ const HeaderThree = () => {
                                        
                                     </li>
                                     <li>
-                                    <Link href="/event">Event</Link>
-                                      
+                                       <Link href="/event">Event</Link>                                  
                                     </li>
-                                    <li>
+                                    {/* <li>
                                        <Link href="/blog">Blog</Link>
-                                    </li>
+                                    </li> */}
                                     <li className="has-dropdown">
                                        <Link href="#">Executive Council</Link>
                                        <ul className="submenu">
@@ -151,7 +150,7 @@ const HeaderThree = () => {
                               </span>
                            </div> */}
                            <div className="header__btn ml-20 d-none d-sm-block">
-                              <Link href="/contact" className="e-btn">Sign Up</Link>
+                              <Link href="/sign-up" className="e-btn">Sign Up</Link>
                            </div>
                            <div className="sidebar__menu d-xl-none">
                               <div className="sidebar-toggle-btn ml-30" id="sidebar-toggle" onClick={() => { setMenuOpen(!menuOpen) }}>

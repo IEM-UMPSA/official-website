@@ -31,7 +31,7 @@ const Footer = () => {
 
       console.log(content)
 
-      alert(content.data.tableRange)
+      alert("You have subscribed to our newsletter.")
 
       setEmail('');
    }

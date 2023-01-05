@@ -79,11 +79,10 @@ const BurgerMenus = ({setMenuOpen, menuOpen}) => {
                     </li>
                     <li>
                       <a onClick={() => { openMobileMenu('event'); }}>Event</a>
-
                     </li>
-                    <li>
+                    {/* <li>
                       <a onClick={() => { openMobileMenu('blog'); }}>Blog</a>
-                    </li>
+                    </li> */}
                     <li className={committee ? "has-droupdown active" : "has-droupdown"}>
                       <a onClick={() => { openMobileMenu('committee'); }}>Executive Council</a>
                       <ul className={committee ? "sub-menu active" : "sub-menu"}>

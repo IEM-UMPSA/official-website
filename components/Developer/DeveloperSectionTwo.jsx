@@ -34,9 +34,9 @@ class TeacherTwo extends Component {
 
                           <div className="teacher__social">
                               <ul>
-                                <li><a href={item.github}><i className="fab fa-github"></i></a></li>
-                                <li><a href={item.linkedin}><i className="fab fa-linkedin"></i></a></li>
-                                <li><a href={item.website}><i className="fab fa-chrome"></i></a></li>
+                                <li><a href={item.github} target="_blank"><i className="fab fa-github"></i></a></li>
+                                <li><a href={item.linkedin} target="_blank"><i className="fab fa-linkedin"></i></a></li>
+                                {/* <li><a href={item.website}><i className="fab fa-chrome"></i></a></li> */}
                              </ul>
                           </div>
                        </div>

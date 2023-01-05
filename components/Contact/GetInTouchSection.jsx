@@ -1,8 +1,42 @@
 import React, { Component } from 'react';
+import { useState } from 'react';
 
-class GetInTouch extends Component {
+const GetInTouch = () => {
+   const [name, setName] = useState('');
+   const [email, setEmail] = useState('');
+   const [subject, setSubject] = useState('');
+   const [message, setMsg] = useState('');
+ 
+   const handleSubmit = async (e) => {
+     e.preventDefault();
+ 
+ 
+     const form = {
+       name,
+       email,
+       subject,
+       message
+    }
+ 
+    console.log(form)
+ 
+       const response = await fetch('/api/contact',{
+         method: 'POST',
+         headers: {
+           'Accept': 'application/json',
+           'Content-Type': 'application/json'
+         },
+         body: JSON.stringify(form)
+     })
+ 
+       const content = await response.json();
+ 
+       console.log(content)
+ 
+       alert("Thanks for contacting us. We will get back to you soon.")
+ 
+   }
 
-    render() {
 
         return (
             <section className="contact__area pt-115 pb-120">
@@ -15,34 +49,34 @@ class GetInTouch extends Component {
                            <p>Have a question or just want to say hi? We'd love to hear from you.</p>
                         </div>
                         <div className="contact__form">
-                           <form action="assets/mail.php">
+                           <form onSubmit={handleSubmit}>
                               <div className="row">
                                  <div className="col-xxl-6 col-xl-6 col-md-6">
                                     <div className="contact__form-input">
-                                       <input type="text" placeholder="Your Name" name="name"/>
+                                       <input  value={name} onChange={e => setName(e.target.value)} type="text" placeholder="Your Name" name="name"/>
                                     </div>
                                  </div>
                                  <div className="col-xxl-6 col-xl-6 col-md-6">
                                     <div className="contact__form-input">
-                                       <input type="email" placeholder="Your Email" name="email"/>
+                                       <input value={email} onChange={e => setEmail(e.target.value)}  type="email" placeholder="Your Email" name="email"/>
                                     </div>
                                  </div>
                                  <div className="col-xxl-12">
                                     <div className="contact__form-input">
-                                       <input type="text" placeholder="Subject" name="subject"/>
+                                       <input type="text"  value={subject} onChange={e => setSubject(e.target.value)} placeholder="Subject" name="subject"/>
                                     </div>
                                  </div>
                                  <div className="col-xxl-12">
                                     <div className="contact__form-input">
-                                       <textarea placeholder="Enter Your Message" name="message"></textarea>
+                                       <textarea placeholder="Enter Your Message" value={message} onChange={e => setMsg(e.target.value)} name="message"></textarea>
                                     </div>
                                  </div>
-                                 <div className="col-xxl-12">
+                                 {/* <div className="col-xxl-12">
                                     <div className="contact__form-agree  d-flex align-items-center mb-20">
                                        <input className="e-check-input" type="checkbox" id="e-agree"/>
                                        <label className="e-check-label" htmlFor="e-agree">I agree to the<a href="#">Terms & Conditions</a></label>
                                     </div>
-                                 </div>
+                                 </div> */}
                                  <div className="col-xxl-12">
                                     <div className="contact__btn">
                                        <button type="submit" className="e-btn">Send your message</button>
@@ -71,7 +105,7 @@ class GetInTouch extends Component {
                                        </svg>
                                     </div>
                                     <div className="contact__info-text">
-                                       <h4>New York Office</h4>
+                                       <h4>Our location</h4>
                                        <p><a target="_blank" href="https://goo.gl/maps/K7WjNanRfYNH8LZo9">Universiti Malaysia, 26600 Pekan, Pahang</a></p>
    
                                     </div>
@@ -108,8 +142,7 @@ class GetInTouch extends Component {
                </div>
             </div>
          </section> 
-        );
-    }
+   )
 }
 
 export default GetInTouch;

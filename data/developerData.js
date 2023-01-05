@@ -6,7 +6,6 @@ const developerData = [
         position: 'Team Lead | Software Architect | Full Stack',
         github: 'https://github.com/hovahyii',
         linkedin: 'https://www.linkedin.com/in/jehovah-yii-zui-hon/',
-        website: 'https://hovahyii.vercel.app'
        
     },
     {
@@ -15,8 +14,7 @@ const developerData = [
         name: 'LOGATHEPAN A/L MUNIYAPPAN',
         position: 'Project Manager',
         github: '',
-        linkedin: '',
-        website: ''
+        linkedin: 'https://www.linkedin.com/in/logathepan/',
     },
     {
         id: 3,
@@ -25,7 +23,6 @@ const developerData = [
         position: 'Lead Front End Developer',
         github: '',
         linkedin: '',
-        website: ''
     },
     {
         id: 4,
@@ -34,16 +31,14 @@ const developerData = [
         position: 'Front End Developer',
         github: 'https://github.com/CCCCheeee',
         linkedin: '',
-        website: ''
     },
     {
         id: 5,
         img: '/assets/img/developer/yattish.jpg',
         name: 'YATTISH A/L JAYA NANDA KUMAR',
         position: 'UI DESIGNER',
-        github: '',
+        github: 'https://www.linkedin.com/in/yattish-veran-913511207',
         linkedin: '',
-        website: ''
     },
     {
         id: 6,
@@ -52,7 +47,6 @@ const developerData = [
         position: 'UI DESIGNER',
         github: '',
         linkedin: '',
-        website: ''
     }
   ]
   

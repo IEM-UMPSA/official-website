@@ -108,9 +108,9 @@ const Header = () => {
                                     <li>
                                        <Link href="/event">Event</Link>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                        <Link href="/blog">Blog</Link>
-                                    </li>
+                                    </li> */}
                                     <li className="has-dropdown">
                                        <Link href="#">Executive Council</Link>
                                        <ul className="submenu">
@@ -155,7 +155,7 @@ const Header = () => {
                               </span>
                            </div> */}
                            <div className="header__btn header__btn-2 ml-50 d-none d-sm-block">
-                                        <Link href="/sign-up" className="e-btn">Sign Up</Link>
+                                 <Link href="/sign-up" className="e-btn">Sign Up</Link>
                            </div>
                            <div className="sidebar__menu d-xl-none">
                               <div className="sidebar-toggle-btn ml-30" id="sidebar-toggle" onClick={() => {
