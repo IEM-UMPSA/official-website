@@ -9,7 +9,7 @@ const developerData = [
         id: 2,
         img: 'https://avatars.githubusercontent.com/u/68846168?v=4',
         name: 'LAO ZHAO LIN',
-        position: 'Software Developer'
+        position: 'Software Tester'
     },
     {
         id: 3,
