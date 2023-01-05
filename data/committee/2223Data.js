@@ -50,7 +50,7 @@ const committee2122Data = [
     },
     {
         id: 9,
-        img: 'https://media.licdn.com/dms/image/D5635AQHz-R3GNyynQA/profile-framedphoto-shrink_400_400/0/1671723756257?e=1673100000&v=beta&t=P03HYJzY8PXACy2UHqsJWzQqrDe6mlmGjD285gjhcNE',
+        img: '/assets/img/developer/hovah.jpeg',
         name: 'Jehovah Yii Zui Hon',
         position: 'Head of Department',
     },

@@ -1,7 +1,7 @@
 const developerData = [
     {
         id: 1,
-        img: 'https://media.licdn.com/dms/image/D5635AQHz-R3GNyynQA/profile-framedphoto-shrink_400_400/0/1671723756257?e=1672927200&v=beta&t=UxM4EaczQif52sX4K4coPkniCeX_2vLqbuvAc14HoPw',
+        img: '/assets/img/developer/hovah.jpeg',
         name: 'JEHOVAH YII ZUI HON',
         position: 'Team Lead | Software Architect | Full Stack',
         github: 'https://github.com/hovahyii',
