@@ -53,7 +53,7 @@ export default function EventDetailsMain(){
                             </div> */}
                             <div className="course__update mr-80 mb-30">
                             <h5>Last Update:</h5>
-                            <p>{data.date}</p>
+                            <p>{data.lastUpdate}</p>
                             </div>
                             {/* <div className="course__update mb-30">
                             <h5>Location:</h5>
