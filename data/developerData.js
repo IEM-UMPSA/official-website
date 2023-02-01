@@ -49,5 +49,5 @@ const developerData = [
         linkedin: '',
     }
   ]
-  
+
   export default developerData;
