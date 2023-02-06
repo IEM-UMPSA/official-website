@@ -4,9 +4,7 @@ import Link from 'next/link';
 
 const BurgerMenus = ({setMenuOpen, menuOpen}) => {
 
-      const [home, setHome] = useState(false)
-      const [event, setEvent] = useState(false)
-      const [blog, setBlog] = useState(false)
+
       const [committee, setCommittee] = useState(false)
       const [other, setOther] = useState(false)
 
@@ -18,41 +16,14 @@ const BurgerMenus = ({setMenuOpen, menuOpen}) => {
 
       const openMobileMenu = menu => {
         
-        if( menu == 'home'){
-          setHome(!home)
-          setEvent(false)
-          setBlog(false)
-          setCommittee(false)
-          setOther(false)
-        }
-        else if( menu == 'event'){
-          setHome(false)
-          setEvent(!event)
-          setBlog(false)
-          setCommittee(false)
-          setOther(false)
 
-        }
-        else if( menu == 'blog'){
-          setHome(false)
-          setEvent(false)
-          setBlog(!blog)
-          setCommittee(false)
-          setOther(false)
-
-        }
-        else if( menu == 'committee'){
-          setHome(false)
-          setEvent(false)
-          setBlog(false)
+       if( menu == 'committee'){
+      
           setCommittee(!committee)
           setOther(false)
 
         }
         else if( menu == 'other'){
-          setHome(false)
-          setEvent(false)
-          setBlog(false)
           setCommittee(false)
           setOther(!other)
 
@@ -74,15 +45,14 @@ const BurgerMenus = ({setMenuOpen, menuOpen}) => {
                 </div>
                 <div className="mm-menu">
                   <ul>
-                    <li>
-                      <a onClick={() => { openMobileMenu('home'); }}>Home</a>
-                    </li>
-                    <li>
-                      <a onClick={() => { openMobileMenu('event'); }}>Event</a>
-                    </li>
-                    {/* <li>
-                      <a onClick={() => { openMobileMenu('blog'); }}>Blog</a>
-                    </li> */}
+                    
+                    <li><Link href="/">Home</Link></li>
+
+                  
+                    <li><Link href="/event">Event</Link></li>
+                    
+                    <li><Link href="/blog">Blog</Link></li>
+
                     <li className={committee ? "has-droupdown active" : "has-droupdown"}>
                       <a onClick={() => { openMobileMenu('committee'); }}>Executive Council</a>
                       <ul className={committee ? "sub-menu active" : "sub-menu"}>
@@ -106,12 +76,12 @@ const BurgerMenus = ({setMenuOpen, menuOpen}) => {
                 </ul>
               </div>
 
-                <div className="sidebar__search p-relative mt-40 ">
+                {/* <div className="sidebar__search p-relative mt-40 ">
                   <form action="#">
                       <input type="text" placeholder="Search..."/>
                       <button type="submit"><i className="fas fa-search"></i></button>
                   </form>
-                </div>
+                </div> */}
                 {/* <div className="sidebar__cart mt-30">
                   <a href="#">
                       <div className="header__cart-icon">

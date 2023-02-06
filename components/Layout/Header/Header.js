@@ -9,7 +9,6 @@ export const revalidate = 3600; // revalidate this page every hour
 const Header = () => {
 
    const [menuOpen, setMenuOpen] = useState(false)
-   const [shopOpen, setShopOpen] = useState(false)
 
    const router = useRouter()
    const [path, setPath] = useState("")
@@ -108,9 +107,9 @@ const Header = () => {
                                     <li>
                                        <Link href="/event">Event</Link>
                                     </li>
-                                    {/* <li>
+                                    <li>
                                        <Link href="/blog">Blog</Link>
-                                    </li> */}
+                                    </li> 
                                     <li className="has-dropdown">
                                        <Link href="#">Executive Council</Link>
                                        <ul className="submenu">

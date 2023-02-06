@@ -3,13 +3,10 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import BurgerMenus from './BurgerMenus';
 import Head from 'next/head';
-import ShopingCart from './ShopingCart';
-import Image from 'next/image';
 
 const HeaderThree = () => {
 
    const [menuOpen, setMenuOpen] = useState(false)
-   const [shopOpen, setShopOpen] = useState(false)
 
    const router = useRouter()
    const [path, setPath] = useState("")
@@ -103,9 +100,9 @@ const HeaderThree = () => {
                                     <li>
                                        <Link href="/event">Event</Link>                                  
                                     </li>
-                                    {/* <li>
+                                   <li>
                                        <Link href="/blog">Blog</Link>
-                                    </li> */}
+                                    </li> 
                                     <li className="has-dropdown">
                                        <Link href="#">Executive Council</Link>
                                        <ul className="submenu">
