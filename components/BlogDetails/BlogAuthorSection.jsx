@@ -8,7 +8,7 @@ const BlogAuthor = ({
 
         return (
             <div className="blog__author-3 d-sm-flex grey-bg mb-90">
-                <div className="blog__author-thumb-3 w-full -mr-48">
+                <div className="blog__author-thumb-3 w-full mr-10">
                     <img src={authorImage} alt="img not found" className=" h-20 object-cover rounded-full" />
                 </div>
                 <div className="blog__author-content ">
