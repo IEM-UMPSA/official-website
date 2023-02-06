@@ -7,20 +7,11 @@ import Breadcrumb from '../../components/Common/Breadcrumb';
 
 class Blog extends React.Component {
 
-    static getInitialProps({store}) {}
-
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <React.Fragment>
             <HeaderTwo />
-            <Breadcrumb pageTitle="Blog" />
-
-            <UnderConstruction />
-            {/* <BlogMain /> */}
+            <BlogMain />           
             <FooterTwo />
             </React.Fragment>
         );

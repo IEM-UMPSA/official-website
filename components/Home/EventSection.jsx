@@ -1,9 +1,7 @@
-import React from 'react';
 import EventItem from '../Event/EventItem';
 // import eventData from "../../data/eventData";
 
 import useSWR from 'swr';
-import EventDetailsMain from '../EventDetails/EventDetailsMain';
 const fetcher = (...args) => fetch(...args).then(res => res.json());
 
 

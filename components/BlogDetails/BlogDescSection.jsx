@@ -13,7 +13,6 @@ class BlogDesc extends Component {
                     <img className="quote" src="assets/img/blog/quote-1.png" alt="img not found"/>
                 <blockquote>
                     <p>After I started learning design with Quillow, I realized that I had Improved to very advanced levels.</p>
-                    <h4>Chris Collins</h4>
                 </blockquote>
                 </div>
                 <div className="blog__text mb-30">

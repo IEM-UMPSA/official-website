@@ -7,13 +7,6 @@ import Breadcrumb from '../../components/Common/Breadcrumb';
 
 
 class Event extends React.Component {
-
-    static getInitialProps({store}) {}
-
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <React.Fragment>

@@ -13,6 +13,7 @@ specifiers:
   formik: ^2.2.9
   google-map-react: ^2.2.0
   googleapis: ^110.0.0
+  lodash: ^4.17.21
   next: 13.1.1
   next-redux-wrapper: ^4.0.1
   node-sass: ^7.0.3
@@ -57,6 +58,7 @@ dependencies:
   formik: 2.2.9_react@18.2.0
   google-map-react: 2.2.0_biqbaboplfbrettd7655fr4n2y
   googleapis: 110.0.0
+  lodash: 4.17.21
   next: 13.1.1_axr7suwvxz37wtrhyqhukhvfja
   next-redux-wrapper: 4.0.1_next@13.1.1+react@18.2.0
   node-sass: 7.0.3
