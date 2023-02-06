@@ -54,8 +54,8 @@ export default function BlogMain({ searchResult }) {
               <div className="blog__sidebar pl-70">
                 <Search onSearchTermChange={setSearchTerm} />
                 <RecentPost />
-                <Category />
-                <Tags />
+                {/* <Category />
+                <Tags /> */}
                 <SidebarBanner />
               </div>
             </div>

@@ -5,7 +5,7 @@ const ArticleLayout = ({ post }) => {
   return (
       <div className="blog__wrapper">
           <div className="blog__item white-bg mb-30 transition-3 fix">
-              <div className="blog__thumb object-cover w-img h-48 fix ">
+              <div className="blog__thumb object-cover h-60 fix ">
                   <Link href={`/blog/${post.slug}`}legacyBehavior>
                       <img src={post.image} alt="blog image"  />
                   </Link>
