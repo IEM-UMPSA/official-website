@@ -29,7 +29,7 @@ const BlogRecent = ({
                             <h3 className="blog__title"><Link href="/blog-details">{title}</Link></h3>
                             <div className="blog__meta d-flex align-items-center justify-content-between">
                                 <div className="blog__author d-flex align-items-center">
-                                    <div className="blog__author-thumb w-full -mr-8">
+                                    <div className="blog__author-thumb rounded-full mr-8">
                                         <img src={authorImage}  className=" h-12 object-cover rounded-full" alt="img not found"/>
                                     </div>
                                     <div className="blog__author-info">
