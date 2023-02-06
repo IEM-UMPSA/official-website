@@ -44,11 +44,11 @@ export default async function handler(req, res) {
 
           // const searchObject = myObject.find((searchObject) => 
             //     searchObject.title === title || 
-            //     searchObject.authorTitle === authorTitle)
+            //     searchObject.author=== author)
             const searchObject = myObject.filter(searchObject => {
                 const titleSearch = q ? searchObject.title.toLowerCase().includes(q.toLowerCase()) : false;
-                const authorTitleSearch = q ? searchObject.authorTitle.toLowerCase().includes(q.toLowerCase()) : false;
-                return titleSearch || authorTitleSearch;
+                const authorSearch = q ? searchObject.author.toLowerCase().includes(q.toLowerCase()) : false;
+                return titleSearch || authorSearch;
             });
             
 

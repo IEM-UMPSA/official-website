@@ -146,9 +146,9 @@ const HeaderThree = () => {
                                  <span className="cart-item">2</span>
                               </span>
                            </div> */}
-                           <div className="header__btn ml-20 d-none d-sm-block">
+                           {/* <div className="header__btn ml-20 d-none d-sm-block">
                               <Link href="/sign-up" className="e-btn">Sign Up</Link>
-                           </div>
+                           </div> */}
                            <div className="sidebar__menu d-xl-none">
                               <div className="sidebar-toggle-btn ml-30" id="sidebar-toggle" onClick={() => { setMenuOpen(!menuOpen) }}>
                                  <span className="line"></span>

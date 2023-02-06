@@ -7,7 +7,9 @@ class SidebarBanner extends Component {
         return (
             <div className="sidebar__widget mb-55">
                 <div className="sidebar__banner w-img">
-                    <img src="assets/img/blog/banner/banner-1.jpg" alt="img not found"/>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/hovahyii">
+                    <img src="https://github.com/appcraftstudio/buymeacoffee/raw/master/Images/snapshot-bmc-button.png" width="300" />
+                </a>                
                 </div>
             </div>
         );

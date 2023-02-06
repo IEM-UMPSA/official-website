@@ -28,7 +28,7 @@ const ArticleLayout = ({ post }) => {
                           <img src={post.authorImage} alt="blog image"  />
                       </div>
                       <div className="blog__author-info">
-                          <h5>{post.authorTitle}</h5>
+                          <h5>{post.author}</h5>
                       </div>
                   </div>
                   <div className="blog__date d-flex align-items-center">

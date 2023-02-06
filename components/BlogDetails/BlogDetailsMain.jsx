@@ -13,8 +13,7 @@ import Tags from '../Blog/TagsSection';
 import SidebarBanner from '../Blog/SidebarBannerSection';
 import Breadcrumb from '../Common/Breadcrumb';
 import useSWR from 'swr';
-import { useRouter } from 'next/router'
-
+import { useRouter } from 'next/router';
 const fetcher = (...args) => fetch(...args).then(res => res.json());
 
 export default function BlogDetailsMain(){
@@ -55,12 +54,14 @@ export default function BlogDetailsMain(){
                         <div className="row">
                             <div className="col-xxl-8 col-xl-8 col-lg-8">
                                     <div key={data.id} className="blog__wrapper">
-                                        <BlogDesc />
+                                        
+                                        <BlogDesc  {...data}/>
+                                    
                                         <div className="blog__img w-img mb-45" >
                                             <img src={data.image} alt={data.title} />
                                         </div>
-                                        <div className="blog__text mb-40">
-                                            <h3>{data.title}</h3>
+                                        <div className="blog__text mb-20">
+                                            {/* <h3>{data.title}</h3> */}
                                             <p>{data.text}</p>
                                             <p>{data.textTwo}</p>
                                         </div>
@@ -68,21 +69,21 @@ export default function BlogDetailsMain(){
 
                                         
                                         <div className="blog__line"></div>
-                                        <BlogMeta  />
-                                        <BlogAuthor />
-                                        <BlogRecent />
-                                        <LatestComments />
-                                        <ReplyForm />
+                                        <BlogMeta  {...data}/>
+                                        <BlogAuthor {...data}/>
+                                        <BlogRecent {...data}/>
+                                        {/* <LatestComments {...data}/>
+                                        <ReplyForm {...data}/> */}
                                     </div>
                               
 
                             </div>
                             <div className="col-xxl-4 col-xl-4 col-lg-4">
                                 <div className="blog__sidebar pl-70">
-                                    <Search />
+                                    {/* <Search /> */}
                                     <RecentPost />
-                                    <Category />
-                                    <Tags />
+                                    {/* <Category />
+                                    <Tags /> */}
                                     <SidebarBanner />
                                 </div>
                             </div>
