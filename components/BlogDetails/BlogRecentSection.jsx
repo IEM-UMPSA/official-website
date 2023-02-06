@@ -20,13 +20,13 @@ const BlogRecent = ({
                     <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                         <div className="blog__item white-bg mb-30 transition-3 fix">
                             <div className="blog__thumb w-img fix">
-                                <Link href="/blog-details"><img src={image} alt="img not found"/></Link>
+                                <Link href={slug}><img src={image} alt="img not found"/></Link>
                             </div>
                             <div className="blog__content">
                             <div className="blog__tag">
-                                <Link href="/blog-details">{tag}</Link>
+                                {tag}
                             </div>
-                            <h3 className="blog__title"><Link href="/blog-details">{title}</Link></h3>
+                            <h3 className="blog__title"><Link href={slug}>{title}</Link></h3>
                             <div className="blog__meta d-flex align-items-center justify-content-between">
                                 <div className="blog__author d-flex align-items-center">
                                     <div className="blog__author-thumb rounded-full mr-8">
