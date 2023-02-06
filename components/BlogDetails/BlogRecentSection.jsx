@@ -5,6 +5,7 @@ const BlogRecent = ({
     tag,
     title,
     authorImage,
+    slug,
     image,
     author,
     date
