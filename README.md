@@ -15,6 +15,7 @@ With the IEM-UMPSS platform, students can evaluate their proficiency in order to
 IEM-UMPSS provides a platform for students to gain knowledge and experiences by participating in a variety of activities such as engineering talks, workshops, games, site visits, conferences, and more. Check out the development team at [https://iemumpss.vercel.app/development-team](https://iemumpss.vercel.app/development-team).
 
 <br/>
+
 ## Contributing to IEM-UMPSS Website
 
 <br/>
