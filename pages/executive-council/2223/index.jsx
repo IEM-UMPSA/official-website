@@ -6,6 +6,7 @@ import AdvisorSection from '../../../components/Advisor/AdvisorsSection'
 import ManagementTeam from '../../../components/TwoTwoTwoThree/ManagementTeam';
 import PublicityTeam from '../../../components/TwoTwoTwoThree/PublicityTeam';
 import UTMTeam from '../../../components/TwoTwoTwoThree/UTMTeam';
+import SEO from '../../../components/SEO/index';
 
 import MultimediaTeam from '../../../components/TwoTwoTwoThree/MultimediaTeam';
 
@@ -15,6 +16,11 @@ class Committee2223 extends React.Component {
         return (
             <React.Fragment>
             <Header />
+            <SEO 
+                pageTitle="Executive Council 2022/2023" 
+                pageDescription= "The 2022/2023 Executive Council of the Institute of Engineers, Malaysia-University of Malaya Postgraduate Society of Students (IEM-UMPSS) represents the leadership of this professional association for engineers in Malaysia. Stay informed and connected with their latest initiatives and programs."
+                pageKeywords="Executive Council, 2022/2023, IEM-UMPSS, Leadership, Professional Association, Engineers, Malaysia"
+            />
             <AdvisorSection />
             <ManagementTeam />
             <TechnicalDepartment />
