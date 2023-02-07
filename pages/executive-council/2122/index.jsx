@@ -6,12 +6,18 @@ import ManagementTeam from '../../../components/TwoOneTwoTwo/ManagementTeam';
 import PublicityTeam from '../../../components/TwoOneTwoTwo/PublicityTeam';
 import MultimediaTeam from '../../../components/TwoOneTwoTwo/MultimediaTeam';
 import TechnicalDepartment from '../../../components/TwoOneTwoTwo/TechnicalDepartment';
+import SEO from '../../../components/SEO/index';
 
 class Committee2122 extends React.Component {
 
     render() {
         return (
             <React.Fragment>
+                 <SEO 
+                pageTitle="Executive Council 2021/2022" 
+                pageDescription= "The 2021/2022 Executive Council of the Institute of Engineers, Malaysia-University of Malaya Postgraduate Society of Students (IEM-UMPSS) represents the leadership of this professional association for engineers in Malaysia. Stay informed and connected with their latest initiatives and programs."
+                pageKeywords="Executive Council, 2021/2022, IEM-UMPSS, Leadership, Professional Association, Engineers, Malaysia"
+            />
             <Header />
             <AdvisorSection />
             <ManagementTeam />

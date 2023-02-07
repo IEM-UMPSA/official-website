@@ -3,16 +3,23 @@ import Breadcrumb from '../Common/Breadcrumb';
 import DeveloperTwo from './DeveloperSectionTwo';
 import OpenSourceContributor from './OpenSourceContributor';
 import Cta from '../Home/CtaSection';
+import SEO from '../../components/SEO/index';
 
 
-class InstructorMain extends Component {
+class DeveloperTeam extends Component {
 
     render() {
 
         return (
             <main>
-	            {/* breadcrumb-start */}
-				<Breadcrumb pageTitle="Hall of Fame" />
+	           <SEO 
+                	pageTitle="Hall of Fame" 
+                	pageDescription="Join the Development Team and Open Source Contributors of the IEM-UMP Student Section, and help drive innovation in the engineering community. Contribute your software development skills and technology knowledge, collaborate with others, and volunteer to make a difference. Get involved today!"
+                	pageKeywords="Development Team, Open Source Contributors, IEM-UMP Student Section, engineering community, software development, technology, collaboration, volunteer, contribute."
+            	/>
+
+           		{/* breadcrumb-start */}
+				<Breadcrumb pageTitle="Hall of Fame" breadCrumbImage="/assets/img/page-title/faq.jpg" />
 				{/* breadcrumb-end */}
 
                 {/* Teacher-start */}
@@ -31,4 +38,4 @@ class InstructorMain extends Component {
     }
 }
 
-export default InstructorMain;
+export default DeveloperTeam;

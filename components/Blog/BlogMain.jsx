@@ -1,5 +1,4 @@
 import ArticleLayout from '../Common/ArticleLayout';
-import Breadcrumb from '../Common/Breadcrumb';
 import PaginationSection from '../Common/Pagination';
 import Search from './SearchSection';
 import RecentPost from './RecentPostSection';
@@ -33,8 +32,6 @@ export default function BlogMain({ searchResult }) {
 
   return (
     <main>
-      <Breadcrumb pageTitle="Blog" />
-
       <section className="blog__area pt-120 pb-120">
         <div className="container">
           <div className="row">
