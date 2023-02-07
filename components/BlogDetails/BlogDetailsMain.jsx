@@ -31,9 +31,9 @@ export default function BlogDetailsMain(){
 
         return (
 
-            <main>
+            <main  key={data.id}>
               
-                <Head key={data.id}>
+                <Head>
                     <title>{'Blog | '+ data.title}</title>
                     <meta name={'Blog | '+ data.title} />
                     <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -59,7 +59,7 @@ export default function BlogDetailsMain(){
         
 
               
-                <Breadcrumb key={data.id} pageTitle={data.title} breadCrumbImage={data.image}/>
+                <Breadcrumb  pageTitle={data.title} breadCrumbImage={data.image}/>
           
 
                 {/* blog-area start */}
