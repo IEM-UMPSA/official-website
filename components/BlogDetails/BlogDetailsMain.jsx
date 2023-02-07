@@ -34,18 +34,28 @@ export default function BlogDetailsMain(){
             <main>
               
                 <Head key={data.id}>
-                    <title>{data.title}</title>
-                    <meta name={data.title} />
-                    <meta name="og:title" property="og:title" content={data.title}></meta>
-                    <meta name="og:description" property="og:description" content={data.text}></meta>
-                    <meta name="twitter:card" content={data.title}></meta>
-                    <link rel="canonical" href={'https://iemumpss.vercel.app'+ data.url}></link>
+                    <title>{'Blog || '+ data.title}</title>
+                    <meta name={'Blog || '+ data.title} />
+                    <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+                    <meta name="description" content={data.metaDescription} />
+                    <meta name="keywords" content={data.metaKeywords} />
+                    <meta
+                        name="viewport"
+                        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+                    />
+                    <meta name="og:title" property="og:title" content={'Blog || '+ data.title}></meta>
+                    <meta name="og:description" property="og:description" content={data.metaDescription}></meta>
+                    <meta name="og:keywords" property="og:keywords" content={data.metaKeywords}></meta>
+                    <meta name="twitter:card" content={'Blog || '+ data.title}></meta>
+                    <link rel="canonical" href={'https://iemumpss.vercel.app/blog/'+ data.slug}></link>
                     <meta property="og:image" content={data.image} />
+                    <meta name="author" content={data.author}/>
+                    <meta name="robots" content="index, follow" />
                 </Head>
         
 
               
-                <Breadcrumb key={data.id} pageTitle={data.title} />
+                <Breadcrumb key={data.id} pageTitle={data.title} breadCrumbImage={data.image}/>
           
 
                 {/* blog-area start */}

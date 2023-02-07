@@ -5,12 +5,6 @@ import HeaderTwo from '../../components/Layout/Header/HeaderStyleTwo';
 
 class Instructor extends React.Component {
 
-    static getInitialProps({ store }) { }
-
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <React.Fragment>

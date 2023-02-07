@@ -1,6 +1,7 @@
 import Link from "next/link";
-  
-  const EventItem = ({
+
+
+const EventItem = ({
     date,
     time,
     venue,

@@ -3,7 +3,7 @@ import Cta from '../Home/CtaSection';
 import Link from 'next/link';
 import useSWR from 'swr';
 import { useRouter } from 'next/router'
-
+import SEO from "../SEO";
 const fetcher = (...args) => fetch(...args).then(res => res.json());
 
 export default function EventDetailsMain(){
@@ -18,6 +18,11 @@ export default function EventDetailsMain(){
 
     return (
         <main>
+            <SEO 
+                pageTitle={data.title}
+                pageDescription={data.metaDescription}
+                pageKeywords={data.metaKeywords}
+            />
             <section key={data.id}  className="page__title-area pt-120 ">
                 <div className="page__title-shape ">
                 <img className="page-title-shape-5 d-none d-sm-block" src="/assets/img/page-title/page-title-shape-1.png" alt="img not found"/>
