@@ -19,7 +19,7 @@ class DeveloperTeam extends Component {
             	/>
 
            		{/* breadcrumb-start */}
-				<Breadcrumb pageTitle="Hall of Fame" breadCrumbImage="/assets/img/page-title/faq.jpg" />
+				<Breadcrumb pageTitle="Hall of Fame" />
 				{/* breadcrumb-end */}
 
                 {/* Teacher-start */}
