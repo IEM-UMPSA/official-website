@@ -39,11 +39,15 @@ export default function BlogDetailsMain(){
                     <meta httpEquiv="x-ua-compatible" content="ie=edge" />
                     <meta name="description" content={data.metaDescription} />
                     <meta name="keywords" content={data.metaKeywords} />
-                    <meta
-                        name="viewport"
-                        content="width=device-width, initial-scale=1, shrink-to-fit=no"
-                    />
+                    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
                     <meta name="og:title" property="og:title" content={'Blog || '+ data.title}></meta>
+                    <meta property="og:image" content={data.image} />
+                    <meta property="og:image:alt" content={data.title} />
+                    <meta property="og:image:width" content="1200" />
+                    <meta property="og:image:height" content="600" />
+                    <meta property="og:site_name" content={'Blog || '+ data.title} />
+                    <meta property="og:type" content="object" />
+                    <meta property="og:url" content={'https://iemumpss.vercel.app/blog/'+ data.slug} />
                     <meta name="og:description" property="og:description" content={data.metaDescription}></meta>
                     <meta name="og:keywords" property="og:keywords" content={data.metaKeywords}></meta>
                     <meta name="twitter:card" content={'Blog || '+ data.title}></meta>
