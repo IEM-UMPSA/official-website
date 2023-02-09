@@ -3,7 +3,6 @@ import Header from '../components/Layout/Header/Header';
 import Footer from '../components/Layout/Footer/Footer';
 import HomeMain from '../components/Home/HomeMain';
 import SEO from '../components/SEO/index';
-import Script from 'next/script'
 
 class Index extends React.Component {
 
@@ -24,8 +23,7 @@ class Index extends React.Component {
             <Header />
             
             <HomeMain />
-            <Script async src="https://www.googletagmanager.com/gtag/js?id=G-BRBBYXSR48" />
-            <Script src="./google-analytics.js" />
+        
 
             <Footer />
 
