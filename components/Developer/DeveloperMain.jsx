@@ -39,3 +39,4 @@ class DeveloperTeam extends Component {
 }
 
 export default DeveloperTeam;
+
