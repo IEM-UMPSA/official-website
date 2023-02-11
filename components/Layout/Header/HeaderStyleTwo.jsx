@@ -2,7 +2,7 @@ import React, { useState, useEffect, Component } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import BurgerMenus from './BurgerMenus';
-import Image from 'next/image'
+
 const HeaderThree = () => {
 
    const [menuOpen, setMenuOpen] = useState(false)
@@ -40,8 +40,8 @@ const HeaderThree = () => {
                            <div className="logo">
                               <Link href="/">
 
-                                 <Image className="logo-white" src="/assets/img/logo/logo-2.png" alt="logo" />
-                                 <Image className="logo-black" src="/assets/img/logo/logo.png" alt="logo" />
+                                 <img className="logo-white" src="/assets/img/logo/logo-2.png" alt="logo" />
+                                 <img className="logo-black" src="/assets/img/logo/logo.png" alt="logo" />
 
                               </Link>
                            </div>
