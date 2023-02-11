@@ -6,11 +6,6 @@ import SEO from '../components/SEO/index';
 
 class Index extends React.Component {
 
-    static getInitialProps({store}) {}
-
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return (

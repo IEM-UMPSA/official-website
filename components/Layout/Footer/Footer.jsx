@@ -57,10 +57,10 @@ const Footer = () => {
 
                                 <div className="footer__social">
                                    <ul>
-                                      <li><a href="https://www.facebook.com/IEMUMPStudentSection/" className="fb"  target="_blank"><i className="fab fa-facebook-f"></i></a></li>
-                                      <li><a href="https://t.me/iemumpss" className="tw"  target="_blank"><i className="fab fa-telegram-plane"></i></a></li>
-                                      <li><a href="https://www.instagram.com/iemumpss/" className="ins"  target="_blank"><i className="fab fa-instagram"></i></a></li>
-                                      <li><a href="https://www.linkedin.com/company/iemumpss/" className="lin"  target="_blank"><i className="fab fa-linkedin"></i></a></li>
+                                      <li><Link href="https://www.facebook.com/IEMUMPStudentSection/" className="fb"  target="_blank"><i className="fab fa-facebook-f"></i></Link></li>
+                                      <li><Link href="https://t.me/iemumpss" className="tw"  target="_blank"><i className="fab fa-telegram-plane"></i></Link></li>
+                                      <li><Link href="https://www.instagram.com/iemumpss/" className="ins"  target="_blank"><i className="fab fa-instagram"></i></Link></li>
+                                      <li><Link href="https://www.linkedin.com/company/iemumpss/" className="lin"  target="_blank"><i className="fab fa-linkedin"></i></Link></li>
 
                                    </ul>
 

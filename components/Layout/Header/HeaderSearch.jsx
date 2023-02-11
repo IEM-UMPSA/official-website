@@ -18,7 +18,7 @@ const HeaderSearch = ({setSearchOpen, searchOpen}) => {
                           <div className="header__search-3-inner text-center">
                               <form action="#">
                                   <div className="header__search-3-btn">
-                                      <a href="#!" className="header__search-3-btn-close" onClick={() => setSearchOpen(false)}><i className="fas fa-times"></i></a>
+                                      <Link href="#!" className="header__search-3-btn-close" onClick={() => setSearchOpen(false)}><i className="fas fa-times"></i></Link>
                                   </div>
                                   <div className="header__search-3-header">
                                       <h3>Search</h3>
