@@ -11,10 +11,8 @@ const SEO = ({ pageTitle, pageDescription, pageKeywords }) => (
       <meta name="keywords" content={pageKeywords} />
       <meta name="author" content="Hovah Yii, IEM Web Dev Team" />
 
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, shrink-to-fit=no"
-      />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
       <meta property="og:image" content="/assets/img/main.jpg" />
       <meta property="og:image:alt" content="The website IEM-UMPSS is a platform hosted by the Institution of Engineers Malaysia - UMP Student Section. It provides a platform for university students to evaluate their proficiency and knowledge..." />
       <meta property="og:image:width" content="1200" />
