@@ -58,10 +58,7 @@ export default function BlogDetailsMain(){
                     <meta name="twitter:title" content={`Blog | ${data.title}`}/>
                     <meta name="twitter:description" content={data.metaDescription}/>
                     <meta name="twitter:image" content={data.image}/>
-                   
-                    <meta name="og:image:alt" property="og:image:alt" content={data.title} />
-                    <meta name="og:image:width"  property="og:image:width" content="1200" />
-                    <meta name="og:image:height" property="og:image:height" content="600" />
+            
                  
                     <meta name="author" content={data.author}/>
                     <meta name="robots" content="index, follow" />
