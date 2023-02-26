@@ -47,7 +47,7 @@ export default function BlogDetailsMain(){
 
                     {/* Facebook Meta Tags  */}
                     <meta property="og:url" content={`https://iemumpss.vercel.app/blog/${data.slug}`}/>
-                    <meta property="og:type" content="website"/>
+                    <meta property="og:type" content="article"/>
                     <meta property="og:title" content={`Blog | ${data.title}`}/>
                     <meta property="og:description" content={data.metaDescription}/>
                     <meta property="og:image" content={data.image}/>

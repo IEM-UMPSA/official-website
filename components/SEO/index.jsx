@@ -17,8 +17,8 @@ const SEO = ({ pageTitle, pageDescription, pageKeywords, pageImage, pageURL }) =
       <meta property="og:image:alt" content="The website IEM-UMPSS is a platform hosted by the Institution of Engineers Malaysia - UMP Student Section. It provides a platform for university students to evaluate their proficiency and knowledge..." />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="600" />
-      <meta property="og:site_name" content="IEM-UMPSS" />
-      <meta property="og:type" content="object" />
+      <meta property="og:site_name" content={`IEM-UMPSS | ${pageTitle}`} />
+      <meta property="og:type" content="event" />
       <meta property="og:title" content={pageTitle}  />
       <meta property="og:url" content={pageURL} />
       <meta property="og:description" content={pageDescription} />
