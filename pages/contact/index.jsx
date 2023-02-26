@@ -19,6 +19,8 @@ class Contact extends React.Component {
                 pageTitle="Contact Us" 
                 pageDescription="Get in touch with the Universiti Malaysia Pekan through our easy-to-use Contact Us page. Find our location in Pekan, Pahang and email us directly at iem@ump.edu.my."
                 pageKeywords="Contact Us, location, Universiti Malaysia, Pekan, Pahang, email, iem@ump.edu.my"
+                pageImage="/assets/img/page-title/contact.jpg"
+                pageURL="https://iemumpss.vercel.app/contact"
             />
             {/* breadcrumb-start */}
 			<Breadcrumb pageTitle="Contact Us" breadCrumbImage="/assets/img/page-title/contact.jpg" />

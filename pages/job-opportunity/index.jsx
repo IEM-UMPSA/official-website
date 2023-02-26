@@ -12,6 +12,8 @@ class index extends React.Component {
                 pageTitle="Job/Internship Opportunity" 
                 pageDescription="Discover job and internship opportunities with IEM-UMP Student Section, the Institution of Engineers Malaysia - UMP Student Section. Join a supportive and dynamic engineering community, gain professional skills and knowledge, and further your career. Apply now and take the next step in your engineering journey."
                 pageKeywords="IEM-UMP Student Section, Institution of Engineers Malaysia, UMP, internship, job opportunities."
+                pageImage="/assets/img/page-title/job.jpg"
+                pageURL="https://iemumpss.vercel.app/job-opportunity"
             />
             {/* breadcrumb-start */}
 			<Breadcrumb pageTitle="Job/Internship Opportunity" breadCrumbImage="/assets/img/page-title/job.jpg"  />

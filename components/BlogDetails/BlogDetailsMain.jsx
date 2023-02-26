@@ -65,10 +65,6 @@ export default function BlogDetailsMain(){
                 </Head>
 
               
-               
-        
-
-              
                 <Breadcrumb  pageTitle={data.title} breadCrumbImage={data.image}/>
           
 

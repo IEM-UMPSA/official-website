@@ -13,7 +13,9 @@ class index extends React.Component {
                 pageTitle="Frequently Asked Question (FAQ)" 
                 pageDescription= "Find answers to your questions about IEM, the Institution of Engineers Malaysia. Learn about the function of IEM, the differences between BEM and IEM, the IEM membership application process, P.Eng, recognised degrees, and more in our FAQ section."
                 pageKeywords="IEM, Institution of Engineers Malaysia, FAQ, function, BEM, IEM membership, application process, P.Eng, recognised degrees, accredited program."
-            />
+                pageImage="/assets/img/page-title/faq.jpg"
+                pageURL="https://iemumpss.vercel.app/faq"
+           />
             {/* breadcrumb-start */}
 			<Breadcrumb pageTitle="Frequently Asked Question (FAQ)" breadCrumbImage="/assets/img/page-title/faq.jpg" />
 			{/* breadcrumb-end */}

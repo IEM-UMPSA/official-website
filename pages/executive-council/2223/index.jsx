@@ -20,6 +20,8 @@ class Committee2223 extends React.Component {
                 pageTitle="Executive Council 2022/2023" 
                 pageDescription= "The 2022/2023 Executive Council of the Institute of Engineers, Malaysia-University of Malaya Postgraduate Society of Students (IEM-UMPSS) represents the leadership of this professional association for engineers in Malaysia. Stay informed and connected with their latest initiatives and programs."
                 pageKeywords="Executive Council, 2022/2023, IEM-UMPSS, Leadership, Professional Association, Engineers, Malaysia"
+              pageImage="/public/assets/img/committee/2122/group-photo.jpg"
+                pageURL="https://iemumpss.vercel.app/executive-council/2223"
             />
             <AdvisorSection />
             <ManagementTeam />

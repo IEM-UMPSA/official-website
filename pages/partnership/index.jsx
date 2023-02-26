@@ -17,6 +17,8 @@ class index extends React.Component {
                 pageTitle="Partnership" 
                 pageDescription="Join IEM-UMP Student Section, the Institution of Engineers Malaysia - UMP Student Section, and advance the science and profession of engineering. Collaborate with universities, clubs, companies, and individuals to share knowledge and ideas. Find professional development, networking opportunities, and more. Contact us for internships and job opportunities."
                 pageKeywords="IEM-UMP Student Section, Institution of Engineers Malaysia, UMP, engineering society, professional skills, knowledge, values, engineering students, welfare, networking, future engineers, university clubs, engineering society, university club, IEM Student Sections, engineering companies, technology companies, internship, job opportunities."
+                pageImage="/assets/img/page-title/partnership.jpg"
+                pageURL="https://iemumpss.vercel.app/partnership"
             />
             {/* breadcrumb-start */}
 			<Breadcrumb pageTitle="Partnership" breadCrumbImage="/assets/img/page-title/partnership.jpg" />

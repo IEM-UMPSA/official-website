@@ -22,6 +22,8 @@ export default function EventDetailsMain(){
                 pageTitle={data.title}
                 pageDescription={data.metaDescription}
                 pageKeywords={data.metaKeywords}
+                pageImage={data.poster}
+                pageURL={`https://iemumpss.vercel.app/event/'+ ${data.slug}`}
             />
             <section key={data.id}  className="page__title-area pt-120 ">
                 <div className="page__title-shape ">

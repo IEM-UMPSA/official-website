@@ -15,6 +15,8 @@ class Blog extends React.Component {
                 pageTitle="Blogs" 
                 pageDescription="Explore the latest insights and ideas in engineering with the blog of IEM-UMPSS official website. Stay up-to-date with the latest trends and developments in the field of engineering by reading our blog articles submitted by experts and students in the community."
                 pageKeywords="IEM-UMPSS, Engineering, Blog, Engineering Community, Student Blog, Engineering Trends, Engineering Developments, Engineering Insights, Engineering Ideas, Engineering Society"
+                pageURL="https://iemumpss.vercel.app/blog"
+                pageImage="/assets/img/page-title/blog.jpg"
             />
             <Breadcrumb pageTitle="Blogs" breadCrumbImage="/assets/img/page-title/blog.jpg"/>
             <Header />
