@@ -28,10 +28,11 @@ export default function BlogDetailsMain(){
 
 
         return (
+            <>
 
-            <main  key={data.id}>
 
-            <Head>
+                     <Head>
+
                     <title>{`Blog | ${data.title}`}</title>
                     <meta httpEquiv="x-ua-compatible" content="ie=edge" />
                     <meta name="description" content={data.metaDescription} />
@@ -63,6 +64,10 @@ export default function BlogDetailsMain(){
                     <meta name="author" content={data.author}/>
                     <meta name="robots" content="index, follow" />
                 </Head>
+
+            <main>
+
+        
 
               
                 <Breadcrumb  pageTitle={data.title} breadCrumbImage={data.image}/>
@@ -112,7 +117,7 @@ export default function BlogDetailsMain(){
                </section>
                 {/* blog-area end */}
             </main>
-     
+     </>
     );
 }
 

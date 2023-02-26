@@ -3,6 +3,7 @@ import Head from "next/head";
 const SEO = ({ pageTitle, pageDescription, pageKeywords, pageImage, pageURL }) => (
   <>
     <Head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <title>
         IEM-UMPSS | {pageTitle} 
       </title>
@@ -18,7 +19,7 @@ const SEO = ({ pageTitle, pageDescription, pageKeywords, pageImage, pageURL }) =
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="600" />
       <meta property="og:site_name" content={`IEM-UMPSS | ${pageTitle}`} />
-      <meta property="og:type" content="event" />
+      <meta property="og:type" content="website" />
       <meta property="og:title" content={pageTitle}  />
       <meta property="og:url" content={pageURL} />
       <meta property="og:description" content={pageDescription} />

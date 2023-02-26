@@ -17,14 +17,16 @@ export default function EventDetailsMain(){
     if (!data) return <div>Loading...</div>
 
     return (
-        <main>
-            <SEO 
+        <>
+          <SEO 
                 pageTitle={data.title}
                 pageDescription={data.metaDescription}
                 pageKeywords={data.metaKeywords}
                 pageImage={data.poster}
                 pageURL={`https://iemumpss.vercel.app/event/${data.slug}`}
             />
+        <main>
+          
             <section key={data.id}  className="page__title-area pt-120 ">
                 <div className="page__title-shape ">
                 <img className="page-title-shape-5 d-none d-sm-block" src="/assets/img/page-title/page-title-shape-1.png" alt="img not found"/>
@@ -182,6 +184,7 @@ export default function EventDetailsMain(){
             <Cta />
             {/* cta-end */}
         </main>
+        </>
     );
 }
 
