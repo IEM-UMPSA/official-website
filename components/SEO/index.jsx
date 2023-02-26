@@ -20,7 +20,6 @@ const SEO = ({ pageTitle, pageDescription, pageKeywords }) => (
       <meta property="og:site_name" content="IEM-UMPSS" />
       <meta property="og:type" content="object" />
       <meta property="og:title" content={pageTitle}  />
-      <meta property="og:url" content="https://iemumpss.vercel.app/" />
       <meta property="og:description" content={pageDescription} />
 
       <meta name="robots" content="index, follow" />
