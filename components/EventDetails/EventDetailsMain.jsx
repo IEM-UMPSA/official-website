@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Cta from '../Home/CtaSection';
 import Link from 'next/link';
 import SEO from "../SEO";
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
 
 export default function EventDetailsMain(){
     const [data, setData] = useState(null);
@@ -68,23 +68,12 @@ export default function EventDetailsMain(){
                             <h5 className="page__title-3">{data.title}</h5>
                         </div>
                         <div className="course__meta-2 d-sm-flex mb-30">
-                            {/* <div className="course__teacher-3 d-flex align-items-center mr-70 mb-30">
-                            <div className="course__teacher-thumb-3 mr-15">
-                                <img src="/assets/img/course/teacher/teacher-1.jpg" alt="img not found"/>
-                            </div>
-                            <div className="course__teacher-info-3">
-                                <h5>Teacher</h5>
-                                <p><Link href="/instructor">Elon Gated</Link></p>
-                            </div>
-                            </div> */}
+                       
                             <div className="course__update mr-80 mb-30">
                             <h5>Last Update:</h5>
                             <p>{data.lastUpdate}</p>
                             </div>
-                            {/* <div className="course__update mb-30">
-                            <h5>Location:</h5>
-                            <p>{data.venue}</p>
-                            </div> */}
+                            
                         </div>
                     </div>
                 </div>
@@ -126,15 +115,7 @@ export default function EventDetailsMain(){
                                     <img className="events-sidebar-img-3" src="/assets/img/events/event-shape-3.png" alt="img not found"/>
                                 </div>
                                 <div className="events__info">
-                                    {/* <div className="events__info-meta mb-25 d-flex align-items-center justify-content-between">
-                                        <div className="events__info-price">
-                                            <h5>$76.<span>00</span> </h5>
-                                            <h5 className="old-price">$142.00</h5>
-                                        </div>
-                                        <div className="events__info-discount">
-                                            <span>68% OFF</span>
-                                        </div>
-                                    </div> */}
+                                  
                                     <div className="events__info-content mb-35">
                                         <ul>
                                             <li className="d-flex align-items-center">
@@ -171,20 +152,11 @@ export default function EventDetailsMain(){
                                 <div className="events__sidebar-widget white-bg">
                                 <div className="events__sponsor">
                                     <h3 className="events__sponsor-title">Organiser</h3>
-                                    {/* <div className="events__sponsor-thumb mb-35">
-                                        <img src="/assets/img/events/sponsor-logo.png" alt="img not found"/>
-                                    </div> */}
+                                    
                                     <div className="events__sponsor-info">
                                         <h3>{data.organiser}</h3>
                                         <h4>Contact: <span>{data.contact}</span></h4>
-                                        {/* <div className="events__social d-xl-flex align-items-center">
-                                            <h4>Share:</h4>
-                                            <ul>
-                                                <li><a href="#" className="fb"><i className="fab fa-facebook-f"></i></a></li>
-                                                <li><a href="#" className="tw"><i className="fab fa-twitter"></i></a></li>
-                                                <li><a href="#" className="pin"><i className="fab fa-pinterest-p"></i></a></li>
-                                            </ul>
-                                        </div> */}
+                                        
 
                                         <h3>{data.organiserTwo}</h3>
                                         <h4>Contact: <span>{data.contactTwo}</span></h4>
