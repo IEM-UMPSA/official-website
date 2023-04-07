@@ -1,20 +1,37 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import Cta from '../Home/CtaSection';
 import Link from 'next/link';
-import useSWR from 'swr';
-import { useRouter } from 'next/router'
 import SEO from "../SEO";
-const fetcher = (...args) => fetch(...args).then(res => res.json());
+import { useRouter } from 'next/router'
 
 export default function EventDetailsMain(){
+    const [data, setData] = useState(null);
+    const [error, setError] = useState(null);
+    const [isLoading, setIsLoading] = useState(true);
     const router = useRouter();
     const { slug } = router.query;
-    const { data, error } = useSWR(`/api/event/${slug}`, fetcher)
 
-    console.log(data)
-    if (error) return <div>Failed to load</div>
-    console.log(data)
-    if (!data) return <div>Loading...</div>
+    useEffect(() => {
+        async function fetchData() {
+            try {
+                const res = await fetch(`/api/event/${slug}`);
+                const jsonData = await res.json();
+                setData(jsonData);
+            } catch (err) {
+                setError(err);
+            }
+            setIsLoading(false);
+        }
+        fetchData();
+    }, [slug]);
+
+    if (error) {
+        return <div>Failed to load</div>;
+    }
+
+    if (isLoading) {
+        return <div>Loading...</div>;
+    }
 
     return (
         <>
@@ -187,4 +204,5 @@ export default function EventDetailsMain(){
         </>
     );
 }
+
 
