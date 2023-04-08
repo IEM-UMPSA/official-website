@@ -16,6 +16,7 @@ class Index extends React.Component {
                 pageKeywords="iemumpss, iem-umpss, iem ump, IEM-UMPSS, Institution of Engineers Malaysia, University of Malaysia Pahang Student Section, engineering, students, professional development, exposure, engineers, institutions, professionals, workshops, site visits, conferences, 10 years anniversary"
                 pageImage="/public/assets/img/main.jpg"
                 pageURL="https://iemumpss.vercel.app"
+                pageImageAlt="IEM-UMPSS Main Page"
             />
             <Header />
             

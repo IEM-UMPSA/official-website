@@ -19,6 +19,7 @@ class Committee2021 extends React.Component {
                 pageKeywords="Executive Council, 2020/2021, IEM-UMPSS, Leadership, Professional Association, Engineers, Malaysia"
                 pageImage="/public/assets/img/committee/2122/group-photo.jpg"
                 pageURL="https://iemumpss.vercel.app/executive-council/2021"
+                pageImageAlt="IEM-UMPSS Executive Council 2020/2021 Page"
             />
             <Header />
             <AdvisorSection />

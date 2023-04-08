@@ -21,6 +21,7 @@ class Contact extends React.Component {
                 pageKeywords="Contact Us, location, Universiti Malaysia, Pekan, Pahang, email, iem@ump.edu.my"
                 pageImage="/assets/img/page-title/contact.jpg"
                 pageURL="https://iemumpss.vercel.app/contact"
+                pageImageAlt="IEM-UMPSS Contact Us Page"
             />
             {/* breadcrumb-start */}
 			<Breadcrumb pageTitle="Contact Us" breadCrumbImage="/assets/img/page-title/contact.jpg" />

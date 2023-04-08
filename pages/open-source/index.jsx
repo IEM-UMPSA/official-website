@@ -16,6 +16,7 @@ class index extends React.Component {
                 pageKeywords="open source, IEM-UMPSS, UMP community, project, website, developers, coding problem, C3 thinking, professional practice, hard skills, experience, contribution, clone, git branch, pull request, merge, review, documentation, privacy policy"
                 pageImage="https://engineering.naukri.com/wp-content/uploads/sites/19/2015/10/open-source.png"
                 pageURL="https://iemumpss.vercel.app/open-source"
+                pageImageAlt="IEM-UMPSS Open Source Page"
             />
             {/* breadcrumb-start */}
 			<Breadcrumb pageTitle="Open Source" />

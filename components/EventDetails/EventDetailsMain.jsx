@@ -39,8 +39,9 @@ export default function EventDetailsMain(){
                 pageTitle={data.title}
                 pageDescription={data.metaDescription}
                 pageKeywords={data.metaKeywords}
-                pageImage={data.poster}
+                pageImage={data.image}
                 pageURL={`https://iemumpss.vercel.app/event/${data.slug}`}
+                pageImageAlt={data.imageAlt}
             />
         <main>
           
@@ -85,7 +86,7 @@ export default function EventDetailsMain(){
                         <div className="col-xxl-8 col-xl-8 col-lg-8">
                             <div className="events__wrapper">
                                 <div className="events__thumb mb-35 w-img">
-                                <img src={data.poster} alt="img not found"/>
+                                <img src={data.image} alt={data.imageAlt}/>
                                 </div>
                                 <div className="events__details mb-35">
                                 <h3>Description</h3>

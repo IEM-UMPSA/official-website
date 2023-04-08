@@ -18,6 +18,7 @@ class Event extends React.Component {
                 pageKeywords="IEM-UMPSS, events, engineering, workshops, talks, site visits, games, conferences, knowledge, experiences, student section, Institution of Engineers Malaysia, University of Malaysia Pahang."
                 pageImage="https://media.istockphoto.com/vectors/male-hand-holding-megaphone-with-upcoming-events-speech-bubble-for-vector-id1014979740?k=6&m=1014979740&s=612x612&w=0&h=0tAIYtwKFA6ttu67JTxo-2_IE1lBt89F2q0YCnUVJ04="
                 pageURL="https://iemumpss.vercel.app/event"
+                pageImageAlt="IEM-UMPSS Events Page"
             
             />
             <Breadcrumb pageTitle="Events" />

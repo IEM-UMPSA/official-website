@@ -19,6 +19,7 @@ class index extends React.Component {
                 pageKeywords="IEM-UMP Student Section, Institution of Engineers Malaysia, UMP, engineering society, professional skills, knowledge, values, engineering students, welfare, networking, future engineers, university clubs, engineering society, university club, IEM Student Sections, engineering companies, technology companies, internship, job opportunities."
                 pageImage="/assets/img/page-title/partnership.jpg"
                 pageURL="https://iemumpss.vercel.app/partnership"
+                pageImageAlt="IEM-UMPSS Partnership Page"
             />
             {/* breadcrumb-start */}
 			<Breadcrumb pageTitle="Partnership" breadCrumbImage="/assets/img/page-title/partnership.jpg" />

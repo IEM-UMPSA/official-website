@@ -17,6 +17,7 @@ class Blog extends React.Component {
                 pageKeywords="IEM-UMPSS, Engineering, Blog, Engineering Community, Student Blog, Engineering Trends, Engineering Developments, Engineering Insights, Engineering Ideas, Engineering Society"
                 pageURL="https://iemumpss.vercel.app/blog"
                 pageImage="/assets/img/page-title/blog.jpg"
+                pageImageAlt="IEM-UMPSS Blog Page"
             />
             <Breadcrumb pageTitle="Blogs" breadCrumbImage="/assets/img/page-title/blog.jpg"/>
             <Header />

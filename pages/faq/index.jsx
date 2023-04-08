@@ -15,6 +15,7 @@ class index extends React.Component {
                 pageKeywords="IEM, Institution of Engineers Malaysia, FAQ, function, BEM, IEM membership, application process, P.Eng, recognised degrees, accredited program."
                 pageImage="/assets/img/page-title/faq.jpg"
                 pageURL="https://iemumpss.vercel.app/faq"
+                pageImageAlt="IEM-UMPSS Frequently Asked Question (FAQ) Page"
            />
             {/* breadcrumb-start */}
 			<Breadcrumb pageTitle="Frequently Asked Question (FAQ)" breadCrumbImage="/assets/img/page-title/faq.jpg" />

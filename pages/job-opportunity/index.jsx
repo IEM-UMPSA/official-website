@@ -14,6 +14,7 @@ class index extends React.Component {
                 pageKeywords="IEM-UMP Student Section, Institution of Engineers Malaysia, UMP, internship, job opportunities."
                 pageImage="/assets/img/page-title/job.jpg"
                 pageURL="https://iemumpss.vercel.app/job-opportunity"
+                pageImageAlt="IEM-UMPSS Job/Internship Opportunity Page"
             />
             {/* breadcrumb-start */}
 			<Breadcrumb pageTitle="Job/Internship Opportunity" breadCrumbImage="/assets/img/page-title/job.jpg"  />
