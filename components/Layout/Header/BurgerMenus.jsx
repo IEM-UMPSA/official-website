@@ -66,6 +66,8 @@ const BurgerMenus = ({setMenuOpen, menuOpen}) => {
                   <li className={other ? "has-droupdown active" : "has-droupdown"}>
                       <a onClick={() => { openMobileMenu('other'); }}>Others</a>
                       <ul className={other ? "sub-menu active" : "sub-menu"}>
+                                                                   <li><Link href="/competition">Competition</Link></li>
+
                         <li><Link href="/partnership">Collaborate with Us</Link></li>
                         <li><Link href="/job-opportunity">Job/Internship</Link></li>
                         <li><Link href="/faq">FAQ</Link></li>

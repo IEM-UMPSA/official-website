@@ -71,6 +71,8 @@ const HeaderThree = () => {
 
                                        </Link>
                                        <ul className="cat-submenu">
+                                                                                     <li><Link href="/competition">Competition</Link></li>
+
                                        <li><Link href="/partnership">Collaborate with Us</Link></li>
                                           <li><Link href="/job-opportunity">Job/Internship</Link></li>
                                           <li><Link href="/faq">FAQ</Link></li>

@@ -95,6 +95,8 @@ const Footer = () => {
                              <div className="footer__widget-body">
                                 <div className="footer__link">
                                    <ul>
+                                                                               <li><Link href="/competition">Competition</Link></li>
+
                                        <li><Link href="/development-team">Development Team</Link></li>
                                        <li><Link href="/open-source">Open Source</Link></li>
                                        <li><Link href="/partnership">Collaborate with Us</Link></li>

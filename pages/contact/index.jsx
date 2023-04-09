@@ -6,12 +6,6 @@ import Breadcrumb from '../../components/Common/Breadcrumb';
 import SEO from '../../components/SEO/index';
 class Contact extends React.Component {
 
-    static getInitialProps({store}) {}
-
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <React.Fragment>

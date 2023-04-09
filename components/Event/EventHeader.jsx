@@ -7,6 +7,15 @@ import Link from "next/link";
     lastUpdate,
   }) => {
     return (
+        <>
+            <SEO 
+                pageTitle={data.title}
+                pageDescription={data.metaDescription}
+                pageKeywords={data.metaKeywords}
+                pageImage={data.image}
+                pageURL={`https://iemumpss.vercel.app/event/${data.slug}`}
+                pageImageAlt={data.imageAlt}
+            />
         <section className="page__title-area pt-120 ">
         <div className="page__title-shape ">
         <img className="page-title-shape-5 d-none d-sm-block" src="/assets/img/page-title/page-title-shape-1.png" alt="img not found"/>
@@ -53,6 +62,7 @@ import Link from "next/link";
         </div>
         </div>
     </section>
+    </>
     );
   };
   
