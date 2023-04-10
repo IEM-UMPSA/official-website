@@ -1,15 +1,15 @@
 import React from 'react';
 import Header from '../../components/Layout/Header/HeaderStyleTwo';
-import BlogDetailsMain from '../../components/BlogDetails/BlogDetailsMain';
+import CompetitionDetailsMain from '../../components/Competition/CompetitionDetailsMain';
 import Footer from '../../components/Layout/Footer/FooterStyleTwo';
 
-class BlogDetails extends React.Component {
+class CompetitionDetails extends React.Component {
 
     render() {
         return (
             <React.Fragment>
                  <Header />
-                <BlogDetailsMain />
+                <CompetitionDetailsMain />
                 <Footer />
             </React.Fragment>
         );
@@ -17,4 +17,4 @@ class BlogDetails extends React.Component {
 }
 
 
-export default BlogDetails;
+export default CompetitionDetails;

@@ -6,7 +6,8 @@ const EventItem = ({
     time,
     venue,
     title,
-    slug
+    slug,
+    
   }) => {
     return (
         <div className="row">

@@ -42,6 +42,7 @@ export default function EventDetailsMain(){
                 pageImage={data.image}
                 pageURL={`https://iemumpss.vercel.app/event/${data.slug}`}
                 pageImageAlt={data.imageAlt}
+                
             />
         <main>
           

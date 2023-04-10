@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Breadcrumb from '../Common/Breadcrumb';
-import CompetitionListTab from '../Elements/Tab/CompetitionListTab';
+import CompetitionListTab from './CompetitionListTab';
 import Cta from '../Home/CtaSection';
 
 
@@ -11,7 +11,7 @@ class CompetitionListMain extends Component {
         return (
             <main>
 	            {/* breadcrumb-start */}
-				<Breadcrumb />
+				<Breadcrumb pageTitle="Competitons" />
 				{/* breadcrumb-end */}
 
                 {/* course tab-start */}

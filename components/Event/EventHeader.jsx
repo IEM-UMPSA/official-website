@@ -8,14 +8,6 @@ import Link from "next/link";
   }) => {
     return (
         <>
-            <SEO 
-                pageTitle={data.title}
-                pageDescription={data.metaDescription}
-                pageKeywords={data.metaKeywords}
-                pageImage={data.image}
-                pageURL={`https://iemumpss.vercel.app/event/${data.slug}`}
-                pageImageAlt={data.imageAlt}
-            />
         <section className="page__title-area pt-120 ">
         <div className="page__title-shape ">
         <img className="page-title-shape-5 d-none d-sm-block" src="/assets/img/page-title/page-title-shape-1.png" alt="img not found"/>
@@ -40,15 +32,7 @@ import Link from "next/link";
                     <h5 className="page__title-3">{title}</h5>
                 </div>
                 <div className="course__meta-2 d-sm-flex mb-30">
-                    {/* <div className="course__teacher-3 d-flex align-items-center mr-70 mb-30">
-                    <div className="course__teacher-thumb-3 mr-15">
-                        <img src="/assets/img/course/teacher/teacher-1.jpg" alt="img not found"/>
-                    </div>
-                    <div className="course__teacher-info-3">
-                        <h5>Teacher</h5>
-                        <p><Link href="/instructor">Elon Gated</Link></p>
-                    </div>
-                    </div> */}
+   
                     <div className="course__update mr-80 mb-30">
                     <h5>Last Update:</h5>
                     <p>{lastUpdate}</p>
