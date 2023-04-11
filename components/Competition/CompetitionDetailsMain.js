@@ -15,7 +15,7 @@ class CompetitionDetailsMain extends Component {
     render() {
         return (
             
-            <React.Fragment>
+            <>
             <SEO 
                 pageTitle="InvencMax 3.0 | IEM-UTM Student Section"
                 pageDescription="InvencMax is an annual invention competition aimed at incentivizing STEAM awareness among undergraduate students and promoting sustainable product design and marketing."
@@ -226,17 +226,21 @@ innovation product. (Any other issues regarding the theme are also acceptable.)<
                             <div className="col-xxl-4 col-xl-4 col-lg-4">
                                 <CourseSidebar />
                             </div>
+
+                            <Cta/>
+		
                         </div>
                     </div>
                 </section>
-				{/* course tab-end */}
-
-                {/* cta-start */}
-				<Cta />
-				{/* cta-end */}
+		              
+				
 
         	</main>
-            </React.Fragment>
+
+
+
+ 
+            </>
         );
     }
 }

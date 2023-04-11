@@ -1,58 +1,17 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
-import ReactPlayer from "react-player";
-import Modal from "react-responsive-modal";
 
 class CourseSidebar extends Component {
 
-    state = {
-        open: false
-      };
-    
-      onOpenModal = () => {
-        this.setState(prevState => ({
-          open: !prevState.open
-        }));
-      };
-
-      onCloseModal = () => {
-        this.setState(prevState => ({
-          open: !prevState.open
-        }));
-      };
 
     render() {
 
         return (
-            <React.Fragment>
-                <Modal
-                open={this.state.open}
-                onClose={this.onCloseModal}
-                styles={{
-                modal: {
-                    maxWidth: "unset",
-                    width: "70%",
-                    padding: "unset"
-                },
-                overlay: {
-                    background: "rgba(0, 0, 0, 0.5)"
-                },
-                closeButton: {
-                    background: "yellow"
-                }
-                }}
-                center
-            >
-                <ReactPlayer
-                url="https://youtu.be/es4x5R-rV9s"
-                width="100%"
-                height="calc(100vh - 100px)"
-                />
-            </Modal>
+            <>
+            
             
             <div className="course__sidebar pl-70 p-relative">
                 <div className="course__shape">
-                <img className="course-dot" src="/assets/img/course/course-dot.png" alt="img not found"/>
                 </div>
                 <div className="course__sidebar-widget-2 white-bg mb-20">
                 <div className="course__video">
@@ -110,7 +69,7 @@ class CourseSidebar extends Component {
                 </div>
            
             </div>
-            </React.Fragment>
+            </>
         );
     }
 }
