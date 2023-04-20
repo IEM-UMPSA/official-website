@@ -161,7 +161,7 @@ const Header = () => {
             </div>
 
             <BurgerMenus menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-            <div onClick={() => setMenuOpen(false)} className={menuOpen ? "body-overlay show" : "body-overlay"}></div>
+            <div onClick={() => setMenuOpen(false)} className={menuOpen ? "body-overlay show " : "body-overlay "}></div>
 
             {/* <ShopingCart shopOpen={shopOpen} setShopOpen={setShopOpen} />
             <div onClick={() => setShopOpen(false)} className={shopOpen ? "body-overlay show" : "body-overlay"}></div> */}
