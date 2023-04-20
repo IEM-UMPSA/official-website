@@ -38,20 +38,24 @@ const PhotoBooth = () => {
       ],
     },
     {
-      name: 'Pekan Library',
+      name: 'Pekan Library 4th floor',
       photos: [
         '/assets/img/library/1.jpg',
         '/assets/img/library/2.jpg',
         '/assets/img/library/3.jpg',
         '/assets/img/library/4.jpg',
         '/assets/img/library/5.jpg',
+      ],
+    },
+       {
+      name: 'Pekan Library Auditorium',
+      photos: [
+      
         '/assets/img/library/AudiNew2.jpg',
         '/assets/img/library/UMPLib_Auditorium1.jpg',
         '/assets/img/library/UMPLib_Auditorium2.jpg',
         '/assets/img/library/UMPLib_Auditorium3.jpg',
       ],
-
-
     },
   ];
 
