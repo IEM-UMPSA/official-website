@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useState } from 'react';
 import SEO from '../../../components/SEO';
 
@@ -71,6 +72,9 @@ const PhotoBooth = () => {
     <div className="p-4 flex justify-center">
       <div className="w-full max-w-screen-lg overflow-hidden">
         <h1 className="text-3xl mb-4 text-center">Venue Photo for Huawei Intelligent World 2030 event</h1>
+
+        <Link href="/" > <h1 className='underline'> ← Back to Homepage</h1> </Link>
+        <br />
         <div className="flex items-center flex-wrap mb-4">
           {venues.map((venue) => (
             <button
