@@ -23,7 +23,7 @@ export default function HeaderBanner() {
             </span>
             <p className="ml-3 truncate sm:visible font-medium text-white monitor">
               <span className="md:hidden">{data.summary}</span>
-              <span className="hidden md:inline absolute">{data.description}</span>
+              <span className=" md:inline ">{data.description}</span>
             </p>
           </div>
           <div className="md:order-3 flex-shrink-0 md:mr-8 sm:order-2 sm:ml-3 ">
