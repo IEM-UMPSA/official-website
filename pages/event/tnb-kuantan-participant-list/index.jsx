@@ -42,7 +42,8 @@ const ParticipantList = () => {
             <tr className="border-b border-gray-500">
               <th className="py-2">#</th>
               <th className="py-2">Full Name</th>
-              <th className="py-2">Matric ID</th>
+              <th className="py-4">Matric ID</th>
+              <th className="py-2">Going</th>
             </tr>
           </thead>
           <tbody>
@@ -51,6 +52,7 @@ const ParticipantList = () => {
                 <td className="py-2">{index + 1}</td>
                 <td className="py-2">{participant.name}</td>
                 <td className="py-2">{participant.matricID}</td>
+                 <td className="py-2">{participant.attendance}</td>
               </tr>
             ))}
           </tbody>
