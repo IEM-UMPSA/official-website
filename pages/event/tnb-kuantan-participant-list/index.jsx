@@ -36,14 +36,16 @@ const ParticipantList = () => {
     </ul>
 
 </div>
-      <div className="overflow-x-auto p-2">
+      <div className="overflow-x-auto p-4">
         <table className="mx-auto w-full max-w-2xl table-auto border-collapse border-gray-500">
           <thead>
             <tr className="border-b border-gray-500">
               <th className="py-2">#</th>
               <th className="py-2">Full Name</th>
-              <th className="py-4">Matric ID</th>
-              <th className="py-2">Going</th>
+              <th className="py-2">Matric ID</th>
+              <th className="py-2">National ID(IC/Passport No.)</th>
+              <th className="py-2">Faculty</th>
+
             </tr>
           </thead>
           <tbody>
@@ -52,7 +54,8 @@ const ParticipantList = () => {
                 <td className="py-2">{index + 1}</td>
                 <td className="py-2">{participant.name}</td>
                 <td className="py-2">{participant.matricID}</td>
-                 <td className="py-2">{participant.attendance}</td>
+                 <td className="py-2">{participant.nationalID}</td>
+                        <td className="py-2">{participant.faculty}</td>
               </tr>
             ))}
           </tbody>
