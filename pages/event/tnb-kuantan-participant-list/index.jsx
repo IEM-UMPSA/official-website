@@ -43,7 +43,7 @@ const ParticipantList = () => {
               <th className="py-2">#</th>
               <th className="py-2">Full Name</th>
               <th className="py-2">Matric ID</th>
-              <th className="py-2">Attendance</th>
+              <th className="py-2">Attendance - 16 May 2023</th>
             </tr>
           </thead>
           <tbody>
