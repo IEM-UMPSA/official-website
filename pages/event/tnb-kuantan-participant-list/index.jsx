@@ -13,6 +13,28 @@ const ParticipantList = () => {
     }
     fetchData();
   }, []);
+
+ const handleAttendanceChange = async (index, event) => {
+    const isChecked = event.target.checked;
+    const participantToUpdate = participants[index];
+    participantToUpdate.attendance = isChecked ? 'Present' : 'Absent';
+    setData([...participants.slice(0, index), participantToUpdate, ...participants.slice(index + 1)]);
+    await updateParticipantAttendance(participantToUpdate);
+  };
+
+  const updateParticipantAttendance = async (participantToUpdate) => {
+    const res = await fetch(`/api/event/tnb/${participantToUpdate.id}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(participantToUpdate)
+    });
+    const updatedParticipant = await res.json();
+    console.log(updatedParticipant);
+  };
+
+
   return (
     <>
     <SEO 
@@ -52,7 +74,7 @@ const ParticipantList = () => {
                 <td className="py-2">{index + 1}</td>
                 <td className="py-2">{participant.name}</td>
                 <td className="py-2">{participant.matricID}</td>
-                 <td className="py-2">{participant.attendance}</td>
+                <td className="py-2"><input type="checkbox" checked={participant.attendance === 'Present'} onChange={(event) => handleAttendanceChange(index, event)} /></td>
               </tr>
             ))}
           </tbody>

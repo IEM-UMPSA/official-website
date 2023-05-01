@@ -14,7 +14,7 @@ const FooterBottom = () => {
                 <div className="row">
                 <div className="col-xxl-6 col-xl-6">
                     <div className="footer__copyright text-left">
-                        <p>&copy; {new Date().getFullYear()} IEM-UMPSS, All Rights Reserved. Developed By <Link href="/development-team">IEM Web Dev</Link></p>
+                        <p>&copy; {new Date().getFullYear()} IEM-UMPSS. All Rights Reserved. Developed By <Link href="/development-team">IEM Web Dev</Link></p>
                     </div>
                 </div>
 
@@ -30,6 +30,12 @@ const FooterBottom = () => {
 
                     </div>
                 </div>
+                </div>
+                <div className="row">
+                        <p className="w-full mx-auto">
+                            Domain name sponsored by  <Link href="https://www.instagram.com/____jjie02_____/" target="_blank" className='text-white'>Chen Kar Kit </Link>
+                        </p>
+
                 </div>
             </div>
         </div>
