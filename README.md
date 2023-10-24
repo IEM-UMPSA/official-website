@@ -75,3 +75,9 @@ If you’re interested in joining our blog writing team, please visit [https://f
 </a>
 
 <br/>
+
+<a href="https://github.com/IEM-UMPSS/iemumpss/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=IEM-UMPSS/iemumpss" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
