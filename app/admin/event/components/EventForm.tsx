@@ -217,7 +217,7 @@ const UploadFormPage: React.FC = () => {
               <select
           id="pic_id"
           name="pic_id"
-          className="w-full"
+          className="w-full border p-2 rounded-lg"
           value={selectedPic}
           onChange={(e) => setSelectedPic(e.target.value)}
           required
