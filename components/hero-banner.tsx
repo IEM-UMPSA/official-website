@@ -33,7 +33,7 @@ export default function HeroBanner() {
             </p>
             <div className="flex space-x-4">
               <Button className="bg-teal-700 text-white">Learn More</Button>
-              <Button className="bg-yellow-300 text-gray-800">Events</Button>
+              <Button className="bg-yellow-300 text-gray-800 hover:text-white">Events</Button>
             </div>
             <div className="border grid grid-cols-3  bg-white pt-4 pb-4 rounded-lg">
               <div  className="text-center">
