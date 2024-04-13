@@ -21,9 +21,7 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <div className="mt-4">
-        <p>Modified and created by <Link href="https://hovahyii.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">Hovah Yii</Link></p>
-      </div>
+
     </footer>
   );
 }
