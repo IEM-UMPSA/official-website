@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     description: "Founded in 2013, IEM-UMPSS acts as a liaison, connecting UMP students to engineers, institutions, industries, and professionals. Join us now to embark on professionalism and celebrate our 10 years anniversary. Explore our awards, upcoming events, and membership options. Get in touch with us to contribute to our open-source projects and grow your portfolio.",
     images: [
       {
-        url: '/logo/logo.jjpg', // Must be an absolute URL
+        url: '/logo/logo.jpg', // Must be an absolute URL
         width: 512,
         height: 512,
       }
