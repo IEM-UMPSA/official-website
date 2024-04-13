@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-
+import Link from "next/link";
 export default function HeroBanner() {
 
     const [currentImage, setCurrentImage] = useState(0);
@@ -33,7 +33,7 @@ export default function HeroBanner() {
             </p>
             <div className="flex space-x-4">
               <Button className="bg-teal-700 text-white">Learn More</Button>
-              <Button className="bg-yellow-300 text-gray-800 hover:text-white">Events</Button>
+              <Link href="/#events" className="bg-yellow-300 text-gray-800 hover:text-white">Events</Link>
             </div>
             <div className="border grid grid-cols-3  bg-white pt-4 pb-4 rounded-lg">
               <div  className="text-center">
