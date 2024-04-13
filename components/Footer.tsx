@@ -17,11 +17,11 @@ export default function Footer() {
             <FaGithub className="text-blue-400" size={30} />
           </Link>
           <Link href="https://www.facebook.com/IEMUMPStudentSection/" target="_blank" rel="noopener noreferrer">
-            <FaFacebook className="text-blue-500" size={30} />
+            <FaFacebook className="text-blue-400" size={30} />
           </Link>
         </div>
       </div>
-
+  
     </footer>
   );
 }
