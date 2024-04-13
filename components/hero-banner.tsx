@@ -4,7 +4,10 @@ import { Button } from "@/components/ui/button";
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import Link from "next/link";
+import { useRouter } from 'next/navigation';
+
 export default function HeroBanner() {
+  const router = useRouter();
 
     const [currentImage, setCurrentImage] = useState(0);
     const images = ['/slide/huawei-day.jpg', '/slide/tt-electronics.jpg'];
@@ -15,7 +18,9 @@ export default function HeroBanner() {
     
         return () => clearInterval(interval);
       }, []);
-
+      const handleClick = () => {
+        router.push('/#events');
+      };
       return (
       <main className="min-screen">
         <section className="bg-[#f8f9fa] py-16">
@@ -33,7 +38,7 @@ export default function HeroBanner() {
             </p>
             <div className="flex space-x-4">
               <Button className="bg-teal-700 text-white">Learn More</Button>
-              <Link href="/#events" className="bg-yellow-300 text-gray-800 hover:text-white">Events</Link>
+              <Button onClick={handleClick} className="bg-yellow-300 text-gray-800 hover:text-white">Events</Button>
             </div>
             <div className="border grid grid-cols-3  bg-white pt-4 pb-4 rounded-lg">
               <div  className="text-center">
