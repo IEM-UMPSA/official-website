@@ -29,7 +29,7 @@ export default function HeroBanner() {
           <div className="space-y-6 lg:w-1/2">
             <div className="space-y-2">
               <h2 className="text-lg text-gray-600">IEM UMPSA</h2>
-              <p className="text-3xl md:text-6xl font-bold text-gray-800 leading-none">Embark on Professionalism</p>
+              <p className="text-4xl md:text-6xl font-bold text-gray-800 leading-none">Embark on Professionalism</p>
             </div>
             <p className="text-gray-600">
             Founded in 2013. Acts as a liaison, connecting UMP students to engineers, institutions, industries and professionals.

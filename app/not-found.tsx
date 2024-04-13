@@ -8,7 +8,7 @@ export default function Custom404() {
     <div className="flex flex-col items-center justify-center h-screen">
       <Image priority src="/under-construction-pikachu.gif" alt="Under Construction" width={400} height={300} />
       <h1 className="text-4xl font-bold mb-4 mt-4">Page Not Found</h1>
-      <p className="text-xl mb-4">Oops! Looks like this page is either under construction or does not exist.</p>
+      <p className="text-xl mb-4 text-center">Oops! Looks like this page is either under construction or does not exist.</p>
       <Link href="/" className="text-blue-500 hover:underline">Go back to homepage</Link>
     </div>
   );
