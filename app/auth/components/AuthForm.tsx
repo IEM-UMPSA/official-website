@@ -3,7 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
-
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
 	Form,
@@ -68,9 +68,10 @@ export default function AuthForm() {
 				<form
 					onSubmit={form.handleSubmit(onSubmit)}
 					className="w-full space-y-6"
-				>            
+				>         
+				<Link href="/">
 				<Image priority src="/logo/logo.png" alt="logo" width={512} height={512} />
-
+				</Link>   
 					<FormField
 						control={form.control}
 						name="email"
