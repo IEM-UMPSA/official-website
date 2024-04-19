@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className="flex flex-col items-center justify-between px-6 py-4 bg-white shadow-md md:flex-row md:justify-between">
       <div className="flex items-center justify-between w-full mb-2 md:mb-0 md:w-auto">
-        <Image src="/logo/logo.png" alt="Logo" width={100} height={100} />
+        <Link href="/"><Image src="/logo/logo.png" alt="Logo" width={100} height={100} /></Link>
 
         <button
           className="p-2 rounded-md md:hidden"
