@@ -32,15 +32,15 @@ export default function Event() {
       const { data, error } = await supabase.from('events').select();
       if (error) {
         console.error('Error fetching events:', error);
-        // Handle error appropriately (e.g., show error message)
         return;
       }
-      setEvents(data || []);
+      // Sort events by date in descending order
+      const sortedEvents = (data || []).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+      setEvents(sortedEvents);
     }
 
     fetchEvents();
 
-    // Cleanup function
     return () => {
       // Cleanup tasks, if any
     };
@@ -55,12 +55,11 @@ export default function Event() {
   const handleShowMore = () => {
     setShowMore(true);
     if (events) {
-      setVisibleEvents(events.slice(0, 7)); // Show two more rows of events
+      setVisibleEvents(events.slice(0, 7)); // Show more events
     }
   };
 
   if (events === null || visibleEvents === null) {
-    // Events are still loading
     return <div>Loading...</div>;
   }
 
@@ -69,10 +68,10 @@ export default function Event() {
   }
 
   return (
-    <div className="bg-white p-8" >
+    <div className="bg-white p-8">
       <h2 className="text-2xl font-bold mb-6" id="events">Events for Academic Session 2023/2024</h2>
       <Suspense fallback={<EventCardSkeleton />}>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6" >
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <EventsSuspense events={visibleEvents} />
         </div>
       </Suspense>
@@ -87,16 +86,12 @@ export default function Event() {
   );
 }
 
-interface EventsSuspenseProps {
-  events: Event[];
-}
-
-function EventsSuspense({ events }: EventsSuspenseProps) {
+function EventsSuspense({ events }: { events: any[] }) {
   return (
     <>
-      {events.map(event => 
+      {events.map((event) => (
         <EventCard key={event.id} {...event} />
-      )}
+      ))}
     </>
   );
 }

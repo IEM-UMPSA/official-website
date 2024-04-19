@@ -16,7 +16,7 @@ type EventCardProps = {
 };
 
 export function EventCard({
-  id,
+  slug,
   title,
   date,
   tag,
@@ -24,7 +24,7 @@ export function EventCard({
   imagePath,
 }: EventCardProps) {
   return (
-    <Link href={`/events/${id}`} className="rounded-lg shadow-lg overflow-hidden">
+    <Link href={`/events/${slug}`} className="rounded-lg shadow-lg overflow-hidden">
       <Image
         alt={title}
         src={getImageUrl(imagePath)}
