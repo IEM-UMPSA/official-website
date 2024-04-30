@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const AwardList: React.FC = () => {
   return (
@@ -7,7 +8,9 @@ const AwardList: React.FC = () => {
       <h1 className="text-3xl font-bold mb-8 text-white">Awards</h1>
       <div className="bg-white shadow-md mx-4 rounded-lg overflow-hidden mb-4 p-4 flex items-center">
         <div className="flex-shrink-0 mr-4">
-          <Image src="/award.jpg" alt="Award" width={100} height={100} />
+          <Link href="https://t.me/iemumpss/481" target="_blank">
+            <Image src="/award.jpg" alt="Award" width={100} height={100} />
+          </Link>
         </div>
         <div>
           <h2 className="text-xl font-bold mb-2">Outstanding IEM Student Section Award 2022/2023</h2>
