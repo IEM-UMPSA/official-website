@@ -10,7 +10,7 @@ export default function HeroBanner() {
   const router = useRouter();
 
     const [currentImage, setCurrentImage] = useState(0);
-    const images = ['/slide/huawei-day.jpg', '/slide/tt-electronics.jpg'];
+    const images = ['/slide/huawei-day.jpg', '/slide/tt-electronics.jpg', '/slide/thank-you.jpg' ];
     useEffect(() => {
         const interval = setInterval(() => {
           setCurrentImage((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
@@ -33,8 +33,6 @@ export default function HeroBanner() {
             </div>
             <p className="text-gray-600">
             Founded in 2013. Acts as a liaison, connecting UMP students to engineers, institutions, industries and professionals.
-
-.
             </p>
             <div className="flex space-x-4">
               <Button className="bg-teal-700 text-white">Learn More</Button>
@@ -64,7 +62,7 @@ export default function HeroBanner() {
       alt="Hero"
       width={1440}
       height="400"
-      className="object-cover w-screen h-[28rem]  object-fit"
+      className="object-cover w-screen h-[28rem] rounded-lg"
     />
           </div>
         </div>
