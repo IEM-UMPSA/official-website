@@ -32,7 +32,7 @@ export default function HeroBanner() {
               <p className="text-4xl md:text-6xl font-bold text-gray-800 leading-none">Embark on Professionalism</p>
             </div>
             <p className="text-gray-600">
-            Founded in 2013. Acts as a liaison, connecting UMP students to engineers, institutions, industries and professionals.
+            Founded in 2013. Acts as a liaison, connecting UMPSA students to engineers, institutions, industries and professionals.
             </p>
             <div className="flex space-x-4">
               <Button className="bg-teal-700 text-white">Learn More</Button>
