@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { FaTelegram, FaLinkedinIn, FaGithub, FaFacebook } from 'react-icons/fa';
+import { FaTelegram, FaLinkedin , FaGithub, FaFacebook } from 'react-icons/fa';
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -11,13 +12,16 @@ export default function Footer() {
             <FaTelegram className="text-blue-400" size={30} />
           </Link>
           <Link href="https://www.linkedin.com/company/iemumpss/" target="_blank" rel="noopener noreferrer" className="mr-4">
-            <FaLinkedinIn className="text-blue-400" size={30} />
+            <FaLinkedin  className="text-blue-400" size={30} />
           </Link>
           <Link href="https://github.com/IEM-UMPSS" target="_blank" rel="noopener noreferrer" className="mr-4">
             <FaGithub className="text-blue-400" size={30} />
           </Link>
           <Link href="https://www.facebook.com/IEMUMPStudentSection/" target="_blank" rel="noopener noreferrer">
             <FaFacebook className="text-blue-400" size={30} />
+          </Link>
+          <Link href="https://chat.whatsapp.com/D6g1NWa4zrW8YNP1zg9hYh" target="_blank" rel="noopener noreferrer">
+            <FaWhatsapp  className="text-blue-400" size={30} />
           </Link>
         </div>
       </div>
