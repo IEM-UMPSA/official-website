@@ -17,7 +17,7 @@ export default function Footer() {
           <Link href="https://github.com/IEM-UMPSS" target="_blank" rel="noopener noreferrer" className="mr-4">
             <FaGithub className="text-blue-400" size={30} />
           </Link>
-          <Link href="https://www.facebook.com/IEMUMPStudentSection/" target="_blank" rel="noopener noreferrer">
+          <Link href="https://www.facebook.com/IEMUMPStudentSection/" target="_blank" rel="noopener noreferrer" className="mr-4">
             <FaFacebook className="text-blue-400" size={30} />
           </Link>
           <Link href="https://chat.whatsapp.com/D6g1NWa4zrW8YNP1zg9hYh" target="_blank" rel="noopener noreferrer">
