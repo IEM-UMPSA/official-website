@@ -110,7 +110,7 @@ const UploadFormPage: React.FC = () => {
           Date
         </Label>
         <Input
-          type="date"
+          type="text"
           id="date"
           name="date"
           className="w-full"
@@ -129,7 +129,7 @@ const UploadFormPage: React.FC = () => {
           Time
         </Label>
         <Input
-          type="time"
+          type="text"
           id="time"
           name="time"
           className="w-full"

@@ -44,7 +44,6 @@ export async function createUserAction(prevState: any, formData: FormData) {
     role: formData.get('role') || 'member', 
     password: formData.get('password') || '123456', 
     imagePath: formData.get('imagePath') || '-', 
-
   });
 
   if (!validatedFields.success) {
@@ -86,6 +85,7 @@ export async function createUserAction(prevState: any, formData: FormData) {
       console.log({ users });
     }
   } catch (e) {
+    console.error('Database Error:', e);
     return {
       type: 'error',
       message: 'Database  Error: Failed to Create User.',
@@ -93,6 +93,7 @@ export async function createUserAction(prevState: any, formData: FormData) {
   }
 
   revalidatePath('/admin');
+  console.log('Redirecting to /admin');
   redirect('/admin');
 }
 

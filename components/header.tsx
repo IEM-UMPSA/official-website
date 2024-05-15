@@ -28,7 +28,9 @@ const Header = () => {
       >
         <div className="flex flex-col space-y-2 md:flex-row md:space-x-4 md:space-y-0">
 
-          <Link href="#events" className="block px-2 py-1 rounded-md hover:bg-gray-200">Events
+          <Link href="/#events" className="block px-2 py-1 rounded-md hover:bg-gray-200">Events
+          </Link>
+          <Link href="/engineering-week" className="block px-2 py-1 rounded-md hover:bg-gray-200">EW
           </Link>
           <Link href="/blog" className="block px-2 py-1 rounded-md hover:bg-gray-200">Blog
           </Link>
