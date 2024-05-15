@@ -6,7 +6,7 @@ import { Metadata, ResolvingMetadata } from "next";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
-import Header from "@/components/header";
+import Header from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const revalidate = 3600;

@@ -1,6 +1,6 @@
 
 import Footer from "@/components/Footer";
-import Header from "@/components/header";
+import Header from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import { FcStackOfPhotos } from "react-icons/fc";
 import Image from "next/image";

@@ -1,6 +1,6 @@
 {
   "name": "iem-new",
-  "version": "3.0.0",
+  "version": "3.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
+    "@mdx-js/loader": "^3.0.1",
+    "@next/mdx": "^14.2.3",
     "@prisma/client": "^5.10.2",
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-dialog": "^1.0.5",
@@ -27,6 +29,7 @@
     "embla-carousel-react": "^8.0.0",
     "formidable": "^3.5.1",
     "formik": "^2.4.5",
+    "fs": "0.0.1-security",
     "jsonwebtoken": "^9.0.2",
     "lucide-react": "^0.352.0",
     "multer": "1.4.5-lts.1",
@@ -35,6 +38,7 @@
     "react-dom": "^18",
     "react-hook-form": "^7.51.3",
     "react-icons": "^5.0.1",
+    "remark-gfm": "^4.0.0",
     "tailwind-merge": "^2.2.2",
     "tailwindcss-animate": "^1.0.7",
     "zod": "^3.22.4"
@@ -44,10 +48,12 @@
     "@types/react": "^18.2.77",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "css-loader": "^7.1.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
+    "ts-loader": "^9.5.1",
     "ts-node": "^10.9.2",
     "typescript": "^5"
   }

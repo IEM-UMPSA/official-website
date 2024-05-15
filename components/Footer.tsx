@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 py-4 text-center text-gray-300">
+    <footer className="bg-gray-900 py-4 text-center text-gray-300 bottom-0 relative w-full">
       <div className="flex flex-col md:flex-row items-center justify-between px-4">
         <p className="text-center md:text-left md:mb-0 mb-2">© {new Date().getFullYear()} All Rights Reserved | IEM UMPSA 2023 - {new Date().getFullYear()} </p>
         <div className="flex items-center justify-center md:justify-end">

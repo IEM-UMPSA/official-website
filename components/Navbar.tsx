@@ -32,7 +32,7 @@ const Header = () => {
           </Link>
           <Link href="/engineering-week" className="block px-2 py-1 rounded-md hover:bg-gray-200">EW
           </Link>
-          <Link href="/blog" className="block px-2 py-1 rounded-md hover:bg-gray-200">Blog
+          <Link href="/blogs" className="block px-2 py-1 rounded-md hover:bg-gray-200">Blog
           </Link>
           <Link href="/auth" className="block px-2 py-1 rounded-md hover:bg-gray-200">Login
           </Link>

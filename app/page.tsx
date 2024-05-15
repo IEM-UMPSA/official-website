@@ -1,6 +1,6 @@
 import HeroBanner from "@/components/hero-banner";
 import Event from "@/components/event";
-import Header from "@/components/header";
+import Header from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Enquiry from "@/components/Enquiry";
 import Award from "@/components/Award";
