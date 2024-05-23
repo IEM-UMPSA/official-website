@@ -55,7 +55,7 @@ const events = [
     image: '/events/aspen.jpg',
     description: 'Kickstart the week on May 12th with our Aspen Plus Workshop. Dive deep into process modeling and learn from the experts.',
     link: '/events/aspen-plus-workshop',
-    uploadLink: 'https://umpedumy-my.sharepoint.com/:f:/g/personal/tb20091_student_umpsa_edu_my/Eu8WNYGK7-9Fpx5v10U9osgBepESi8-rO_xGir_jQV4b2g?e=I6Fn0n',
+    uploadLink: 'https://drive.google.com/drive/folders/1-49k6-5MgyCe7VsO558HO8i_NI5XJMiC?usp=drive_link',
   },
   {
     name: 'Site Visit - UPC Chemical (M) Sdn. Bhd.',
@@ -76,7 +76,7 @@ const events = [
     image: '/events/math-olympic.jpg',
     description: 'Put your skills to the test and compete with the best on the final day.',
     link: '/events/math-olympic-competition',
-    uploadLink: 'https://umpedumy-my.sharepoint.com/:f:/g/personal/tb20091_student_umpsa_edu_my/Emq6Iz1e8exMvJtKzXWueW4BWq-StL4XBPBHgXcC_P2byg?e=e6Eyw7',
+    uploadLink: 'https://drive.google.com/drive/folders/1--t-l28pxZtFE__q9OzM1oc0FeOP6OwZ?usp=drive_link',
   },
   {
     name: 'IEM Virtual Run',
