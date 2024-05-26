@@ -10,7 +10,7 @@ export default function HeroBanner() {
   const router = useRouter();
 
     const [currentImage, setCurrentImage] = useState(0);
-    const images = ['/slide/huawei-day.jpg', '/slide/tt-electronics.jpg', '/slide/thank-you.jpg' ];
+    const images = ['/slide/upc.jpg', '/slide/huawei-day.jpg', '/slide/tt-electronics.jpg', '/slide/thank-you.jpg' ];
     useEffect(() => {
         const interval = setInterval(() => {
           setCurrentImage((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
